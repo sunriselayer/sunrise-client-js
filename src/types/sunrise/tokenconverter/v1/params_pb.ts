@@ -11,7 +11,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file sunrise/tokenconverter/v1/params.proto.
  */
 export const file_sunrise_tokenconverter_v1_params: GenFile = /*@__PURE__*/
-  fileDesc("CiZzdW5yaXNlL3Rva2VuY29udmVydGVyL3YxL3BhcmFtcy5wcm90bxIZc3VucmlzZS50b2tlbmNvbnZlcnRlci52MSI1CgZQYXJhbXMSEgoKYm9uZF9kZW5vbRgBIAEoCRIRCglmZWVfZGVub20YAiABKAk6BOigHwFC6gEKHWNvbS5zdW5yaXNlLnRva2VuY29udmVydGVyLnYxQgtQYXJhbXNQcm90b1ABWjZnaXRodWIuY29tL3N1bnJpc2VsYXllci9zdW5yaXNlL3gvdG9rZW5jb252ZXJ0ZXIvdHlwZXOiAgNTVFiqAhlTdW5yaXNlLlRva2VuY29udmVydGVyLlYxygIZU3VucmlzZVxUb2tlbmNvbnZlcnRlclxWMeICJVN1bnJpc2VcVG9rZW5jb252ZXJ0ZXJcVjFcR1BCTWV0YWRhdGHqAhtTdW5yaXNlOjpUb2tlbmNvbnZlcnRlcjo6VjFiBnByb3RvMw", [file_gogoproto_gogo]);
+  fileDesc("CiZzdW5yaXNlL3Rva2VuY29udmVydGVyL3YxL3BhcmFtcy5wcm90bxIZc3VucmlzZS50b2tlbmNvbnZlcnRlci52MSIOCgZQYXJhbXM6BOigHwFC6gEKHWNvbS5zdW5yaXNlLnRva2VuY29udmVydGVyLnYxQgtQYXJhbXNQcm90b1ABWjZnaXRodWIuY29tL3N1bnJpc2VsYXllci9zdW5yaXNlL3gvdG9rZW5jb252ZXJ0ZXIvdHlwZXOiAgNTVFiqAhlTdW5yaXNlLlRva2VuY29udmVydGVyLlYxygIZU3VucmlzZVxUb2tlbmNvbnZlcnRlclxWMeICJVN1bnJpc2VcVG9rZW5jb252ZXJ0ZXJcVjFcR1BCTWV0YWRhdGHqAhtTdW5yaXNlOjpUb2tlbmNvbnZlcnRlcjo6VjFiBnByb3RvMw", [file_gogoproto_gogo]);
 
 /**
  * Params defines the parameters for the module.
@@ -19,15 +19,6 @@ export const file_sunrise_tokenconverter_v1_params: GenFile = /*@__PURE__*/
  * @generated from message sunrise.tokenconverter.v1.Params
  */
 export type Params = Message<"sunrise.tokenconverter.v1.Params"> & {
-  /**
-   * @generated from field: string bond_denom = 1;
-   */
-  bondDenom: string;
-
-  /**
-   * @generated from field: string fee_denom = 2;
-   */
-  feeDenom: string;
 };
 
 /**

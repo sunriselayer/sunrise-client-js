@@ -13,7 +13,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file cosmos/mint/v1beta1/mint.proto.
  */
 export const file_cosmos_mint_v1beta1_mint: GenFile = /*@__PURE__*/
-  fileDesc("Ch5jb3Ntb3MvbWludC92MWJldGExL21pbnQucHJvdG8SE2Nvc21vcy5taW50LnYxYmV0YTEiqgEKBk1pbnRlchJECglpbmZsYXRpb24YASABKAlCMcjeHwDa3h8bY29zbW9zc2RrLmlvL21hdGguTGVnYWN5RGVj0rQtCmNvc21vcy5EZWMSTAoRYW5udWFsX3Byb3Zpc2lvbnMYAiABKAlCMcjeHwDa3h8bY29zbW9zc2RrLmlvL21hdGguTGVnYWN5RGVj0rQtCmNvc21vcy5EZWMSDAoEZGF0YRgDIAEoDCLXAwoGUGFyYW1zEhIKCm1pbnRfZGVub20YASABKAkSVQoVaW5mbGF0aW9uX3JhdGVfY2hhbmdlGAIgASgJQjbI3h8A2t4fG2Nvc21vc3Nkay5pby9tYXRoLkxlZ2FjeURlY9K0LQpjb3Ntb3MuRGVjqOewKgESTQoNaW5mbGF0aW9uX21heBgDIAEoCUI2yN4fANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lEZWPStC0KY29zbW9zLkRlY6jnsCoBEk0KDWluZmxhdGlvbl9taW4YBCABKAlCNsjeHwDa3h8bY29zbW9zc2RrLmlvL21hdGguTGVnYWN5RGVj0rQtCmNvc21vcy5EZWOo57AqARJLCgtnb2FsX2JvbmRlZBgFIAEoCUI2yN4fANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lEZWPStC0KY29zbW9zLkRlY6jnsCoBEhcKD2Jsb2Nrc19wZXJfeWVhchgGIAEoBBI/CgptYXhfc3VwcGx5GAcgASgJQivI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludNK0LQpjb3Ntb3MuSW50Oh2K57AqGGNvc21vcy1zZGsveC9taW50L1BhcmFtc0KtAQoXY29tLmNvc21vcy5taW50LnYxYmV0YTFCCU1pbnRQcm90b1ABWhljb3Ntb3NzZGsuaW8veC9taW50L3R5cGVzogIDQ01YqgITQ29zbW9zLk1pbnQuVjFiZXRhMcoCE0Nvc21vc1xNaW50XFYxYmV0YTHiAh9Db3Ntb3NcTWludFxWMWJldGExXEdQQk1ldGFkYXRh6gIVQ29zbW9zOjpNaW50OjpWMWJldGExYgZwcm90bzM", [file_gogoproto_gogo, file_cosmos_proto_cosmos, file_amino_amino]);
+  fileDesc("Ch5jb3Ntb3MvbWludC92MWJldGExL21pbnQucHJvdG8SE2Nvc21vcy5taW50LnYxYmV0YTEinAEKBk1pbnRlchJECglpbmZsYXRpb24YASABKAlCMcjeHwDa3h8bY29zbW9zc2RrLmlvL21hdGguTGVnYWN5RGVj0rQtCmNvc21vcy5EZWMSTAoRYW5udWFsX3Byb3Zpc2lvbnMYAiABKAlCMcjeHwDa3h8bY29zbW9zc2RrLmlvL21hdGguTGVnYWN5RGVj0rQtCmNvc21vcy5EZWMilgMKBlBhcmFtcxISCgptaW50X2Rlbm9tGAEgASgJElUKFWluZmxhdGlvbl9yYXRlX2NoYW5nZRgCIAEoCUI2yN4fANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lEZWPStC0KY29zbW9zLkRlY6jnsCoBEk0KDWluZmxhdGlvbl9tYXgYAyABKAlCNsjeHwDa3h8bY29zbW9zc2RrLmlvL21hdGguTGVnYWN5RGVj0rQtCmNvc21vcy5EZWOo57AqARJNCg1pbmZsYXRpb25fbWluGAQgASgJQjbI3h8A2t4fG2Nvc21vc3Nkay5pby9tYXRoLkxlZ2FjeURlY9K0LQpjb3Ntb3MuRGVjqOewKgESSwoLZ29hbF9ib25kZWQYBSABKAlCNsjeHwDa3h8bY29zbW9zc2RrLmlvL21hdGguTGVnYWN5RGVj0rQtCmNvc21vcy5EZWOo57AqARIXCg9ibG9ja3NfcGVyX3llYXIYBiABKAQ6HYrnsCoYY29zbW9zLXNkay94L21pbnQvUGFyYW1zQr0BChdjb20uY29zbW9zLm1pbnQudjFiZXRhMUIJTWludFByb3RvUAFaKWdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsveC9taW50L3R5cGVzogIDQ01YqgITQ29zbW9zLk1pbnQuVjFiZXRhMcoCE0Nvc21vc1xNaW50XFYxYmV0YTHiAh9Db3Ntb3NcTWludFxWMWJldGExXEdQQk1ldGFkYXRh6gIVQ29zbW9zOjpNaW50OjpWMWJldGExYgZwcm90bzM", [file_gogoproto_gogo, file_cosmos_proto_cosmos, file_amino_amino]);
 
 /**
  * Minter represents the minting state.
@@ -34,14 +34,6 @@ export type Minter = Message<"cosmos.mint.v1beta1.Minter"> & {
    * @generated from field: string annual_provisions = 2;
    */
   annualProvisions: string;
-
-  /**
-   * data is any custom data that the user might want to put in the minter, to
-   * be used in the minting process.
-   *
-   * @generated from field: bytes data = 3;
-   */
-  data: Uint8Array;
 };
 
 /**
@@ -98,13 +90,6 @@ export type Params = Message<"cosmos.mint.v1beta1.Params"> & {
    * @generated from field: uint64 blocks_per_year = 6;
    */
   blocksPerYear: bigint;
-
-  /**
-   * maximum supply for the token
-   *
-   * @generated from field: string max_supply = 7;
-   */
-  maxSupply: string;
 };
 
 /**

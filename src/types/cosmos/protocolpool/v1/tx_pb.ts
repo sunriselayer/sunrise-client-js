@@ -11,15 +11,15 @@ import type { Coin } from "../../base/v1beta1/coin_pb";
 import { file_cosmos_base_v1beta1_coin } from "../../base/v1beta1/coin_pb";
 import { file_cosmos_proto_cosmos } from "../../../cosmos_proto/cosmos_pb";
 import { file_cosmos_msg_v1_msg } from "../../msg/v1/msg_pb";
-import type { Duration, Timestamp } from "@bufbuild/protobuf/wkt";
-import { file_google_protobuf_duration, file_google_protobuf_timestamp } from "@bufbuild/protobuf/wkt";
+import type { Timestamp } from "@bufbuild/protobuf/wkt";
+import { file_google_protobuf_timestamp } from "@bufbuild/protobuf/wkt";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file cosmos/protocolpool/v1/tx.proto.
  */
 export const file_cosmos_protocolpool_v1_tx: GenFile = /*@__PURE__*/
-  fileDesc("Ch9jb3Ntb3MvcHJvdG9jb2xwb29sL3YxL3R4LnByb3RvEhZjb3Ntb3MucHJvdG9jb2xwb29sLnYxIrgBChRNc2dGdW5kQ29tbXVuaXR5UG9vbBJbCgZhbW91bnQYASADKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CMMjeHwCq3x8oZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBlcy5Db2lucxIrCglkZXBvc2l0b3IYAiABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZzoWiKAfAOigHwCC57AqCWRlcG9zaXRvciIeChxNc2dGdW5kQ29tbXVuaXR5UG9vbFJlc3BvbnNlIsQBChVNc2dDb21tdW5pdHlQb29sU3BlbmQSKwoJYXV0aG9yaXR5GAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSEQoJcmVjaXBpZW50GAIgASgJElsKBmFtb3VudBgDIAMoCzIZLmNvc21vcy5iYXNlLnYxYmV0YTEuQ29pbkIwyN4fAKrfHyhnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3R5cGVzLkNvaW5zOg6C57AqCWF1dGhvcml0eSIfCh1Nc2dDb21tdW5pdHlQb29sU3BlbmRSZXNwb25zZSK7AgoXTXNnU3VibWl0QnVkZ2V0UHJvcG9zYWwSKwoJYXV0aG9yaXR5GAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSMwoRcmVjaXBpZW50X2FkZHJlc3MYAiABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxI1ChJidWRnZXRfcGVyX3RyYW5jaGUYAyABKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW4SNAoKc3RhcnRfdGltZRgEIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCBJDfHwESEAoIdHJhbmNoZXMYBSABKAQSLwoGcGVyaW9kGAYgASgLMhkuZ29vZ2xlLnByb3RvYnVmLkR1cmF0aW9uQgSY3x8BOg6C57AqCWF1dGhvcml0eSIhCh9Nc2dTdWJtaXRCdWRnZXRQcm9wb3NhbFJlc3BvbnNlIl0KDk1zZ0NsYWltQnVkZ2V0EjMKEXJlY2lwaWVudF9hZGRyZXNzGAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmc6FoLnsCoRcmVjaXBpZW50X2FkZHJlc3MidQoWTXNnQ2xhaW1CdWRnZXRSZXNwb25zZRJbCgZhbW91bnQYASABKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CMMjeHwCq3x8oZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBlcy5Db2lucyL8AQoXTXNnQ3JlYXRlQ29udGludW91c0Z1bmQSKwoJYXV0aG9yaXR5GAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSKwoJcmVjaXBpZW50GAIgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSRQoKcGVyY2VudGFnZRgDIAEoCUIxyN4fANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lEZWPStC0KY29zbW9zLkRlYxIwCgZleHBpcnkYBCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgSQ3x8BOg6C57AqCWF1dGhvcml0eSIhCh9Nc2dDcmVhdGVDb250aW51b3VzRnVuZFJlc3BvbnNlIosBChdNc2dDYW5jZWxDb250aW51b3VzRnVuZBIrCglhdXRob3JpdHkYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxIzChFyZWNpcGllbnRfYWRkcmVzcxgCIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nOg6C57AqCWF1dGhvcml0eSKbAgofTXNnQ2FuY2VsQ29udGludW91c0Z1bmRSZXNwb25zZRI7Cg1jYW5jZWxlZF90aW1lGAEgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIIyN4fAJDfHwESFwoPY2FuY2VsZWRfaGVpZ2h0GAIgASgEEjMKEXJlY2lwaWVudF9hZGRyZXNzGAMgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSbQoYd2l0aGRyYXduX2FsbG9jYXRlZF9mdW5kGAQgAygLMhkuY29zbW9zLmJhc2UudjFiZXRhMS5Db2luQjDI3h8Aqt8fKGdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvdHlwZXMuQ29pbnMiaAoZTXNnV2l0aGRyYXdDb250aW51b3VzRnVuZBIzChFyZWNpcGllbnRfYWRkcmVzcxgBIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nOhaC57AqEXJlY2lwaWVudF9hZGRyZXNzIoABCiFNc2dXaXRoZHJhd0NvbnRpbnVvdXNGdW5kUmVzcG9uc2USWwoGYW1vdW50GAEgAygLMhkuY29zbW9zLmJhc2UudjFiZXRhMS5Db2luQjDI3h8Aqt8fKGdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvdHlwZXMuQ29pbnMihAEKD01zZ1VwZGF0ZVBhcmFtcxIrCglhdXRob3JpdHkYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxI0CgZwYXJhbXMYAiABKAsyHi5jb3Ntb3MucHJvdG9jb2xwb29sLnYxLlBhcmFtc0IEyN4fADoOguewKglhdXRob3JpdHkiGQoXTXNnVXBkYXRlUGFyYW1zUmVzcG9uc2Uy+QcKA01zZxJ3ChFGdW5kQ29tbXVuaXR5UG9vbBIsLmNvc21vcy5wcm90b2NvbHBvb2wudjEuTXNnRnVuZENvbW11bml0eVBvb2waNC5jb3Ntb3MucHJvdG9jb2xwb29sLnYxLk1zZ0Z1bmRDb21tdW5pdHlQb29sUmVzcG9uc2USegoSQ29tbXVuaXR5UG9vbFNwZW5kEi0uY29zbW9zLnByb3RvY29scG9vbC52MS5Nc2dDb21tdW5pdHlQb29sU3BlbmQaNS5jb3Ntb3MucHJvdG9jb2xwb29sLnYxLk1zZ0NvbW11bml0eVBvb2xTcGVuZFJlc3BvbnNlEoABChRTdWJtaXRCdWRnZXRQcm9wb3NhbBIvLmNvc21vcy5wcm90b2NvbHBvb2wudjEuTXNnU3VibWl0QnVkZ2V0UHJvcG9zYWwaNy5jb3Ntb3MucHJvdG9jb2xwb29sLnYxLk1zZ1N1Ym1pdEJ1ZGdldFByb3Bvc2FsUmVzcG9uc2USZQoLQ2xhaW1CdWRnZXQSJi5jb3Ntb3MucHJvdG9jb2xwb29sLnYxLk1zZ0NsYWltQnVkZ2V0Gi4uY29zbW9zLnByb3RvY29scG9vbC52MS5Nc2dDbGFpbUJ1ZGdldFJlc3BvbnNlEoABChRDcmVhdGVDb250aW51b3VzRnVuZBIvLmNvc21vcy5wcm90b2NvbHBvb2wudjEuTXNnQ3JlYXRlQ29udGludW91c0Z1bmQaNy5jb3Ntb3MucHJvdG9jb2xwb29sLnYxLk1zZ0NyZWF0ZUNvbnRpbnVvdXNGdW5kUmVzcG9uc2UShgEKFldpdGhkcmF3Q29udGludW91c0Z1bmQSMS5jb3Ntb3MucHJvdG9jb2xwb29sLnYxLk1zZ1dpdGhkcmF3Q29udGludW91c0Z1bmQaOS5jb3Ntb3MucHJvdG9jb2xwb29sLnYxLk1zZ1dpdGhkcmF3Q29udGludW91c0Z1bmRSZXNwb25zZRKAAQoUQ2FuY2VsQ29udGludW91c0Z1bmQSLy5jb3Ntb3MucHJvdG9jb2xwb29sLnYxLk1zZ0NhbmNlbENvbnRpbnVvdXNGdW5kGjcuY29zbW9zLnByb3RvY29scG9vbC52MS5Nc2dDYW5jZWxDb250aW51b3VzRnVuZFJlc3BvbnNlEn0KDFVwZGF0ZVBhcmFtcxInLmNvc21vcy5wcm90b2NvbHBvb2wudjEuTXNnVXBkYXRlUGFyYW1zGi8uY29zbW9zLnByb3RvY29scG9vbC52MS5Nc2dVcGRhdGVQYXJhbXNSZXNwb25zZSITyrQtD2Nvc21vcy1zZGsgMC40NxoFgOewKgFCwgEKGmNvbS5jb3Ntb3MucHJvdG9jb2xwb29sLnYxQgdUeFByb3RvUAFaIWNvc21vc3Nkay5pby94L3Byb3RvY29scG9vbC90eXBlc6ICA0NQWKoCFkNvc21vcy5Qcm90b2NvbHBvb2wuVjHKAhZDb3Ntb3NcUHJvdG9jb2xwb29sXFYx4gIiQ29zbW9zXFByb3RvY29scG9vbFxWMVxHUEJNZXRhZGF0YeoCGENvc21vczo6UHJvdG9jb2xwb29sOjpWMWIGcHJvdG8z", [file_cosmos_protocolpool_v1_types, file_gogoproto_gogo, file_cosmos_base_v1beta1_coin, file_cosmos_proto_cosmos, file_cosmos_msg_v1_msg, file_google_protobuf_timestamp, file_google_protobuf_duration]);
+  fileDesc("Ch9jb3Ntb3MvcHJvdG9jb2xwb29sL3YxL3R4LnByb3RvEhZjb3Ntb3MucHJvdG9jb2xwb29sLnYxIrgBChRNc2dGdW5kQ29tbXVuaXR5UG9vbBIrCglkZXBvc2l0b3IYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxJbCgZhbW91bnQYAiADKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CMMjeHwCq3x8oZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBlcy5Db2luczoWiKAfAOigHwCC57AqCWRlcG9zaXRvciIeChxNc2dGdW5kQ29tbXVuaXR5UG9vbFJlc3BvbnNlIsQBChVNc2dDb21tdW5pdHlQb29sU3BlbmQSKwoJYXV0aG9yaXR5GAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSEQoJcmVjaXBpZW50GAIgASgJElsKBmFtb3VudBgDIAMoCzIZLmNvc21vcy5iYXNlLnYxYmV0YTEuQ29pbkIwyN4fAKrfHyhnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3R5cGVzLkNvaW5zOg6C57AqCWF1dGhvcml0eSIfCh1Nc2dDb21tdW5pdHlQb29sU3BlbmRSZXNwb25zZSL8AQoXTXNnQ3JlYXRlQ29udGludW91c0Z1bmQSKwoJYXV0aG9yaXR5GAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSKwoJcmVjaXBpZW50GAIgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSRQoKcGVyY2VudGFnZRgDIAEoCUIxyN4fANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lEZWPStC0KY29zbW9zLkRlYxIwCgZleHBpcnkYBCABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgSQ3x8BOg6C57AqCWF1dGhvcml0eSIhCh9Nc2dDcmVhdGVDb250aW51b3VzRnVuZFJlc3BvbnNlIoMBChdNc2dDYW5jZWxDb250aW51b3VzRnVuZBIrCglhdXRob3JpdHkYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxIrCglyZWNpcGllbnQYAiABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZzoOguewKglhdXRob3JpdHkipAEKH01zZ0NhbmNlbENvbnRpbnVvdXNGdW5kUmVzcG9uc2USOwoNY2FuY2VsZWRfdGltZRgBIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCCMjeHwCQ3x8BEhcKD2NhbmNlbGVkX2hlaWdodBgCIAEoBBIrCglyZWNpcGllbnQYAyABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZyKEAQoPTXNnVXBkYXRlUGFyYW1zEisKCWF1dGhvcml0eRgBIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEjQKBnBhcmFtcxgCIAEoCzIeLmNvc21vcy5wcm90b2NvbHBvb2wudjEuUGFyYW1zQgTI3h8AOg6C57AqCWF1dGhvcml0eSIZChdNc2dVcGRhdGVQYXJhbXNSZXNwb25zZTLxBAoDTXNnEncKEUZ1bmRDb21tdW5pdHlQb29sEiwuY29zbW9zLnByb3RvY29scG9vbC52MS5Nc2dGdW5kQ29tbXVuaXR5UG9vbBo0LmNvc21vcy5wcm90b2NvbHBvb2wudjEuTXNnRnVuZENvbW11bml0eVBvb2xSZXNwb25zZRJ6ChJDb21tdW5pdHlQb29sU3BlbmQSLS5jb3Ntb3MucHJvdG9jb2xwb29sLnYxLk1zZ0NvbW11bml0eVBvb2xTcGVuZBo1LmNvc21vcy5wcm90b2NvbHBvb2wudjEuTXNnQ29tbXVuaXR5UG9vbFNwZW5kUmVzcG9uc2USgAEKFENyZWF0ZUNvbnRpbnVvdXNGdW5kEi8uY29zbW9zLnByb3RvY29scG9vbC52MS5Nc2dDcmVhdGVDb250aW51b3VzRnVuZBo3LmNvc21vcy5wcm90b2NvbHBvb2wudjEuTXNnQ3JlYXRlQ29udGludW91c0Z1bmRSZXNwb25zZRKAAQoUQ2FuY2VsQ29udGludW91c0Z1bmQSLy5jb3Ntb3MucHJvdG9jb2xwb29sLnYxLk1zZ0NhbmNlbENvbnRpbnVvdXNGdW5kGjcuY29zbW9zLnByb3RvY29scG9vbC52MS5Nc2dDYW5jZWxDb250aW51b3VzRnVuZFJlc3BvbnNlEmgKDFVwZGF0ZVBhcmFtcxInLmNvc21vcy5wcm90b2NvbHBvb2wudjEuTXNnVXBkYXRlUGFyYW1zGi8uY29zbW9zLnByb3RvY29scG9vbC52MS5Nc2dVcGRhdGVQYXJhbXNSZXNwb25zZRoFgOewKgFC0gEKGmNvbS5jb3Ntb3MucHJvdG9jb2xwb29sLnYxQgdUeFByb3RvUAFaMWdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsveC9wcm90b2NvbHBvb2wvdHlwZXOiAgNDUFiqAhZDb3Ntb3MuUHJvdG9jb2xwb29sLlYxygIWQ29zbW9zXFByb3RvY29scG9vbFxWMeICIkNvc21vc1xQcm90b2NvbHBvb2xcVjFcR1BCTWV0YWRhdGHqAhhDb3Ntb3M6OlByb3RvY29scG9vbDo6VjFiBnByb3RvMw", [file_cosmos_protocolpool_v1_types, file_gogoproto_gogo, file_cosmos_base_v1beta1_coin, file_cosmos_proto_cosmos, file_cosmos_msg_v1_msg, file_google_protobuf_timestamp]);
 
 /**
  * MsgFundCommunityPool allows an account to directly
@@ -29,14 +29,14 @@ export const file_cosmos_protocolpool_v1_tx: GenFile = /*@__PURE__*/
  */
 export type MsgFundCommunityPool = Message<"cosmos.protocolpool.v1.MsgFundCommunityPool"> & {
   /**
-   * @generated from field: repeated cosmos.base.v1beta1.Coin amount = 1;
-   */
-  amount: Coin[];
-
-  /**
-   * @generated from field: string depositor = 2;
+   * @generated from field: string depositor = 1;
    */
   depositor: string;
+
+  /**
+   * @generated from field: repeated cosmos.base.v1beta1.Coin amount = 2;
+   */
+  amount: Coin[];
 };
 
 /**
@@ -111,120 +111,6 @@ export const MsgCommunityPoolSpendResponseSchema: GenMessage<MsgCommunityPoolSpe
   messageDesc(file_cosmos_protocolpool_v1_tx, 3);
 
 /**
- * MsgSubmitBudgetProposal defines budget proposal type.
- *
- * @generated from message cosmos.protocolpool.v1.MsgSubmitBudgetProposal
- */
-export type MsgSubmitBudgetProposal = Message<"cosmos.protocolpool.v1.MsgSubmitBudgetProposal"> & {
-  /**
-   * Authority is the address that controls the module (defaults to x/gov unless overwritten).
-   *
-   * @generated from field: string authority = 1;
-   */
-  authority: string;
-
-  /**
-   * RecipientAddress is the address of the recipient who can claim the budget.
-   *
-   * @generated from field: string recipient_address = 2;
-   */
-  recipientAddress: string;
-
-  /**
-   * BudgetPerTranche is the amount allocated per tranche.
-   *
-   * @generated from field: cosmos.base.v1beta1.Coin budget_per_tranche = 3;
-   */
-  budgetPerTranche?: Coin;
-
-  /**
-   * StartTime is the time when the budget becomes claimable.
-   * If StartTime is less than the current block time, proposal will not be accepted.
-   *
-   * @generated from field: google.protobuf.Timestamp start_time = 4;
-   */
-  startTime?: Timestamp;
-
-  /**
-   * Tranches is the number of times the budget amount is to be distributed.
-   *
-   * @generated from field: uint64 tranches = 5;
-   */
-  tranches: bigint;
-
-  /**
-   * Period is the time interval(number of seconds) at which funds distribution should be performed.
-   * For example, if a period is set to 3600, it represents an action that
-   * should occur every hour (3600 seconds).
-   *
-   * @generated from field: google.protobuf.Duration period = 6;
-   */
-  period?: Duration;
-};
-
-/**
- * Describes the message cosmos.protocolpool.v1.MsgSubmitBudgetProposal.
- * Use `create(MsgSubmitBudgetProposalSchema)` to create a new message.
- */
-export const MsgSubmitBudgetProposalSchema: GenMessage<MsgSubmitBudgetProposal> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_tx, 4);
-
-/**
- * MsgSubmitBudgetProposalResponse defines the response to executing a
- * MsgSubmitBudgetProposal message.
- *
- * @generated from message cosmos.protocolpool.v1.MsgSubmitBudgetProposalResponse
- */
-export type MsgSubmitBudgetProposalResponse = Message<"cosmos.protocolpool.v1.MsgSubmitBudgetProposalResponse"> & {
-};
-
-/**
- * Describes the message cosmos.protocolpool.v1.MsgSubmitBudgetProposalResponse.
- * Use `create(MsgSubmitBudgetProposalResponseSchema)` to create a new message.
- */
-export const MsgSubmitBudgetProposalResponseSchema: GenMessage<MsgSubmitBudgetProposalResponse> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_tx, 5);
-
-/**
- * MsgClaimBudget defines a message for claiming the distributed budget.
- *
- * @generated from message cosmos.protocolpool.v1.MsgClaimBudget
- */
-export type MsgClaimBudget = Message<"cosmos.protocolpool.v1.MsgClaimBudget"> & {
-  /**
-   * @generated from field: string recipient_address = 1;
-   */
-  recipientAddress: string;
-};
-
-/**
- * Describes the message cosmos.protocolpool.v1.MsgClaimBudget.
- * Use `create(MsgClaimBudgetSchema)` to create a new message.
- */
-export const MsgClaimBudgetSchema: GenMessage<MsgClaimBudget> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_tx, 6);
-
-/**
- * MsgClaimBudgetResponse defines the response to executing a
- * MsgClaimBudget message.
- *
- * @generated from message cosmos.protocolpool.v1.MsgClaimBudgetResponse
- */
-export type MsgClaimBudgetResponse = Message<"cosmos.protocolpool.v1.MsgClaimBudgetResponse"> & {
-  /**
-   * @generated from field: cosmos.base.v1beta1.Coin amount = 1;
-   */
-  amount?: Coin;
-};
-
-/**
- * Describes the message cosmos.protocolpool.v1.MsgClaimBudgetResponse.
- * Use `create(MsgClaimBudgetResponseSchema)` to create a new message.
- */
-export const MsgClaimBudgetResponseSchema: GenMessage<MsgClaimBudgetResponse> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_tx, 7);
-
-/**
  * MsgCreateContinuousFund defines a message for adding continuous funds.
  *
  * @generated from message cosmos.protocolpool.v1.MsgCreateContinuousFund
@@ -264,7 +150,7 @@ export type MsgCreateContinuousFund = Message<"cosmos.protocolpool.v1.MsgCreateC
  * Use `create(MsgCreateContinuousFundSchema)` to create a new message.
  */
 export const MsgCreateContinuousFundSchema: GenMessage<MsgCreateContinuousFund> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_tx, 8);
+  messageDesc(file_cosmos_protocolpool_v1_tx, 4);
 
 /**
  * MsgCreateContinuousFundResponse defines the response to executing a
@@ -280,7 +166,7 @@ export type MsgCreateContinuousFundResponse = Message<"cosmos.protocolpool.v1.Ms
  * Use `create(MsgCreateContinuousFundResponseSchema)` to create a new message.
  */
 export const MsgCreateContinuousFundResponseSchema: GenMessage<MsgCreateContinuousFundResponse> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_tx, 9);
+  messageDesc(file_cosmos_protocolpool_v1_tx, 5);
 
 /**
  * MsgCancelContinuousFund defines a message to cancel continuous funds for a specific recipient.
@@ -296,11 +182,11 @@ export type MsgCancelContinuousFund = Message<"cosmos.protocolpool.v1.MsgCancelC
   authority: string;
 
   /**
-   * RecipientAddress is the account address of recipient whose funds are to be cancelled.
+   * Recipient is the account address string of the recipient whose funds are to be cancelled.
    *
-   * @generated from field: string recipient_address = 2;
+   * @generated from field: string recipient = 2;
    */
-  recipientAddress: string;
+  recipient: string;
 };
 
 /**
@@ -308,7 +194,7 @@ export type MsgCancelContinuousFund = Message<"cosmos.protocolpool.v1.MsgCancelC
  * Use `create(MsgCancelContinuousFundSchema)` to create a new message.
  */
 export const MsgCancelContinuousFundSchema: GenMessage<MsgCancelContinuousFund> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_tx, 10);
+  messageDesc(file_cosmos_protocolpool_v1_tx, 6);
 
 /**
  * MsgCancelContinuousFundResponse defines the response to executing a
@@ -332,20 +218,11 @@ export type MsgCancelContinuousFundResponse = Message<"cosmos.protocolpool.v1.Ms
   canceledHeight: bigint;
 
   /**
-   * RecipientAddress is the account address of recipient whose funds are cancelled.
+   * Recipient is the account address string of the recipient whose funds are cancelled.
    *
-   * @generated from field: string recipient_address = 3;
+   * @generated from field: string recipient = 3;
    */
-  recipientAddress: string;
-
-  /**
-   * withdrawnAllocatedFund represents the fund allocated to this recipient (if any) that have not been withdrawn yet,
-   * before a cancellation request has been initiated.
-   * It involves first withdrawing the funds and then canceling the request.
-   *
-   * @generated from field: repeated cosmos.base.v1beta1.Coin withdrawn_allocated_fund = 4;
-   */
-  withdrawnAllocatedFund: Coin[];
+  recipient: string;
 };
 
 /**
@@ -353,46 +230,7 @@ export type MsgCancelContinuousFundResponse = Message<"cosmos.protocolpool.v1.Ms
  * Use `create(MsgCancelContinuousFundResponseSchema)` to create a new message.
  */
 export const MsgCancelContinuousFundResponseSchema: GenMessage<MsgCancelContinuousFundResponse> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_tx, 11);
-
-/**
- * MsgWithdrawContinuousFund defines a message for withdrawing the continuous fund allocated to it.
- *
- * @generated from message cosmos.protocolpool.v1.MsgWithdrawContinuousFund
- */
-export type MsgWithdrawContinuousFund = Message<"cosmos.protocolpool.v1.MsgWithdrawContinuousFund"> & {
-  /**
-   * @generated from field: string recipient_address = 1;
-   */
-  recipientAddress: string;
-};
-
-/**
- * Describes the message cosmos.protocolpool.v1.MsgWithdrawContinuousFund.
- * Use `create(MsgWithdrawContinuousFundSchema)` to create a new message.
- */
-export const MsgWithdrawContinuousFundSchema: GenMessage<MsgWithdrawContinuousFund> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_tx, 12);
-
-/**
- * MsgWithdrawContinuousFundResponse defines the response to executing a
- * MsgWithdrawContinuousFund message.
- *
- * @generated from message cosmos.protocolpool.v1.MsgWithdrawContinuousFundResponse
- */
-export type MsgWithdrawContinuousFundResponse = Message<"cosmos.protocolpool.v1.MsgWithdrawContinuousFundResponse"> & {
-  /**
-   * @generated from field: repeated cosmos.base.v1beta1.Coin amount = 1;
-   */
-  amount: Coin[];
-};
-
-/**
- * Describes the message cosmos.protocolpool.v1.MsgWithdrawContinuousFundResponse.
- * Use `create(MsgWithdrawContinuousFundResponseSchema)` to create a new message.
- */
-export const MsgWithdrawContinuousFundResponseSchema: GenMessage<MsgWithdrawContinuousFundResponse> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_tx, 13);
+  messageDesc(file_cosmos_protocolpool_v1_tx, 7);
 
 /**
  * MsgUpdateParams is the Msg/UpdateParams request type.
@@ -422,7 +260,7 @@ export type MsgUpdateParams = Message<"cosmos.protocolpool.v1.MsgUpdateParams"> 
  * Use `create(MsgUpdateParamsSchema)` to create a new message.
  */
 export const MsgUpdateParamsSchema: GenMessage<MsgUpdateParams> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_tx, 14);
+  messageDesc(file_cosmos_protocolpool_v1_tx, 8);
 
 /**
  * MsgUpdateParamsResponse defines the response structure for executing a
@@ -438,7 +276,7 @@ export type MsgUpdateParamsResponse = Message<"cosmos.protocolpool.v1.MsgUpdateP
  * Use `create(MsgUpdateParamsResponseSchema)` to create a new message.
  */
 export const MsgUpdateParamsResponseSchema: GenMessage<MsgUpdateParamsResponse> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_tx, 15);
+  messageDesc(file_cosmos_protocolpool_v1_tx, 9);
 
 /**
  * Msg defines the pool Msg service.
@@ -471,27 +309,10 @@ export const Msg: GenService<{
     output: typeof MsgCommunityPoolSpendResponseSchema;
   },
   /**
-   * SubmitBudgetProposal defines a method to set a budget proposal.
-   *
-   * @generated from rpc cosmos.protocolpool.v1.Msg.SubmitBudgetProposal
-   */
-  submitBudgetProposal: {
-    methodKind: "unary";
-    input: typeof MsgSubmitBudgetProposalSchema;
-    output: typeof MsgSubmitBudgetProposalResponseSchema;
-  },
-  /**
-   * ClaimBudget defines a method to claim the distributed budget.
-   *
-   * @generated from rpc cosmos.protocolpool.v1.Msg.ClaimBudget
-   */
-  claimBudget: {
-    methodKind: "unary";
-    input: typeof MsgClaimBudgetSchema;
-    output: typeof MsgClaimBudgetResponseSchema;
-  },
-  /**
-   * CreateContinuousFund defines a method to add funds continuously.
+   * CreateContinuousFund defines a method to distribute a percentage of funds to an address continuously.
+   * This ContinuousFund can be indefinite or run until a given expiry time.
+   * Funds come from validator block rewards from x/distribution, but may also come from
+   * any user who funds the ProtocolPoolEscrow module account directly through x/bank.
    *
    * @generated from rpc cosmos.protocolpool.v1.Msg.CreateContinuousFund
    */
@@ -499,16 +320,6 @@ export const Msg: GenService<{
     methodKind: "unary";
     input: typeof MsgCreateContinuousFundSchema;
     output: typeof MsgCreateContinuousFundResponseSchema;
-  },
-  /**
-   * WithdrawContinuousFund defines a method to withdraw continuous fund allocated.
-   *
-   * @generated from rpc cosmos.protocolpool.v1.Msg.WithdrawContinuousFund
-   */
-  withdrawContinuousFund: {
-    methodKind: "unary";
-    input: typeof MsgWithdrawContinuousFundSchema;
-    output: typeof MsgWithdrawContinuousFundResponseSchema;
   },
   /**
    * CancelContinuousFund defines a method for cancelling continuous fund.

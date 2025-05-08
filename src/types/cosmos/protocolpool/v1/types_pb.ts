@@ -6,77 +6,15 @@ import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv1";
 import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv1";
 import { file_gogoproto_gogo } from "../../../gogoproto/gogo_pb";
 import { file_cosmos_proto_cosmos } from "../../../cosmos_proto/cosmos_pb";
-import type { Coin } from "../../base/v1beta1/coin_pb";
-import { file_cosmos_base_v1beta1_coin } from "../../base/v1beta1/coin_pb";
-import type { Duration, Timestamp } from "@bufbuild/protobuf/wkt";
-import { file_google_protobuf_duration, file_google_protobuf_timestamp } from "@bufbuild/protobuf/wkt";
-import { file_amino_amino } from "../../../amino/amino_pb";
+import type { Timestamp } from "@bufbuild/protobuf/wkt";
+import { file_google_protobuf_timestamp } from "@bufbuild/protobuf/wkt";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file cosmos/protocolpool/v1/types.proto.
  */
 export const file_cosmos_protocolpool_v1_types: GenFile = /*@__PURE__*/
-  fileDesc("CiJjb3Ntb3MvcHJvdG9jb2xwb29sL3YxL3R5cGVzLnByb3RvEhZjb3Ntb3MucHJvdG9jb2xwb29sLnYxIqoCCgZCdWRnZXQSMwoRcmVjaXBpZW50X2FkZHJlc3MYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxIxCg5jbGFpbWVkX2Ftb3VudBgCIAEoCzIZLmNvc21vcy5iYXNlLnYxYmV0YTEuQ29pbhI5Cg9sYXN0X2NsYWltZWRfYXQYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgSQ3x8BEhUKDXRyYW5jaGVzX2xlZnQYBCABKAQSNQoSYnVkZ2V0X3Blcl90cmFuY2hlGAUgASgLMhkuY29zbW9zLmJhc2UudjFiZXRhMS5Db2luEi8KBnBlcmlvZBgGIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbkIEmN8fASK2AQoOQ29udGludW91c0Z1bmQSKwoJcmVjaXBpZW50GAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSRQoKcGVyY2VudGFnZRgCIAEoCUIxyN4fANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lEZWPStC0KY29zbW9zLkRlYxIwCgZleHBpcnkYAyABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgSQ3x8BIocBChJEaXN0cmlidXRpb25BbW91bnQScQoGYW1vdW50GAEgAygLMhkuY29zbW9zLmJhc2UudjFiZXRhMS5Db2luQkbI3h8Aqt8fKGdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsvdHlwZXMuQ29pbnOa57AqDGxlZ2FjeV9jb2luc6jnsCoBIi0KBlBhcmFtcxIjChtlbmFibGVkX2Rpc3RyaWJ1dGlvbl9kZW5vbXMYASADKAlCxQEKGmNvbS5jb3Ntb3MucHJvdG9jb2xwb29sLnYxQgpUeXBlc1Byb3RvUAFaIWNvc21vc3Nkay5pby94L3Byb3RvY29scG9vbC90eXBlc6ICA0NQWKoCFkNvc21vcy5Qcm90b2NvbHBvb2wuVjHKAhZDb3Ntb3NcUHJvdG9jb2xwb29sXFYx4gIiQ29zbW9zXFByb3RvY29scG9vbFxWMVxHUEJNZXRhZGF0YeoCGENvc21vczo6UHJvdG9jb2xwb29sOjpWMWIGcHJvdG8z", [file_gogoproto_gogo, file_cosmos_proto_cosmos, file_cosmos_base_v1beta1_coin, file_google_protobuf_timestamp, file_google_protobuf_duration, file_amino_amino]);
-
-/**
- * Budget defines the fields of a budget proposal.
- *
- * @generated from message cosmos.protocolpool.v1.Budget
- */
-export type Budget = Message<"cosmos.protocolpool.v1.Budget"> & {
-  /**
-   * recipient_address is the address of the recipient who can claim the budget.
-   *
-   * @generated from field: string recipient_address = 1;
-   */
-  recipientAddress: string;
-
-  /**
-   * claimed_amount is the total amount claimed from the total budget amount requested.
-   *
-   * @generated from field: cosmos.base.v1beta1.Coin claimed_amount = 2;
-   */
-  claimedAmount?: Coin;
-
-  /**
-   * last_claimed_at is the time when the budget was last successfully claimed or distributed.
-   * It is used to track the next starting claim time for fund distribution.
-   *
-   * @generated from field: google.protobuf.Timestamp last_claimed_at = 3;
-   */
-  lastClaimedAt?: Timestamp;
-
-  /**
-   * tranches_left is the number of tranches left for the amount to be distributed.
-   *
-   * @generated from field: uint64 tranches_left = 4;
-   */
-  tranchesLeft: bigint;
-
-  /**
-   * budget_per_tranche is the amount allocated per tranche.
-   *
-   * @generated from field: cosmos.base.v1beta1.Coin budget_per_tranche = 5;
-   */
-  budgetPerTranche?: Coin;
-
-  /**
-   * Period is the time interval(number of seconds) at which funds distribution should be performed.
-   * For example, if a period is set to 3600, it represents an action that
-   * should occur every hour (3600 seconds).
-   *
-   * @generated from field: google.protobuf.Duration period = 6;
-   */
-  period?: Duration;
-};
-
-/**
- * Describes the message cosmos.protocolpool.v1.Budget.
- * Use `create(BudgetSchema)` to create a new message.
- */
-export const BudgetSchema: GenMessage<Budget> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_types, 0);
+  fileDesc("CiJjb3Ntb3MvcHJvdG9jb2xwb29sL3YxL3R5cGVzLnByb3RvEhZjb3Ntb3MucHJvdG9jb2xwb29sLnYxIrYBCg5Db250aW51b3VzRnVuZBIrCglyZWNpcGllbnQYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxJFCgpwZXJjZW50YWdlGAIgASgJQjHI3h8A2t4fG2Nvc21vc3Nkay5pby9tYXRoLkxlZ2FjeURlY9K0LQpjb3Ntb3MuRGVjEjAKBmV4cGlyeRgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCBJDfHwEiTQoGUGFyYW1zEiMKG2VuYWJsZWRfZGlzdHJpYnV0aW9uX2Rlbm9tcxgBIAMoCRIeChZkaXN0cmlidXRpb25fZnJlcXVlbmN5GAIgASgEQtUBChpjb20uY29zbW9zLnByb3RvY29scG9vbC52MUIKVHlwZXNQcm90b1ABWjFnaXRodWIuY29tL2Nvc21vcy9jb3Ntb3Mtc2RrL3gvcHJvdG9jb2xwb29sL3R5cGVzogIDQ1BYqgIWQ29zbW9zLlByb3RvY29scG9vbC5WMcoCFkNvc21vc1xQcm90b2NvbHBvb2xcVjHiAiJDb3Ntb3NcUHJvdG9jb2xwb29sXFYxXEdQQk1ldGFkYXRh6gIYQ29zbW9zOjpQcm90b2NvbHBvb2w6OlYxYgZwcm90bzM", [file_gogoproto_gogo, file_cosmos_proto_cosmos, file_google_protobuf_timestamp]);
 
 /**
  * ContinuousFund defines the fields of continuous fund proposal.
@@ -85,7 +23,7 @@ export const BudgetSchema: GenMessage<Budget> = /*@__PURE__*/
  */
 export type ContinuousFund = Message<"cosmos.protocolpool.v1.ContinuousFund"> & {
   /**
-   * Recipient address of the account receiving funds.
+   * Recipient is the address string of the account receiving funds.
    *
    * @generated from field: string recipient = 1;
    */
@@ -111,26 +49,7 @@ export type ContinuousFund = Message<"cosmos.protocolpool.v1.ContinuousFund"> & 
  * Use `create(ContinuousFundSchema)` to create a new message.
  */
 export const ContinuousFundSchema: GenMessage<ContinuousFund> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_types, 1);
-
-/**
- * DistributionAmount is used to store the coins of periodic distributions.
- *
- * @generated from message cosmos.protocolpool.v1.DistributionAmount
- */
-export type DistributionAmount = Message<"cosmos.protocolpool.v1.DistributionAmount"> & {
-  /**
-   * @generated from field: repeated cosmos.base.v1beta1.Coin amount = 1;
-   */
-  amount: Coin[];
-};
-
-/**
- * Describes the message cosmos.protocolpool.v1.DistributionAmount.
- * Use `create(DistributionAmountSchema)` to create a new message.
- */
-export const DistributionAmountSchema: GenMessage<DistributionAmount> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_types, 2);
+  messageDesc(file_cosmos_protocolpool_v1_types, 0);
 
 /**
  * Params defines the parameters for the protocolpool module.
@@ -139,12 +58,20 @@ export const DistributionAmountSchema: GenMessage<DistributionAmount> = /*@__PUR
  */
 export type Params = Message<"cosmos.protocolpool.v1.Params"> & {
   /**
-   * enabled_distribution_denoms lists the denoms that are allowed to be distributed.
+   * EnabledDistributionDenoms lists the denoms that are allowed to be distributed.
    * This is to avoid spending time distributing undesired tokens to continuous funds and budgets.
    *
    * @generated from field: repeated string enabled_distribution_denoms = 1;
    */
   enabledDistributionDenoms: string[];
+
+  /**
+   * DistributionFrequency is the frequency (in terms of blocks) that funds are distributed out from the
+   * x/protocolpool module.
+   *
+   * @generated from field: uint64 distribution_frequency = 2;
+   */
+  distributionFrequency: bigint;
 };
 
 /**
@@ -152,5 +79,5 @@ export type Params = Message<"cosmos.protocolpool.v1.Params"> & {
  * Use `create(ParamsSchema)` to create a new message.
  */
 export const ParamsSchema: GenMessage<Params> = /*@__PURE__*/
-  messageDesc(file_cosmos_protocolpool_v1_types, 3);
+  messageDesc(file_cosmos_protocolpool_v1_types, 1);
 

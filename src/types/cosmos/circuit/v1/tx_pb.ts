@@ -201,7 +201,7 @@ export const Msg: GenService<{
   },
   /**
    * ResetCircuitBreaker resumes processing of Msg's in the state machine that
-   * have been paused using TripCircuitBreaker.
+   * have been been paused using TripCircuitBreaker.
    *
    * @generated from rpc cosmos.circuit.v1.Msg.ResetCircuitBreaker
    */
