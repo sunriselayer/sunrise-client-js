@@ -26,7 +26,7 @@ export type DaExtension = ReturnType<typeof setupDaExtension>;
 
 export function setupDaExtension(base: QueryClient) {
   const rpc = createProtobufRpcClient(base);
-  const service = "sunrise.da.v1.Query";
+  const service = "sunrise.da.v0.Query";
 
   return {
     da: {
