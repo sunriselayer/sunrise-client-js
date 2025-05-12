@@ -22,7 +22,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file sunrise/liquidityincentive/v1/query.proto.
  */
 export const file_sunrise_liquidityincentive_v1_query: GenFile = /*@__PURE__*/
-  fileDesc("CilzdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9xdWVyeS5wcm90bxIdc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEiFAoSUXVlcnlQYXJhbXNSZXF1ZXN0IlIKE1F1ZXJ5UGFyYW1zUmVzcG9uc2USOwoGcGFyYW1zGAEgASgLMiUuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUGFyYW1zQgTI3h8AIh8KEVF1ZXJ5RXBvY2hSZXF1ZXN0EgoKAmlkGAEgASgEIk8KElF1ZXJ5RXBvY2hSZXNwb25zZRI5CgVlcG9jaBgBIAEoCzIkLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLkVwb2NoQgTI3h8AIlAKElF1ZXJ5RXBvY2hzUmVxdWVzdBI6CgpwYWdpbmF0aW9uGAEgASgLMiYuY29zbW9zLmJhc2UucXVlcnkudjFiZXRhMS5QYWdlUmVxdWVzdCKOAQoTUXVlcnlFcG9jaHNSZXNwb25zZRI6CgZlcG9jaHMYASADKAsyJC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5FcG9jaEIEyN4fABI7CgpwYWdpbmF0aW9uGAIgASgLMicuY29zbW9zLmJhc2UucXVlcnkudjFiZXRhMS5QYWdlUmVzcG9uc2UiPwoRUXVlcnlHYXVnZVJlcXVlc3QSGQoRcHJldmlvdXNfZXBvY2hfaWQYASABKAQSDwoHcG9vbF9pZBgCIAEoBCJPChJRdWVyeUdhdWdlUmVzcG9uc2USOQoFZ2F1Z2UYASABKAsyJC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5HYXVnZUIEyN4fACJrChJRdWVyeUdhdWdlc1JlcXVlc3QSGQoRcHJldmlvdXNfZXBvY2hfaWQYASABKAQSOgoKcGFnaW5hdGlvbhgCIAEoCzImLmNvc21vcy5iYXNlLnF1ZXJ5LnYxYmV0YTEuUGFnZVJlcXVlc3QijQEKE1F1ZXJ5R2F1Z2VzUmVzcG9uc2USOQoFZ2F1Z2UYASADKAsyJC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5HYXVnZUIEyN4fABI7CgpwYWdpbmF0aW9uGAIgASgLMicuY29zbW9zLmJhc2UucXVlcnkudjFiZXRhMS5QYWdlUmVzcG9uc2UiIwoQUXVlcnlWb3RlUmVxdWVzdBIPCgdhZGRyZXNzGAEgASgJIkwKEVF1ZXJ5Vm90ZVJlc3BvbnNlEjcKBHZvdGUYASABKAsyIy5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5Wb3RlQgTI3h8AIk8KEVF1ZXJ5Vm90ZXNSZXF1ZXN0EjoKCnBhZ2luYXRpb24YASABKAsyJi5jb3Ntb3MuYmFzZS5xdWVyeS52MWJldGExLlBhZ2VSZXF1ZXN0IosBChJRdWVyeVZvdGVzUmVzcG9uc2USOAoFdm90ZXMYASADKAsyIy5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5Wb3RlQgTI3h8AEjsKCnBhZ2luYXRpb24YAiABKAsyJy5jb3Ntb3MuYmFzZS5xdWVyeS52MWJldGExLlBhZ2VSZXNwb25zZSJQChJRdWVyeUJyaWJlc1JlcXVlc3QSOgoKcGFnaW5hdGlvbhgBIAEoCzImLmNvc21vcy5iYXNlLnF1ZXJ5LnYxYmV0YTEuUGFnZVJlcXVlc3QijgEKE1F1ZXJ5QnJpYmVzUmVzcG9uc2USOgoGYnJpYmVzGAEgAygLMiQuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuQnJpYmVCBMjeHwASOwoKcGFnaW5hdGlvbhgCIAEoCzInLmNvc21vcy5iYXNlLnF1ZXJ5LnYxYmV0YTEuUGFnZVJlc3BvbnNlIh8KEVF1ZXJ5QnJpYmVSZXF1ZXN0EgoKAmlkGAEgASgEIk8KElF1ZXJ5QnJpYmVSZXNwb25zZRI5CgVicmliZRgBIAEoCzIkLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLkJyaWJlQgTI3h8AIi8KG1F1ZXJ5QnJpYmVzQnlFcG9jaElkUmVxdWVzdBIQCghlcG9jaF9pZBgBIAEoBCKXAQocUXVlcnlCcmliZXNCeUVwb2NoSWRSZXNwb25zZRI6CgZicmliZXMYASADKAsyJC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5CcmliZUIEyN4fABI7CgpwYWdpbmF0aW9uGAIgASgLMicuY29zbW9zLmJhc2UucXVlcnkudjFiZXRhMS5QYWdlUmVzcG9uc2UiLQoaUXVlcnlCcmliZXNCeVBvb2xJZFJlcXVlc3QSDwoHcG9vbF9pZBgBIAEoBCKWAQobUXVlcnlCcmliZXNCeVBvb2xJZFJlc3BvbnNlEjoKBmJyaWJlcxgBIAMoCzIkLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLkJyaWJlQgTI3h8AEjsKCnBhZ2luYXRpb24YAiABKAsyJy5jb3Ntb3MuYmFzZS5xdWVyeS52MWJldGExLlBhZ2VSZXNwb25zZSJHCiJRdWVyeUJyaWJlc0J5RXBvY2hBbmRQb29sSWRSZXF1ZXN0EhAKCGVwb2NoX2lkGAEgASgEEg8KB3Bvb2xfaWQYAiABKAQingEKI1F1ZXJ5QnJpYmVzQnlFcG9jaEFuZFBvb2xJZFJlc3BvbnNlEjoKBmJyaWJlcxgBIAMoCzIkLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLkJyaWJlQgTI3h8AEjsKCnBhZ2luYXRpb24YAiABKAsyJy5jb3Ntb3MuYmFzZS5xdWVyeS52MWJldGExLlBhZ2VSZXNwb25zZSJaChxRdWVyeUJyaWJlQWxsb2NhdGlvbnNSZXF1ZXN0EjoKCnBhZ2luYXRpb24YASABKAsyJi5jb3Ntb3MuYmFzZS5xdWVyeS52MWJldGExLlBhZ2VSZXF1ZXN0Iq0BCh1RdWVyeUJyaWJlQWxsb2NhdGlvbnNSZXNwb25zZRJPChFicmliZV9hbGxvY2F0aW9ucxgBIAMoCzIuLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLkJyaWJlQWxsb2NhdGlvbkIEyN4fABI7CgpwYWdpbmF0aW9uGAIgASgLMicuY29zbW9zLmJhc2UucXVlcnkudjFiZXRhMS5QYWdlUmVzcG9uc2UiOAolUXVlcnlCcmliZUFsbG9jYXRpb25zQnlBZGRyZXNzUmVxdWVzdBIPCgdhZGRyZXNzGAEgASgJInkKJlF1ZXJ5QnJpYmVBbGxvY2F0aW9uc0J5QWRkcmVzc1Jlc3BvbnNlEk8KEWJyaWJlX2FsbG9jYXRpb25zGAEgAygLMi4uc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuQnJpYmVBbGxvY2F0aW9uQgTI3h8AIlEKG1F1ZXJ5QnJpYmVBbGxvY2F0aW9uUmVxdWVzdBIPCgdhZGRyZXNzGAEgASgJEhAKCGVwb2NoX2lkGAIgASgEEg8KB3Bvb2xfaWQYAyABKAQibgocUXVlcnlCcmliZUFsbG9jYXRpb25SZXNwb25zZRJOChBicmliZV9hbGxvY2F0aW9uGAEgASgLMi4uc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuQnJpYmVBbGxvY2F0aW9uQgTI3h8AMpUWCgVRdWVyeRKeAQoGUGFyYW1zEjEuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlQYXJhbXNSZXF1ZXN0GjIuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlQYXJhbXNSZXNwb25zZSItgtPkkwInEiUvc3VucmlzZS9saXF1aWRpdHlpbmNlbnRpdmUvdjEvcGFyYW1zEqABCgVFcG9jaBIwLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5RXBvY2hSZXF1ZXN0GjEuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlFcG9jaFJlc3BvbnNlIjKC0+STAiwSKi9zdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9lcG9jaHMve2lkfRKeAQoGRXBvY2hzEjEuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlFcG9jaHNSZXF1ZXN0GjIuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlFcG9jaHNSZXNwb25zZSItgtPkkwInEiUvc3VucmlzZS9saXF1aWRpdHlpbmNlbnRpdmUvdjEvZXBvY2hzEsABCgVHYXVnZRIwLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5R2F1Z2VSZXF1ZXN0GjEuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlHYXVnZVJlc3BvbnNlIlKC0+STAkwSSi9zdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9lcG9jaHMve3ByZXZpb3VzX2Vwb2NoX2lkfS9nYXVnZXMve3Bvb2xfaWR9ErkBCgZHYXVnZXMSMS5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeUdhdWdlc1JlcXVlc3QaMi5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeUdhdWdlc1Jlc3BvbnNlIkiC0+STAkISQC9zdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9lcG9jaHMve3ByZXZpb3VzX2Vwb2NoX2lkfS9nYXVnZXMSoQEKBFZvdGUSLy5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeVZvdGVSZXF1ZXN0GjAuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlWb3RlUmVzcG9uc2UiNoLT5JMCMBIuL3N1bnJpc2UvbGlxdWlkaXR5aW5jZW50aXZlL3YxL3ZvdGVzL3thZGRyZXNzfRKaAQoFVm90ZXMSMC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeVZvdGVzUmVxdWVzdBoxLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5Vm90ZXNSZXNwb25zZSIsgtPkkwImEiQvc3VucmlzZS9saXF1aWRpdHlpbmNlbnRpdmUvdjEvdm90ZXMSngEKBkJyaWJlcxIxLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5QnJpYmVzUmVxdWVzdBoyLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5QnJpYmVzUmVzcG9uc2UiLYLT5JMCJxIlL3N1bnJpc2UvbGlxdWlkaXR5aW5jZW50aXZlL3YxL2JyaWJlcxKgAQoFQnJpYmUSMC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeUJyaWJlUmVxdWVzdBoxLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5QnJpYmVSZXNwb25zZSIygtPkkwIsEiovc3VucmlzZS9saXF1aWRpdHlpbmNlbnRpdmUvdjEvYnJpYmVzL3tpZH0SygEKD0JyaWJlc0J5RXBvY2hJZBI6LnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5QnJpYmVzQnlFcG9jaElkUmVxdWVzdBo7LnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5QnJpYmVzQnlFcG9jaElkUmVzcG9uc2UiPoLT5JMCOBI2L3N1bnJpc2UvbGlxdWlkaXR5aW5jZW50aXZlL3YxL2JyaWJlcy9lcG9jaC97ZXBvY2hfaWR9EsUBCg5CcmliZXNCeVBvb2xJZBI5LnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5QnJpYmVzQnlQb29sSWRSZXF1ZXN0Gjouc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlCcmliZXNCeVBvb2xJZFJlc3BvbnNlIjyC0+STAjYSNC9zdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9icmliZXMvcG9vbC97cG9vbF9pZH0S7gEKFkJyaWJlc0J5RXBvY2hBbmRQb29sSWQSQS5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeUJyaWJlc0J5RXBvY2hBbmRQb29sSWRSZXF1ZXN0GkIuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlCcmliZXNCeUVwb2NoQW5kUG9vbElkUmVzcG9uc2UiTYLT5JMCRxJFL3N1bnJpc2UvbGlxdWlkaXR5aW5jZW50aXZlL3YxL2JyaWJlcy9lcG9jaC97ZXBvY2hfaWR9L3Bvb2wve3Bvb2xfaWR9EscBChBCcmliZUFsbG9jYXRpb25zEjsuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlCcmliZUFsbG9jYXRpb25zUmVxdWVzdBo8LnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5QnJpYmVBbGxvY2F0aW9uc1Jlc3BvbnNlIjiC0+STAjISMC9zdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9icmliZS1hbGxvY2F0aW9ucxLsAQoZQnJpYmVBbGxvY2F0aW9uc0J5QWRkcmVzcxJELnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5QnJpYmVBbGxvY2F0aW9uc0J5QWRkcmVzc1JlcXVlc3QaRS5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeUJyaWJlQWxsb2NhdGlvbnNCeUFkZHJlc3NSZXNwb25zZSJCgtPkkwI8Ejovc3VucmlzZS9saXF1aWRpdHlpbmNlbnRpdmUvdjEvYnJpYmVfYWxsb2NhdGlvbnMve2FkZHJlc3N9EuMBCg9CcmliZUFsbG9jYXRpb24SOi5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeUJyaWJlQWxsb2NhdGlvblJlcXVlc3QaOy5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeUJyaWJlQWxsb2NhdGlvblJlc3BvbnNlIleC0+STAlESTy9zdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9icmliZS1hbGxvY2F0aW9ucy97YWRkcmVzc30ve2Vwb2NoX2lkfS97cG9vbF9pZH1CgQIKIWNvbS5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MUIKUXVlcnlQcm90b1ABWjpnaXRodWIuY29tL3N1bnJpc2VsYXllci9zdW5yaXNlL3gvbGlxdWlkaXR5aW5jZW50aXZlL3R5cGVzogIDU0xYqgIdU3VucmlzZS5MaXF1aWRpdHlpbmNlbnRpdmUuVjHKAh1TdW5yaXNlXExpcXVpZGl0eWluY2VudGl2ZVxWMeICKVN1bnJpc2VcTGlxdWlkaXR5aW5jZW50aXZlXFYxXEdQQk1ldGFkYXRh6gIfU3VucmlzZTo6TGlxdWlkaXR5aW5jZW50aXZlOjpWMWIGcHJvdG8z", [file_cosmos_base_query_v1beta1_pagination, file_gogoproto_gogo, file_google_api_annotations, file_sunrise_liquidityincentive_v1_epoch, file_sunrise_liquidityincentive_v1_gauge, file_sunrise_liquidityincentive_v1_params, file_sunrise_liquidityincentive_v1_bribe]);
+  fileDesc("CilzdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9xdWVyeS5wcm90bxIdc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEiFAoSUXVlcnlQYXJhbXNSZXF1ZXN0IlIKE1F1ZXJ5UGFyYW1zUmVzcG9uc2USOwoGcGFyYW1zGAEgASgLMiUuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUGFyYW1zQgTI3h8AIh8KEVF1ZXJ5RXBvY2hSZXF1ZXN0EgoKAmlkGAEgASgEIk8KElF1ZXJ5RXBvY2hSZXNwb25zZRI5CgVlcG9jaBgBIAEoCzIkLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLkVwb2NoQgTI3h8AIlAKElF1ZXJ5RXBvY2hzUmVxdWVzdBI6CgpwYWdpbmF0aW9uGAEgASgLMiYuY29zbW9zLmJhc2UucXVlcnkudjFiZXRhMS5QYWdlUmVxdWVzdCKOAQoTUXVlcnlFcG9jaHNSZXNwb25zZRI6CgZlcG9jaHMYASADKAsyJC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5FcG9jaEIEyN4fABI7CgpwYWdpbmF0aW9uGAIgASgLMicuY29zbW9zLmJhc2UucXVlcnkudjFiZXRhMS5QYWdlUmVzcG9uc2UiPwoRUXVlcnlHYXVnZVJlcXVlc3QSGQoRcHJldmlvdXNfZXBvY2hfaWQYASABKAQSDwoHcG9vbF9pZBgCIAEoBCJPChJRdWVyeUdhdWdlUmVzcG9uc2USOQoFZ2F1Z2UYASABKAsyJC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5HYXVnZUIEyN4fACJrChJRdWVyeUdhdWdlc1JlcXVlc3QSGQoRcHJldmlvdXNfZXBvY2hfaWQYASABKAQSOgoKcGFnaW5hdGlvbhgCIAEoCzImLmNvc21vcy5iYXNlLnF1ZXJ5LnYxYmV0YTEuUGFnZVJlcXVlc3QijQEKE1F1ZXJ5R2F1Z2VzUmVzcG9uc2USOQoFZ2F1Z2UYASADKAsyJC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5HYXVnZUIEyN4fABI7CgpwYWdpbmF0aW9uGAIgASgLMicuY29zbW9zLmJhc2UucXVlcnkudjFiZXRhMS5QYWdlUmVzcG9uc2UiIwoQUXVlcnlWb3RlUmVxdWVzdBIPCgdhZGRyZXNzGAEgASgJIkwKEVF1ZXJ5Vm90ZVJlc3BvbnNlEjcKBHZvdGUYASABKAsyIy5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5Wb3RlQgTI3h8AIk8KEVF1ZXJ5Vm90ZXNSZXF1ZXN0EjoKCnBhZ2luYXRpb24YASABKAsyJi5jb3Ntb3MuYmFzZS5xdWVyeS52MWJldGExLlBhZ2VSZXF1ZXN0IosBChJRdWVyeVZvdGVzUmVzcG9uc2USOAoFdm90ZXMYASADKAsyIy5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5Wb3RlQgTI3h8AEjsKCnBhZ2luYXRpb24YAiABKAsyJy5jb3Ntb3MuYmFzZS5xdWVyeS52MWJldGExLlBhZ2VSZXNwb25zZSI3ChJRdWVyeUJyaWJlc1JlcXVlc3QSEAoIZXBvY2hfaWQYASABKAkSDwoHcG9vbF9pZBgCIAEoCSJRChNRdWVyeUJyaWJlc1Jlc3BvbnNlEjoKBmJyaWJlcxgBIAMoCzIkLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLkJyaWJlQgTI3h8AIh8KEVF1ZXJ5QnJpYmVSZXF1ZXN0EgoKAmlkGAEgASgEIk8KElF1ZXJ5QnJpYmVSZXNwb25zZRI5CgVicmliZRgBIAEoCzIkLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLkJyaWJlQgTI3h8AIi8KHFF1ZXJ5QnJpYmVBbGxvY2F0aW9uc1JlcXVlc3QSDwoHYWRkcmVzcxgBIAEoCSJwCh1RdWVyeUJyaWJlQWxsb2NhdGlvbnNSZXNwb25zZRJPChFicmliZV9hbGxvY2F0aW9ucxgBIAMoCzIuLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLkJyaWJlQWxsb2NhdGlvbkIEyN4fACJRChtRdWVyeUJyaWJlQWxsb2NhdGlvblJlcXVlc3QSDwoHYWRkcmVzcxgBIAEoCRIQCghlcG9jaF9pZBgCIAEoCRIPCgdwb29sX2lkGAMgASgJIm4KHFF1ZXJ5QnJpYmVBbGxvY2F0aW9uUmVzcG9uc2USTgoQYnJpYmVfYWxsb2NhdGlvbhgBIAEoCzIuLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLkJyaWJlQWxsb2NhdGlvbkIEyN4fADKgDwoFUXVlcnkSngEKBlBhcmFtcxIxLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5UGFyYW1zUmVxdWVzdBoyLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5UGFyYW1zUmVzcG9uc2UiLYLT5JMCJxIlL3N1bnJpc2UvbGlxdWlkaXR5aW5jZW50aXZlL3YxL3BhcmFtcxKgAQoFRXBvY2gSMC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeUVwb2NoUmVxdWVzdBoxLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5RXBvY2hSZXNwb25zZSIygtPkkwIsEiovc3VucmlzZS9saXF1aWRpdHlpbmNlbnRpdmUvdjEvZXBvY2hzL3tpZH0SngEKBkVwb2NocxIxLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5RXBvY2hzUmVxdWVzdBoyLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5RXBvY2hzUmVzcG9uc2UiLYLT5JMCJxIlL3N1bnJpc2UvbGlxdWlkaXR5aW5jZW50aXZlL3YxL2Vwb2NocxLAAQoFR2F1Z2USMC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeUdhdWdlUmVxdWVzdBoxLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5R2F1Z2VSZXNwb25zZSJSgtPkkwJMEkovc3VucmlzZS9saXF1aWRpdHlpbmNlbnRpdmUvdjEvZXBvY2hzL3twcmV2aW91c19lcG9jaF9pZH0vZ2F1Z2VzL3twb29sX2lkfRK5AQoGR2F1Z2VzEjEuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlHYXVnZXNSZXF1ZXN0GjIuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlHYXVnZXNSZXNwb25zZSJIgtPkkwJCEkAvc3VucmlzZS9saXF1aWRpdHlpbmNlbnRpdmUvdjEvZXBvY2hzL3twcmV2aW91c19lcG9jaF9pZH0vZ2F1Z2VzEqEBCgRWb3RlEi8uc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlWb3RlUmVxdWVzdBowLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5Vm90ZVJlc3BvbnNlIjaC0+STAjASLi9zdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS92b3Rlcy97YWRkcmVzc30SmgEKBVZvdGVzEjAuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlWb3Rlc1JlcXVlc3QaMS5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeVZvdGVzUmVzcG9uc2UiLILT5JMCJhIkL3N1bnJpc2UvbGlxdWlkaXR5aW5jZW50aXZlL3YxL3ZvdGVzEp4BCgZCcmliZXMSMS5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeUJyaWJlc1JlcXVlc3QaMi5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeUJyaWJlc1Jlc3BvbnNlIi2C0+STAicSJS9zdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9icmliZXMSoAEKBUJyaWJlEjAuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlCcmliZVJlcXVlc3QaMS5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5RdWVyeUJyaWJlUmVzcG9uc2UiMoLT5JMCLBIqL3N1bnJpc2UvbGlxdWlkaXR5aW5jZW50aXZlL3YxL2JyaWJlcy97aWR9EscBChBCcmliZUFsbG9jYXRpb25zEjsuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlCcmliZUFsbG9jYXRpb25zUmVxdWVzdBo8LnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLlF1ZXJ5QnJpYmVBbGxvY2F0aW9uc1Jlc3BvbnNlIjiC0+STAjISMC9zdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9icmliZS1hbGxvY2F0aW9ucxLjAQoPQnJpYmVBbGxvY2F0aW9uEjouc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlCcmliZUFsbG9jYXRpb25SZXF1ZXN0Gjsuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUXVlcnlCcmliZUFsbG9jYXRpb25SZXNwb25zZSJXgtPkkwJREk8vc3VucmlzZS9saXF1aWRpdHlpbmNlbnRpdmUvdjEvYnJpYmUtYWxsb2NhdGlvbnMve2FkZHJlc3N9L3tlcG9jaF9pZH0ve3Bvb2xfaWR9QoECCiFjb20uc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjFCClF1ZXJ5UHJvdG9QAVo6Z2l0aHViLmNvbS9zdW5yaXNlbGF5ZXIvc3VucmlzZS94L2xpcXVpZGl0eWluY2VudGl2ZS90eXBlc6ICA1NMWKoCHVN1bnJpc2UuTGlxdWlkaXR5aW5jZW50aXZlLlYxygIdU3VucmlzZVxMaXF1aWRpdHlpbmNlbnRpdmVcVjHiAilTdW5yaXNlXExpcXVpZGl0eWluY2VudGl2ZVxWMVxHUEJNZXRhZGF0YeoCH1N1bnJpc2U6OkxpcXVpZGl0eWluY2VudGl2ZTo6VjFiBnByb3RvMw", [file_cosmos_base_query_v1beta1_pagination, file_gogoproto_gogo, file_google_api_annotations, file_sunrise_liquidityincentive_v1_epoch, file_sunrise_liquidityincentive_v1_gauge, file_sunrise_liquidityincentive_v1_params, file_sunrise_liquidityincentive_v1_bribe]);
 
 /**
  * QueryParamsRequest is request type for the Query/Params RPC method.
@@ -320,9 +320,18 @@ export const QueryVotesResponseSchema: GenMessage<QueryVotesResponse> = /*@__PUR
  */
 export type QueryBribesRequest = Message<"sunrise.liquidityincentive.v1.QueryBribesRequest"> & {
   /**
-   * @generated from field: cosmos.base.query.v1beta1.PageRequest pagination = 1;
+   * Optional filter by epoch_id. If empty, not applied.
+   *
+   * @generated from field: string epoch_id = 1;
    */
-  pagination?: PageRequest;
+  epochId: string;
+
+  /**
+   * Optional filter by pool_id. If empty, not applied.
+   *
+   * @generated from field: string pool_id = 2;
+   */
+  poolId: string;
 };
 
 /**
@@ -342,11 +351,6 @@ export type QueryBribesResponse = Message<"sunrise.liquidityincentive.v1.QueryBr
    * @generated from field: repeated sunrise.liquidityincentive.v1.Bribe bribes = 1;
    */
   bribes: Bribe[];
-
-  /**
-   * @generated from field: cosmos.base.query.v1beta1.PageResponse pagination = 2;
-   */
-  pagination?: PageResponse;
 };
 
 /**
@@ -395,149 +399,17 @@ export const QueryBribeResponseSchema: GenMessage<QueryBribeResponse> = /*@__PUR
   messageDesc(file_sunrise_liquidityincentive_v1_query, 17);
 
 /**
- * QueryBribesByEpochIdRequest
- *
- * @generated from message sunrise.liquidityincentive.v1.QueryBribesByEpochIdRequest
- */
-export type QueryBribesByEpochIdRequest = Message<"sunrise.liquidityincentive.v1.QueryBribesByEpochIdRequest"> & {
-  /**
-   * @generated from field: uint64 epoch_id = 1;
-   */
-  epochId: bigint;
-};
-
-/**
- * Describes the message sunrise.liquidityincentive.v1.QueryBribesByEpochIdRequest.
- * Use `create(QueryBribesByEpochIdRequestSchema)` to create a new message.
- */
-export const QueryBribesByEpochIdRequestSchema: GenMessage<QueryBribesByEpochIdRequest> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_query, 18);
-
-/**
- * QueryBribesByEpochIdResponse
- *
- * @generated from message sunrise.liquidityincentive.v1.QueryBribesByEpochIdResponse
- */
-export type QueryBribesByEpochIdResponse = Message<"sunrise.liquidityincentive.v1.QueryBribesByEpochIdResponse"> & {
-  /**
-   * @generated from field: repeated sunrise.liquidityincentive.v1.Bribe bribes = 1;
-   */
-  bribes: Bribe[];
-
-  /**
-   * @generated from field: cosmos.base.query.v1beta1.PageResponse pagination = 2;
-   */
-  pagination?: PageResponse;
-};
-
-/**
- * Describes the message sunrise.liquidityincentive.v1.QueryBribesByEpochIdResponse.
- * Use `create(QueryBribesByEpochIdResponseSchema)` to create a new message.
- */
-export const QueryBribesByEpochIdResponseSchema: GenMessage<QueryBribesByEpochIdResponse> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_query, 19);
-
-/**
- * QueryBribesByPoolIdRequest
- *
- * @generated from message sunrise.liquidityincentive.v1.QueryBribesByPoolIdRequest
- */
-export type QueryBribesByPoolIdRequest = Message<"sunrise.liquidityincentive.v1.QueryBribesByPoolIdRequest"> & {
-  /**
-   * @generated from field: uint64 pool_id = 1;
-   */
-  poolId: bigint;
-};
-
-/**
- * Describes the message sunrise.liquidityincentive.v1.QueryBribesByPoolIdRequest.
- * Use `create(QueryBribesByPoolIdRequestSchema)` to create a new message.
- */
-export const QueryBribesByPoolIdRequestSchema: GenMessage<QueryBribesByPoolIdRequest> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_query, 20);
-
-/**
- * QueryBribesByPoolIdResponse
- *
- * @generated from message sunrise.liquidityincentive.v1.QueryBribesByPoolIdResponse
- */
-export type QueryBribesByPoolIdResponse = Message<"sunrise.liquidityincentive.v1.QueryBribesByPoolIdResponse"> & {
-  /**
-   * @generated from field: repeated sunrise.liquidityincentive.v1.Bribe bribes = 1;
-   */
-  bribes: Bribe[];
-
-  /**
-   * @generated from field: cosmos.base.query.v1beta1.PageResponse pagination = 2;
-   */
-  pagination?: PageResponse;
-};
-
-/**
- * Describes the message sunrise.liquidityincentive.v1.QueryBribesByPoolIdResponse.
- * Use `create(QueryBribesByPoolIdResponseSchema)` to create a new message.
- */
-export const QueryBribesByPoolIdResponseSchema: GenMessage<QueryBribesByPoolIdResponse> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_query, 21);
-
-/**
- * QueryBribesByEpochAndPoolIdRequest
- *
- * @generated from message sunrise.liquidityincentive.v1.QueryBribesByEpochAndPoolIdRequest
- */
-export type QueryBribesByEpochAndPoolIdRequest = Message<"sunrise.liquidityincentive.v1.QueryBribesByEpochAndPoolIdRequest"> & {
-  /**
-   * @generated from field: uint64 epoch_id = 1;
-   */
-  epochId: bigint;
-
-  /**
-   * @generated from field: uint64 pool_id = 2;
-   */
-  poolId: bigint;
-};
-
-/**
- * Describes the message sunrise.liquidityincentive.v1.QueryBribesByEpochAndPoolIdRequest.
- * Use `create(QueryBribesByEpochAndPoolIdRequestSchema)` to create a new message.
- */
-export const QueryBribesByEpochAndPoolIdRequestSchema: GenMessage<QueryBribesByEpochAndPoolIdRequest> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_query, 22);
-
-/**
- * QueryBribesByEpochAndPoolIdResponse
- *
- * @generated from message sunrise.liquidityincentive.v1.QueryBribesByEpochAndPoolIdResponse
- */
-export type QueryBribesByEpochAndPoolIdResponse = Message<"sunrise.liquidityincentive.v1.QueryBribesByEpochAndPoolIdResponse"> & {
-  /**
-   * @generated from field: repeated sunrise.liquidityincentive.v1.Bribe bribes = 1;
-   */
-  bribes: Bribe[];
-
-  /**
-   * @generated from field: cosmos.base.query.v1beta1.PageResponse pagination = 2;
-   */
-  pagination?: PageResponse;
-};
-
-/**
- * Describes the message sunrise.liquidityincentive.v1.QueryBribesByEpochAndPoolIdResponse.
- * Use `create(QueryBribesByEpochAndPoolIdResponseSchema)` to create a new message.
- */
-export const QueryBribesByEpochAndPoolIdResponseSchema: GenMessage<QueryBribesByEpochAndPoolIdResponse> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_query, 23);
-
-/**
  * QueryBribeAllocationsRequest
  *
  * @generated from message sunrise.liquidityincentive.v1.QueryBribeAllocationsRequest
  */
 export type QueryBribeAllocationsRequest = Message<"sunrise.liquidityincentive.v1.QueryBribeAllocationsRequest"> & {
   /**
-   * @generated from field: cosmos.base.query.v1beta1.PageRequest pagination = 1;
+   * Optional filter by address. If empty, not applied.
+   *
+   * @generated from field: string address = 1;
    */
-  pagination?: PageRequest;
+  address: string;
 };
 
 /**
@@ -545,7 +417,7 @@ export type QueryBribeAllocationsRequest = Message<"sunrise.liquidityincentive.v
  * Use `create(QueryBribeAllocationsRequestSchema)` to create a new message.
  */
 export const QueryBribeAllocationsRequestSchema: GenMessage<QueryBribeAllocationsRequest> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_query, 24);
+  messageDesc(file_sunrise_liquidityincentive_v1_query, 18);
 
 /**
  * QueryBribeAllocationsResponse
@@ -557,11 +429,6 @@ export type QueryBribeAllocationsResponse = Message<"sunrise.liquidityincentive.
    * @generated from field: repeated sunrise.liquidityincentive.v1.BribeAllocation bribe_allocations = 1;
    */
   bribeAllocations: BribeAllocation[];
-
-  /**
-   * @generated from field: cosmos.base.query.v1beta1.PageResponse pagination = 2;
-   */
-  pagination?: PageResponse;
 };
 
 /**
@@ -569,45 +436,7 @@ export type QueryBribeAllocationsResponse = Message<"sunrise.liquidityincentive.
  * Use `create(QueryBribeAllocationsResponseSchema)` to create a new message.
  */
 export const QueryBribeAllocationsResponseSchema: GenMessage<QueryBribeAllocationsResponse> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_query, 25);
-
-/**
- * QueryBribeAllocationsByAddressRequest
- *
- * @generated from message sunrise.liquidityincentive.v1.QueryBribeAllocationsByAddressRequest
- */
-export type QueryBribeAllocationsByAddressRequest = Message<"sunrise.liquidityincentive.v1.QueryBribeAllocationsByAddressRequest"> & {
-  /**
-   * @generated from field: string address = 1;
-   */
-  address: string;
-};
-
-/**
- * Describes the message sunrise.liquidityincentive.v1.QueryBribeAllocationsByAddressRequest.
- * Use `create(QueryBribeAllocationsByAddressRequestSchema)` to create a new message.
- */
-export const QueryBribeAllocationsByAddressRequestSchema: GenMessage<QueryBribeAllocationsByAddressRequest> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_query, 26);
-
-/**
- * QueryBribeAllocationsByAddressResponse
- *
- * @generated from message sunrise.liquidityincentive.v1.QueryBribeAllocationsByAddressResponse
- */
-export type QueryBribeAllocationsByAddressResponse = Message<"sunrise.liquidityincentive.v1.QueryBribeAllocationsByAddressResponse"> & {
-  /**
-   * @generated from field: repeated sunrise.liquidityincentive.v1.BribeAllocation bribe_allocations = 1;
-   */
-  bribeAllocations: BribeAllocation[];
-};
-
-/**
- * Describes the message sunrise.liquidityincentive.v1.QueryBribeAllocationsByAddressResponse.
- * Use `create(QueryBribeAllocationsByAddressResponseSchema)` to create a new message.
- */
-export const QueryBribeAllocationsByAddressResponseSchema: GenMessage<QueryBribeAllocationsByAddressResponse> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_query, 27);
+  messageDesc(file_sunrise_liquidityincentive_v1_query, 19);
 
 /**
  * QueryBribeAllocationRequest
@@ -621,14 +450,14 @@ export type QueryBribeAllocationRequest = Message<"sunrise.liquidityincentive.v1
   address: string;
 
   /**
-   * @generated from field: uint64 epoch_id = 2;
+   * @generated from field: string epoch_id = 2;
    */
-  epochId: bigint;
+  epochId: string;
 
   /**
-   * @generated from field: uint64 pool_id = 3;
+   * @generated from field: string pool_id = 3;
    */
-  poolId: bigint;
+  poolId: string;
 };
 
 /**
@@ -636,7 +465,7 @@ export type QueryBribeAllocationRequest = Message<"sunrise.liquidityincentive.v1
  * Use `create(QueryBribeAllocationRequestSchema)` to create a new message.
  */
 export const QueryBribeAllocationRequestSchema: GenMessage<QueryBribeAllocationRequest> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_query, 28);
+  messageDesc(file_sunrise_liquidityincentive_v1_query, 20);
 
 /**
  * QueryBribeAllocationResponse
@@ -655,7 +484,7 @@ export type QueryBribeAllocationResponse = Message<"sunrise.liquidityincentive.v
  * Use `create(QueryBribeAllocationResponseSchema)` to create a new message.
  */
 export const QueryBribeAllocationResponseSchema: GenMessage<QueryBribeAllocationResponse> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_query, 29);
+  messageDesc(file_sunrise_liquidityincentive_v1_query, 21);
 
 /**
  * Query defines the gRPC querier service.
@@ -734,7 +563,7 @@ export const Query: GenService<{
     output: typeof QueryVotesResponseSchema;
   },
   /**
-   * Bribes
+   * Bribes queries bribes with optional filters for epoch_id and pool_id.
    *
    * @generated from rpc sunrise.liquidityincentive.v1.Query.Bribes
    */
@@ -744,7 +573,7 @@ export const Query: GenService<{
     output: typeof QueryBribesResponseSchema;
   },
   /**
-   * Bribe
+   * Bribe queries a Bribe by its ID.
    *
    * @generated from rpc sunrise.liquidityincentive.v1.Query.Bribe
    */
@@ -754,37 +583,7 @@ export const Query: GenService<{
     output: typeof QueryBribeResponseSchema;
   },
   /**
-   * BribesByEpochId
-   *
-   * @generated from rpc sunrise.liquidityincentive.v1.Query.BribesByEpochId
-   */
-  bribesByEpochId: {
-    methodKind: "unary";
-    input: typeof QueryBribesByEpochIdRequestSchema;
-    output: typeof QueryBribesByEpochIdResponseSchema;
-  },
-  /**
-   * BribesByPoolId
-   *
-   * @generated from rpc sunrise.liquidityincentive.v1.Query.BribesByPoolId
-   */
-  bribesByPoolId: {
-    methodKind: "unary";
-    input: typeof QueryBribesByPoolIdRequestSchema;
-    output: typeof QueryBribesByPoolIdResponseSchema;
-  },
-  /**
-   * BribesByEpochAndPoolId
-   *
-   * @generated from rpc sunrise.liquidityincentive.v1.Query.BribesByEpochAndPoolId
-   */
-  bribesByEpochAndPoolId: {
-    methodKind: "unary";
-    input: typeof QueryBribesByEpochAndPoolIdRequestSchema;
-    output: typeof QueryBribesByEpochAndPoolIdResponseSchema;
-  },
-  /**
-   * BribeAllocations
+   * BribeAllocations queries bribe allocations with an optional filter for address.
    *
    * @generated from rpc sunrise.liquidityincentive.v1.Query.BribeAllocations
    */
@@ -794,17 +593,7 @@ export const Query: GenService<{
     output: typeof QueryBribeAllocationsResponseSchema;
   },
   /**
-   * BribeAllocationsByAddress
-   *
-   * @generated from rpc sunrise.liquidityincentive.v1.Query.BribeAllocationsByAddress
-   */
-  bribeAllocationsByAddress: {
-    methodKind: "unary";
-    input: typeof QueryBribeAllocationsByAddressRequestSchema;
-    output: typeof QueryBribeAllocationsByAddressResponseSchema;
-  },
-  /**
-   * BribeAllocation
+   * BribeAllocation queries a BribeAllocation by address, epoch ID, and pool ID.
    *
    * @generated from rpc sunrise.liquidityincentive.v1.Query.BribeAllocation
    */
