@@ -1,6 +1,6 @@
 {
   "name": "@sunriselayer/client",
-  "version": "0.5.0-rc8",
+  "version": "0.5.0-rc9",
   "publishConfig": {
     "access": "public"
   },
