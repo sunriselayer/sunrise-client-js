@@ -16,6 +16,8 @@ import {
   QueryEpochsResponseSchema,
   QueryParamsRequestSchema,
   QueryParamsResponseSchema,
+  QueryTallyResultRequestSchema,
+  QueryTallyResultResponseSchema,
   QueryVoteRequestSchema,
   QueryVoteResponseSchema,
   QueryVotesRequestSchema,
@@ -76,6 +78,7 @@ export function setupLiquidityIncentiveExtension(base: QueryClient) {
       ),
       vote: queryFactory(rpc, service, "Vote", QueryVoteRequestSchema, QueryVoteResponseSchema),
       votes: queryFactory(rpc, service, "Votes", QueryVotesRequestSchema, QueryVotesResponseSchema),
+      tallyResult: queryFactory(rpc, service, "TallyResult", QueryTallyResultRequestSchema, QueryTallyResultResponseSchema),
     },
   };
 }

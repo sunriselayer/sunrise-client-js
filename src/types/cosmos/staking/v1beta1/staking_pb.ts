@@ -21,7 +21,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file cosmos/staking/v1beta1/staking.proto.
  */
 export const file_cosmos_staking_v1beta1_staking: GenFile = /*@__PURE__*/
-  fileDesc("CiRjb3Ntb3Mvc3Rha2luZy92MWJldGExL3N0YWtpbmcucHJvdG8SFmNvc21vcy5zdGFraW5nLnYxYmV0YTEihwEKDkhpc3RvcmljYWxJbmZvEjMKBmhlYWRlchgBIAEoCzIYLnRlbmRlcm1pbnQudHlwZXMuSGVhZGVyQgnI3h8AqOewKgESPAoGdmFsc2V0GAIgAygLMiEuY29zbW9zLnN0YWtpbmcudjFiZXRhMS5WYWxpZGF0b3JCCcjeHwCo57AqAToCGAEibAoQSGlzdG9yaWNhbFJlY29yZBIPCgdhcHBoYXNoGAEgASgMEi4KBHRpbWUYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgSQ3x8BEhcKD3ZhbGlkYXRvcnNfaGFzaBgDIAEoDCL4AQoPQ29tbWlzc2lvblJhdGVzEkQKBHJhdGUYASABKAlCNsjeHwDa3h8bY29zbW9zc2RrLmlvL21hdGguTGVnYWN5RGVj0rQtCmNvc21vcy5EZWOo57AqARJICghtYXhfcmF0ZRgCIAEoCUI2yN4fANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lEZWPStC0KY29zbW9zLkRlY6jnsCoBEk8KD21heF9jaGFuZ2VfcmF0ZRgDIAEoCUI2yN4fANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lEZWPStC0KY29zbW9zLkRlY6jnsCoBOgTooB8BIqQBCgpDb21taXNzaW9uElAKEGNvbW1pc3Npb25fcmF0ZXMYASABKAsyJy5jb3Ntb3Muc3Rha2luZy52MWJldGExLkNvbW1pc3Npb25SYXRlc0INyN4fANDeHwGo57AqARI+Cgt1cGRhdGVfdGltZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCDcjeHwCQ3x8BqOewKgE6BOigHwEicgoLRGVzY3JpcHRpb24SDwoHbW9uaWtlchgBIAEoCRIQCghpZGVudGl0eRgCIAEoCRIPCgd3ZWJzaXRlGAMgASgJEhgKEHNlY3VyaXR5X2NvbnRhY3QYBCABKAkSDwoHZGV0YWlscxgFIAEoCToE6KAfASLMBQoJVmFsaWRhdG9yEjIKEG9wZXJhdG9yX2FkZHJlc3MYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxJIChBjb25zZW5zdXNfcHVia2V5GAIgASgLMhQuZ29vZ2xlLnByb3RvYnVmLkFueUIYyrQtFGNvc21vcy5jcnlwdG8uUHViS2V5Eg4KBmphaWxlZBgDIAEoCBIyCgZzdGF0dXMYBCABKA4yIi5jb3Ntb3Muc3Rha2luZy52MWJldGExLkJvbmRTdGF0dXMSOwoGdG9rZW5zGAUgASgJQivI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludNK0LQpjb3Ntb3MuSW50EksKEGRlbGVnYXRvcl9zaGFyZXMYBiABKAlCMcjeHwDa3h8bY29zbW9zc2RrLmlvL21hdGguTGVnYWN5RGVj0rQtCmNvc21vcy5EZWMSQwoLZGVzY3JpcHRpb24YByABKAsyIy5jb3Ntb3Muc3Rha2luZy52MWJldGExLkRlc2NyaXB0aW9uQgnI3h8AqOewKgESGAoQdW5ib25kaW5nX2hlaWdodBgIIAEoAxJBCg51bmJvbmRpbmdfdGltZRgJIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCDcjeHwCQ3x8BqOewKgESQQoKY29tbWlzc2lvbhgKIAEoCzIiLmNvc21vcy5zdGFraW5nLnYxYmV0YTEuQ29tbWlzc2lvbkIJyN4fAKjnsCoBEkgKE21pbl9zZWxmX2RlbGVnYXRpb24YCyABKAlCK8jeHwDa3h8VY29zbW9zc2RrLmlvL21hdGguSW500rQtCmNvc21vcy5JbnQSIwobdW5ib25kaW5nX29uX2hvbGRfcmVmX2NvdW50GAwgASgDEhUKDXVuYm9uZGluZ19pZHMYDSADKAQ6CIigHwDooB8AIjsKDFZhbEFkZHJlc3NlcxIrCglhZGRyZXNzZXMYASADKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZyKFAQoGRFZQYWlyEjMKEWRlbGVnYXRvcl9hZGRyZXNzGAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSPAoRdmFsaWRhdG9yX2FkZHJlc3MYAiABKAlCIdK0LR1jb3Ntb3MuVmFsaWRhdG9yQWRkcmVzc1N0cmluZzoIiKAfAOigHwAiQwoHRFZQYWlycxI4CgVwYWlycxgBIAMoCzIeLmNvc21vcy5zdGFraW5nLnYxYmV0YTEuRFZQYWlyQgnI3h8AqOewKgEizwEKCkRWVlRyaXBsZXQSMwoRZGVsZWdhdG9yX2FkZHJlc3MYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxJAChV2YWxpZGF0b3Jfc3JjX2FkZHJlc3MYAiABKAlCIdK0LR1jb3Ntb3MuVmFsaWRhdG9yQWRkcmVzc1N0cmluZxJAChV2YWxpZGF0b3JfZHN0X2FkZHJlc3MYAyABKAlCIdK0LR1jb3Ntb3MuVmFsaWRhdG9yQWRkcmVzc1N0cmluZzoIiKAfAOigHwAiTgoLRFZWVHJpcGxldHMSPwoIdHJpcGxldHMYASADKAsyIi5jb3Ntb3Muc3Rha2luZy52MWJldGExLkRWVlRyaXBsZXRCCcjeHwCo57AqASLMAQoKRGVsZWdhdGlvbhIzChFkZWxlZ2F0b3JfYWRkcmVzcxgBIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEjwKEXZhbGlkYXRvcl9hZGRyZXNzGAIgASgJQiHStC0dY29zbW9zLlZhbGlkYXRvckFkZHJlc3NTdHJpbmcSQQoGc2hhcmVzGAMgASgJQjHI3h8A2t4fG2Nvc21vc3Nkay5pby9tYXRoLkxlZ2FjeURlY9K0LQpjb3Ntb3MuRGVjOgiIoB8A6KAfACLgAQoTVW5ib25kaW5nRGVsZWdhdGlvbhIzChFkZWxlZ2F0b3JfYWRkcmVzcxgBIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEjwKEXZhbGlkYXRvcl9hZGRyZXNzGAIgASgJQiHStC0dY29zbW9zLlZhbGlkYXRvckFkZHJlc3NTdHJpbmcSTAoHZW50cmllcxgDIAMoCzIwLmNvc21vcy5zdGFraW5nLnYxYmV0YTEuVW5ib25kaW5nRGVsZWdhdGlvbkVudHJ5QgnI3h8AqOewKgE6CIigHwDooB8AIrwCChhVbmJvbmRpbmdEZWxlZ2F0aW9uRW50cnkSFwoPY3JlYXRpb25faGVpZ2h0GAEgASgDEkIKD2NvbXBsZXRpb25fdGltZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCDcjeHwCQ3x8BqOewKgESRAoPaW5pdGlhbF9iYWxhbmNlGAMgASgJQivI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludNK0LQpjb3Ntb3MuSW50EjwKB2JhbGFuY2UYBCABKAlCK8jeHwDa3h8VY29zbW9zc2RrLmlvL21hdGguSW500rQtCmNvc21vcy5JbnQSFAoMdW5ib25kaW5nX2lkGAUgASgEEiMKG3VuYm9uZGluZ19vbl9ob2xkX3JlZl9jb3VudBgGIAEoAzoE6KAfASK+AgoRUmVkZWxlZ2F0aW9uRW50cnkSFwoPY3JlYXRpb25faGVpZ2h0GAEgASgDEkIKD2NvbXBsZXRpb25fdGltZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCDcjeHwCQ3x8BqOewKgESRAoPaW5pdGlhbF9iYWxhbmNlGAMgASgJQivI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludNK0LQpjb3Ntb3MuSW50EkUKCnNoYXJlc19kc3QYBCABKAlCMcjeHwDa3h8bY29zbW9zc2RrLmlvL21hdGguTGVnYWN5RGVj0rQtCmNvc21vcy5EZWMSFAoMdW5ib25kaW5nX2lkGAUgASgEEiMKG3VuYm9uZGluZ19vbl9ob2xkX3JlZl9jb3VudBgGIAEoAzoE6KAfASKYAgoMUmVkZWxlZ2F0aW9uEjMKEWRlbGVnYXRvcl9hZGRyZXNzGAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSQAoVdmFsaWRhdG9yX3NyY19hZGRyZXNzGAIgASgJQiHStC0dY29zbW9zLlZhbGlkYXRvckFkZHJlc3NTdHJpbmcSQAoVdmFsaWRhdG9yX2RzdF9hZGRyZXNzGAMgASgJQiHStC0dY29zbW9zLlZhbGlkYXRvckFkZHJlc3NTdHJpbmcSRQoHZW50cmllcxgEIAMoCzIpLmNvc21vcy5zdGFraW5nLnYxYmV0YTEuUmVkZWxlZ2F0aW9uRW50cnlCCcjeHwCo57AqAToIiKAfAOigHwAi+wIKBlBhcmFtcxJACg51bmJvbmRpbmdfdGltZRgBIAEoCzIZLmdvb2dsZS5wcm90b2J1Zi5EdXJhdGlvbkINyN4fAJjfHwGo57AqARIWCg5tYXhfdmFsaWRhdG9ycxgCIAEoDRITCgttYXhfZW50cmllcxgDIAEoDRIaChJoaXN0b3JpY2FsX2VudHJpZXMYBCABKA0SEgoKYm9uZF9kZW5vbRgFIAEoCRJxChNtaW5fY29tbWlzc2lvbl9yYXRlGAYgASgJQlTI3h8A2t4fG2Nvc21vc3Nkay5pby9tYXRoLkxlZ2FjeURlY/LeHxp5YW1sOiJtaW5fY29tbWlzc2lvbl9yYXRlItK0LQpjb3Ntb3MuRGVjqOewKgESOQoQa2V5X3JvdGF0aW9uX2ZlZRgHIAEoCzIZLmNvc21vcy5iYXNlLnYxYmV0YTEuQ29pbkIEyN4fADok6KAfAYrnsCobY29zbW9zLXNkay94L3N0YWtpbmcvUGFyYW1zIpQBChJEZWxlZ2F0aW9uUmVzcG9uc2USQQoKZGVsZWdhdGlvbhgBIAEoCzIiLmNvc21vcy5zdGFraW5nLnYxYmV0YTEuRGVsZWdhdGlvbkIJyN4fAKjnsCoBEjUKB2JhbGFuY2UYAiABKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CCcjeHwCo57AqAToE6KAfACKxAQoZUmVkZWxlZ2F0aW9uRW50cnlSZXNwb25zZRJQChJyZWRlbGVnYXRpb25fZW50cnkYASABKAsyKS5jb3Ntb3Muc3Rha2luZy52MWJldGExLlJlZGVsZWdhdGlvbkVudHJ5QgnI3h8AqOewKgESPAoHYmFsYW5jZRgEIAEoCUIryN4fANreHxVjb3Ntb3NzZGsuaW8vbWF0aC5JbnTStC0KY29zbW9zLkludDoE6KAfASKyAQoUUmVkZWxlZ2F0aW9uUmVzcG9uc2USRQoMcmVkZWxlZ2F0aW9uGAEgASgLMiQuY29zbW9zLnN0YWtpbmcudjFiZXRhMS5SZWRlbGVnYXRpb25CCcjeHwCo57AqARJNCgdlbnRyaWVzGAIgAygLMjEuY29zbW9zLnN0YWtpbmcudjFiZXRhMS5SZWRlbGVnYXRpb25FbnRyeVJlc3BvbnNlQgnI3h8AqOewKgE6BOigHwAizAEKBFBvb2wSYAoRbm90X2JvbmRlZF90b2tlbnMYASABKAlCRcjeHwDa3h8VY29zbW9zc2RrLmlvL21hdGguSW506t4fEW5vdF9ib25kZWRfdG9rZW5z0rQtCmNvc21vcy5JbnSo57AqARJYCg1ib25kZWRfdG9rZW5zGAIgASgJQkHI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludOreHw1ib25kZWRfdG9rZW5z0rQtCmNvc21vcy5JbnSo57AqAToI6KAfAfCgHwEiUAoQVmFsaWRhdG9yVXBkYXRlcxI8Cgd1cGRhdGVzGAEgAygLMiAudGVuZGVybWludC5hYmNpLlZhbGlkYXRvclVwZGF0ZUIJyN4fAKjnsCoBIpQCChlDb25zUHViS2V5Um90YXRpb25IaXN0b3J5EhgKEG9wZXJhdG9yX2FkZHJlc3MYASABKAwSRwoPb2xkX2NvbnNfcHVia2V5GAIgASgLMhQuZ29vZ2xlLnByb3RvYnVmLkFueUIYyrQtFGNvc21vcy5jcnlwdG8uUHViS2V5EkcKD25ld19jb25zX3B1YmtleRgDIAEoCzIULmdvb2dsZS5wcm90b2J1Zi5BbnlCGMq0LRRjb3Ntb3MuY3J5cHRvLlB1YktleRIOCgZoZWlnaHQYBCABKAQSMQoDZmVlGAUgASgLMhkuY29zbW9zLmJhc2UudjFiZXRhMS5Db2luQgnI3h8AqOewKgE6CIigHwDooB8AIkgKGVZhbEFkZHJzT2ZSb3RhdGVkQ29uc0tleXMSKwoJYWRkcmVzc2VzGAEgAygMQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcqtgEKCkJvbmRTdGF0dXMSLAoXQk9ORF9TVEFUVVNfVU5TUEVDSUZJRUQQABoPip0gC1Vuc3BlY2lmaWVkEiYKFEJPTkRfU1RBVFVTX1VOQk9OREVEEAEaDIqdIAhVbmJvbmRlZBIoChVCT05EX1NUQVRVU19VTkJPTkRJTkcQAhoNip0gCVVuYm9uZGluZxIiChJCT05EX1NUQVRVU19CT05ERUQQAxoKip0gBkJvbmRlZBoEiKMeACpdCgpJbmZyYWN0aW9uEhoKFklORlJBQ1RJT05fVU5TUEVDSUZJRUQQABIaChZJTkZSQUNUSU9OX0RPVUJMRV9TSUdOEAESFwoTSU5GUkFDVElPTl9ET1dOVElNRRACQsIBChpjb20uY29zbW9zLnN0YWtpbmcudjFiZXRhMUIMU3Rha2luZ1Byb3RvUAFaHGNvc21vc3Nkay5pby94L3N0YWtpbmcvdHlwZXOiAgNDU1iqAhZDb3Ntb3MuU3Rha2luZy5WMWJldGExygIWQ29zbW9zXFN0YWtpbmdcVjFiZXRhMeICIkNvc21vc1xTdGFraW5nXFYxYmV0YTFcR1BCTWV0YWRhdGHqAhhDb3Ntb3M6OlN0YWtpbmc6OlYxYmV0YTFiBnByb3RvMw", [file_gogoproto_gogo, file_google_protobuf_any, file_google_protobuf_duration, file_google_protobuf_timestamp, file_cosmos_proto_cosmos, file_cosmos_base_v1beta1_coin, file_amino_amino, file_tendermint_types_types, file_tendermint_abci_types]);
+  fileDesc("CiRjb3Ntb3Mvc3Rha2luZy92MWJldGExL3N0YWtpbmcucHJvdG8SFmNvc21vcy5zdGFraW5nLnYxYmV0YTEigwEKDkhpc3RvcmljYWxJbmZvEjMKBmhlYWRlchgBIAEoCzIYLnRlbmRlcm1pbnQudHlwZXMuSGVhZGVyQgnI3h8AqOewKgESPAoGdmFsc2V0GAIgAygLMiEuY29zbW9zLnN0YWtpbmcudjFiZXRhMS5WYWxpZGF0b3JCCcjeHwCo57AqASL4AQoPQ29tbWlzc2lvblJhdGVzEkQKBHJhdGUYASABKAlCNsjeHwDa3h8bY29zbW9zc2RrLmlvL21hdGguTGVnYWN5RGVj0rQtCmNvc21vcy5EZWOo57AqARJICghtYXhfcmF0ZRgCIAEoCUI2yN4fANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lEZWPStC0KY29zbW9zLkRlY6jnsCoBEk8KD21heF9jaGFuZ2VfcmF0ZRgDIAEoCUI2yN4fANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lEZWPStC0KY29zbW9zLkRlY6jnsCoBOgTooB8BIqQBCgpDb21taXNzaW9uElAKEGNvbW1pc3Npb25fcmF0ZXMYASABKAsyJy5jb3Ntb3Muc3Rha2luZy52MWJldGExLkNvbW1pc3Npb25SYXRlc0INyN4fANDeHwGo57AqARI+Cgt1cGRhdGVfdGltZRgCIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCDcjeHwCQ3x8BqOewKgE6BOigHwEicgoLRGVzY3JpcHRpb24SDwoHbW9uaWtlchgBIAEoCRIQCghpZGVudGl0eRgCIAEoCRIPCgd3ZWJzaXRlGAMgASgJEhgKEHNlY3VyaXR5X2NvbnRhY3QYBCABKAkSDwoHZGV0YWlscxgFIAEoCToE6KAfASLfBQoJVmFsaWRhdG9yEjIKEG9wZXJhdG9yX2FkZHJlc3MYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxJIChBjb25zZW5zdXNfcHVia2V5GAIgASgLMhQuZ29vZ2xlLnByb3RvYnVmLkFueUIYyrQtFGNvc21vcy5jcnlwdG8uUHViS2V5Eg4KBmphaWxlZBgDIAEoCBIyCgZzdGF0dXMYBCABKA4yIi5jb3Ntb3Muc3Rha2luZy52MWJldGExLkJvbmRTdGF0dXMSOwoGdG9rZW5zGAUgASgJQivI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludNK0LQpjb3Ntb3MuSW50EksKEGRlbGVnYXRvcl9zaGFyZXMYBiABKAlCMcjeHwDa3h8bY29zbW9zc2RrLmlvL21hdGguTGVnYWN5RGVj0rQtCmNvc21vcy5EZWMSQwoLZGVzY3JpcHRpb24YByABKAsyIy5jb3Ntb3Muc3Rha2luZy52MWJldGExLkRlc2NyaXB0aW9uQgnI3h8AqOewKgESGAoQdW5ib25kaW5nX2hlaWdodBgIIAEoAxJBCg51bmJvbmRpbmdfdGltZRgJIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1lc3RhbXBCDcjeHwCQ3x8BqOewKgESQQoKY29tbWlzc2lvbhgKIAEoCzIiLmNvc21vcy5zdGFraW5nLnYxYmV0YTEuQ29tbWlzc2lvbkIJyN4fAKjnsCoBElsKE21pbl9zZWxmX2RlbGVnYXRpb24YCyABKAlCPsjeHwDa3h8VY29zbW9zc2RrLmlvL21hdGguSW500rQtCmNvc21vcy5JbnTatC0PY29zbW9zLXNkayAwLjQ2EiMKG3VuYm9uZGluZ19vbl9ob2xkX3JlZl9jb3VudBgMIAEoAxIVCg11bmJvbmRpbmdfaWRzGA0gAygEOgiIoB8A6KAfACI7CgxWYWxBZGRyZXNzZXMSKwoJYWRkcmVzc2VzGAEgAygJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcihQEKBkRWUGFpchIzChFkZWxlZ2F0b3JfYWRkcmVzcxgBIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEjwKEXZhbGlkYXRvcl9hZGRyZXNzGAIgASgJQiHStC0dY29zbW9zLlZhbGlkYXRvckFkZHJlc3NTdHJpbmc6CIigHwDooB8AIkMKB0RWUGFpcnMSOAoFcGFpcnMYASADKAsyHi5jb3Ntb3Muc3Rha2luZy52MWJldGExLkRWUGFpckIJyN4fAKjnsCoBIs8BCgpEVlZUcmlwbGV0EjMKEWRlbGVnYXRvcl9hZGRyZXNzGAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSQAoVdmFsaWRhdG9yX3NyY19hZGRyZXNzGAIgASgJQiHStC0dY29zbW9zLlZhbGlkYXRvckFkZHJlc3NTdHJpbmcSQAoVdmFsaWRhdG9yX2RzdF9hZGRyZXNzGAMgASgJQiHStC0dY29zbW9zLlZhbGlkYXRvckFkZHJlc3NTdHJpbmc6CIigHwDooB8AIk4KC0RWVlRyaXBsZXRzEj8KCHRyaXBsZXRzGAEgAygLMiIuY29zbW9zLnN0YWtpbmcudjFiZXRhMS5EVlZUcmlwbGV0QgnI3h8AqOewKgEizAEKCkRlbGVnYXRpb24SMwoRZGVsZWdhdG9yX2FkZHJlc3MYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxI8ChF2YWxpZGF0b3JfYWRkcmVzcxgCIAEoCUIh0rQtHWNvc21vcy5WYWxpZGF0b3JBZGRyZXNzU3RyaW5nEkEKBnNoYXJlcxgDIAEoCUIxyN4fANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lEZWPStC0KY29zbW9zLkRlYzoIiKAfAOigHwAi4AEKE1VuYm9uZGluZ0RlbGVnYXRpb24SMwoRZGVsZWdhdG9yX2FkZHJlc3MYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxI8ChF2YWxpZGF0b3JfYWRkcmVzcxgCIAEoCUIh0rQtHWNvc21vcy5WYWxpZGF0b3JBZGRyZXNzU3RyaW5nEkwKB2VudHJpZXMYAyADKAsyMC5jb3Ntb3Muc3Rha2luZy52MWJldGExLlVuYm9uZGluZ0RlbGVnYXRpb25FbnRyeUIJyN4fAKjnsCoBOgiIoB8A6KAfACK8AgoYVW5ib25kaW5nRGVsZWdhdGlvbkVudHJ5EhcKD2NyZWF0aW9uX2hlaWdodBgBIAEoAxJCCg9jb21wbGV0aW9uX3RpbWUYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQg3I3h8AkN8fAajnsCoBEkQKD2luaXRpYWxfYmFsYW5jZRgDIAEoCUIryN4fANreHxVjb3Ntb3NzZGsuaW8vbWF0aC5JbnTStC0KY29zbW9zLkludBI8CgdiYWxhbmNlGAQgASgJQivI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludNK0LQpjb3Ntb3MuSW50EhQKDHVuYm9uZGluZ19pZBgFIAEoBBIjCht1bmJvbmRpbmdfb25faG9sZF9yZWZfY291bnQYBiABKAM6BOigHwEivgIKEVJlZGVsZWdhdGlvbkVudHJ5EhcKD2NyZWF0aW9uX2hlaWdodBgBIAEoAxJCCg9jb21wbGV0aW9uX3RpbWUYAiABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQg3I3h8AkN8fAajnsCoBEkQKD2luaXRpYWxfYmFsYW5jZRgDIAEoCUIryN4fANreHxVjb3Ntb3NzZGsuaW8vbWF0aC5JbnTStC0KY29zbW9zLkludBJFCgpzaGFyZXNfZHN0GAQgASgJQjHI3h8A2t4fG2Nvc21vc3Nkay5pby9tYXRoLkxlZ2FjeURlY9K0LQpjb3Ntb3MuRGVjEhQKDHVuYm9uZGluZ19pZBgFIAEoBBIjCht1bmJvbmRpbmdfb25faG9sZF9yZWZfY291bnQYBiABKAM6BOigHwEimAIKDFJlZGVsZWdhdGlvbhIzChFkZWxlZ2F0b3JfYWRkcmVzcxgBIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEkAKFXZhbGlkYXRvcl9zcmNfYWRkcmVzcxgCIAEoCUIh0rQtHWNvc21vcy5WYWxpZGF0b3JBZGRyZXNzU3RyaW5nEkAKFXZhbGlkYXRvcl9kc3RfYWRkcmVzcxgDIAEoCUIh0rQtHWNvc21vcy5WYWxpZGF0b3JBZGRyZXNzU3RyaW5nEkUKB2VudHJpZXMYBCADKAsyKS5jb3Ntb3Muc3Rha2luZy52MWJldGExLlJlZGVsZWdhdGlvbkVudHJ5QgnI3h8AqOewKgE6CIigHwDooB8AIsACCgZQYXJhbXMSQAoOdW5ib25kaW5nX3RpbWUYASABKAsyGS5nb29nbGUucHJvdG9idWYuRHVyYXRpb25CDcjeHwCY3x8BqOewKgESFgoObWF4X3ZhbGlkYXRvcnMYAiABKA0SEwoLbWF4X2VudHJpZXMYAyABKA0SGgoSaGlzdG9yaWNhbF9lbnRyaWVzGAQgASgNEhIKCmJvbmRfZGVub20YBSABKAkScQoTbWluX2NvbW1pc3Npb25fcmF0ZRgGIAEoCUJUyN4fANreHxtjb3Ntb3NzZGsuaW8vbWF0aC5MZWdhY3lEZWPy3h8aeWFtbDoibWluX2NvbW1pc3Npb25fcmF0ZSLStC0KY29zbW9zLkRlY6jnsCoBOiTooB8BiuewKhtjb3Ntb3Mtc2RrL3gvc3Rha2luZy9QYXJhbXMilAEKEkRlbGVnYXRpb25SZXNwb25zZRJBCgpkZWxlZ2F0aW9uGAEgASgLMiIuY29zbW9zLnN0YWtpbmcudjFiZXRhMS5EZWxlZ2F0aW9uQgnI3h8AqOewKgESNQoHYmFsYW5jZRgCIAEoCzIZLmNvc21vcy5iYXNlLnYxYmV0YTEuQ29pbkIJyN4fAKjnsCoBOgTooB8AIrEBChlSZWRlbGVnYXRpb25FbnRyeVJlc3BvbnNlElAKEnJlZGVsZWdhdGlvbl9lbnRyeRgBIAEoCzIpLmNvc21vcy5zdGFraW5nLnYxYmV0YTEuUmVkZWxlZ2F0aW9uRW50cnlCCcjeHwCo57AqARI8CgdiYWxhbmNlGAQgASgJQivI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludNK0LQpjb3Ntb3MuSW50OgTooB8BIrIBChRSZWRlbGVnYXRpb25SZXNwb25zZRJFCgxyZWRlbGVnYXRpb24YASABKAsyJC5jb3Ntb3Muc3Rha2luZy52MWJldGExLlJlZGVsZWdhdGlvbkIJyN4fAKjnsCoBEk0KB2VudHJpZXMYAiADKAsyMS5jb3Ntb3Muc3Rha2luZy52MWJldGExLlJlZGVsZWdhdGlvbkVudHJ5UmVzcG9uc2VCCcjeHwCo57AqAToE6KAfACLMAQoEUG9vbBJgChFub3RfYm9uZGVkX3Rva2VucxgBIAEoCUJFyN4fANreHxVjb3Ntb3NzZGsuaW8vbWF0aC5JbnTq3h8Rbm90X2JvbmRlZF90b2tlbnPStC0KY29zbW9zLkludKjnsCoBElgKDWJvbmRlZF90b2tlbnMYAiABKAlCQcjeHwDa3h8VY29zbW9zc2RrLmlvL21hdGguSW506t4fDWJvbmRlZF90b2tlbnPStC0KY29zbW9zLkludKjnsCoBOgjooB8B8KAfASJQChBWYWxpZGF0b3JVcGRhdGVzEjwKB3VwZGF0ZXMYASADKAsyIC50ZW5kZXJtaW50LmFiY2kuVmFsaWRhdG9yVXBkYXRlQgnI3h8AqOewKgEqtgEKCkJvbmRTdGF0dXMSLAoXQk9ORF9TVEFUVVNfVU5TUEVDSUZJRUQQABoPip0gC1Vuc3BlY2lmaWVkEiYKFEJPTkRfU1RBVFVTX1VOQk9OREVEEAEaDIqdIAhVbmJvbmRlZBIoChVCT05EX1NUQVRVU19VTkJPTkRJTkcQAhoNip0gCVVuYm9uZGluZxIiChJCT05EX1NUQVRVU19CT05ERUQQAxoKip0gBkJvbmRlZBoEiKMeACpdCgpJbmZyYWN0aW9uEhoKFklORlJBQ1RJT05fVU5TUEVDSUZJRUQQABIaChZJTkZSQUNUSU9OX0RPVUJMRV9TSUdOEAESFwoTSU5GUkFDVElPTl9ET1dOVElNRRACQtIBChpjb20uY29zbW9zLnN0YWtpbmcudjFiZXRhMUIMU3Rha2luZ1Byb3RvUAFaLGdpdGh1Yi5jb20vY29zbW9zL2Nvc21vcy1zZGsveC9zdGFraW5nL3R5cGVzogIDQ1NYqgIWQ29zbW9zLlN0YWtpbmcuVjFiZXRhMcoCFkNvc21vc1xTdGFraW5nXFYxYmV0YTHiAiJDb3Ntb3NcU3Rha2luZ1xWMWJldGExXEdQQk1ldGFkYXRh6gIYQ29zbW9zOjpTdGFraW5nOjpWMWJldGExYgZwcm90bzM", [file_gogoproto_gogo, file_google_protobuf_any, file_google_protobuf_duration, file_google_protobuf_timestamp, file_cosmos_proto_cosmos, file_cosmos_base_v1beta1_coin, file_amino_amino, file_tendermint_types_types, file_tendermint_abci_types]);
 
 /**
  * HistoricalInfo contains header and validator information for a given block.
@@ -30,7 +30,6 @@ export const file_cosmos_staking_v1beta1_staking: GenFile = /*@__PURE__*/
  * (`n` is set by the staking module's `historical_entries` parameter).
  *
  * @generated from message cosmos.staking.v1beta1.HistoricalInfo
- * @deprecated
  */
 export type HistoricalInfo = Message<"cosmos.staking.v1beta1.HistoricalInfo"> & {
   /**
@@ -47,42 +46,9 @@ export type HistoricalInfo = Message<"cosmos.staking.v1beta1.HistoricalInfo"> & 
 /**
  * Describes the message cosmos.staking.v1beta1.HistoricalInfo.
  * Use `create(HistoricalInfoSchema)` to create a new message.
- * @deprecated
  */
 export const HistoricalInfoSchema: GenMessage<HistoricalInfo> = /*@__PURE__*/
   messageDesc(file_cosmos_staking_v1beta1_staking, 0);
-
-/**
- * Historical contains a set of minimum values needed for evaluating historical validator sets and blocks.
- * It is stored as part of staking module's state, which persists the `n` most
- * recent HistoricalInfo
- * (`n` is set by the staking module's `historical_entries` parameter).
- *
- * @generated from message cosmos.staking.v1beta1.HistoricalRecord
- */
-export type HistoricalRecord = Message<"cosmos.staking.v1beta1.HistoricalRecord"> & {
-  /**
-   * @generated from field: bytes apphash = 1;
-   */
-  apphash: Uint8Array;
-
-  /**
-   * @generated from field: google.protobuf.Timestamp time = 2;
-   */
-  time?: Timestamp;
-
-  /**
-   * @generated from field: bytes validators_hash = 3;
-   */
-  validatorsHash: Uint8Array;
-};
-
-/**
- * Describes the message cosmos.staking.v1beta1.HistoricalRecord.
- * Use `create(HistoricalRecordSchema)` to create a new message.
- */
-export const HistoricalRecordSchema: GenMessage<HistoricalRecord> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 1);
 
 /**
  * CommissionRates defines the initial commission rates to be used for creating
@@ -118,7 +84,7 @@ export type CommissionRates = Message<"cosmos.staking.v1beta1.CommissionRates"> 
  * Use `create(CommissionRatesSchema)` to create a new message.
  */
 export const CommissionRatesSchema: GenMessage<CommissionRates> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 2);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 1);
 
 /**
  * Commission defines commission parameters for a given validator.
@@ -146,7 +112,7 @@ export type Commission = Message<"cosmos.staking.v1beta1.Commission"> & {
  * Use `create(CommissionSchema)` to create a new message.
  */
 export const CommissionSchema: GenMessage<Commission> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 3);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 2);
 
 /**
  * Description defines a validator description.
@@ -195,7 +161,7 @@ export type Description = Message<"cosmos.staking.v1beta1.Description"> & {
  * Use `create(DescriptionSchema)` to create a new message.
  */
 export const DescriptionSchema: GenMessage<Description> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 4);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 3);
 
 /**
  * Validator defines a validator, together with the total amount of the
@@ -283,8 +249,6 @@ export type Validator = Message<"cosmos.staking.v1beta1.Validator"> & {
   /**
    * min_self_delegation is the validator's self declared minimum self delegation.
    *
-   * Since: cosmos-sdk 0.46
-   *
    * @generated from field: string min_self_delegation = 11;
    */
   minSelfDelegation: string;
@@ -297,7 +261,7 @@ export type Validator = Message<"cosmos.staking.v1beta1.Validator"> & {
   unbondingOnHoldRefCount: bigint;
 
   /**
-   * list of unbonding ids, each uniquely identifying an unbonding of this validator
+   * list of unbonding ids, each uniquely identifing an unbonding of this validator
    *
    * @generated from field: repeated uint64 unbonding_ids = 13;
    */
@@ -309,7 +273,7 @@ export type Validator = Message<"cosmos.staking.v1beta1.Validator"> & {
  * Use `create(ValidatorSchema)` to create a new message.
  */
 export const ValidatorSchema: GenMessage<Validator> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 5);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 4);
 
 /**
  * ValAddresses defines a repeated set of validator addresses.
@@ -328,7 +292,7 @@ export type ValAddresses = Message<"cosmos.staking.v1beta1.ValAddresses"> & {
  * Use `create(ValAddressesSchema)` to create a new message.
  */
 export const ValAddressesSchema: GenMessage<ValAddresses> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 6);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 5);
 
 /**
  * DVPair is struct that just has a delegator-validator pair with no other data.
@@ -354,7 +318,7 @@ export type DVPair = Message<"cosmos.staking.v1beta1.DVPair"> & {
  * Use `create(DVPairSchema)` to create a new message.
  */
 export const DVPairSchema: GenMessage<DVPair> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 7);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 6);
 
 /**
  * DVPairs defines an array of DVPair objects.
@@ -373,7 +337,7 @@ export type DVPairs = Message<"cosmos.staking.v1beta1.DVPairs"> & {
  * Use `create(DVPairsSchema)` to create a new message.
  */
 export const DVPairsSchema: GenMessage<DVPairs> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 8);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 7);
 
 /**
  * DVVTriplet is struct that just has a delegator-validator-validator triplet
@@ -405,7 +369,7 @@ export type DVVTriplet = Message<"cosmos.staking.v1beta1.DVVTriplet"> & {
  * Use `create(DVVTripletSchema)` to create a new message.
  */
 export const DVVTripletSchema: GenMessage<DVVTriplet> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 9);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 8);
 
 /**
  * DVVTriplets defines an array of DVVTriplet objects.
@@ -424,7 +388,7 @@ export type DVVTriplets = Message<"cosmos.staking.v1beta1.DVVTriplets"> & {
  * Use `create(DVVTripletsSchema)` to create a new message.
  */
 export const DVVTripletsSchema: GenMessage<DVVTriplets> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 10);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 9);
 
 /**
  * Delegation represents the bond with tokens held by an account. It is
@@ -461,7 +425,7 @@ export type Delegation = Message<"cosmos.staking.v1beta1.Delegation"> & {
  * Use `create(DelegationSchema)` to create a new message.
  */
 export const DelegationSchema: GenMessage<Delegation> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 11);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 10);
 
 /**
  * UnbondingDelegation stores all of a single delegator's unbonding bonds
@@ -499,7 +463,7 @@ export type UnbondingDelegation = Message<"cosmos.staking.v1beta1.UnbondingDeleg
  * Use `create(UnbondingDelegationSchema)` to create a new message.
  */
 export const UnbondingDelegationSchema: GenMessage<UnbondingDelegation> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 12);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 11);
 
 /**
  * UnbondingDelegationEntry defines an unbonding object with relevant metadata.
@@ -555,7 +519,7 @@ export type UnbondingDelegationEntry = Message<"cosmos.staking.v1beta1.Unbonding
  * Use `create(UnbondingDelegationEntrySchema)` to create a new message.
  */
 export const UnbondingDelegationEntrySchema: GenMessage<UnbondingDelegationEntry> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 13);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 12);
 
 /**
  * RedelegationEntry defines a redelegation object with relevant metadata.
@@ -611,7 +575,7 @@ export type RedelegationEntry = Message<"cosmos.staking.v1beta1.RedelegationEntr
  * Use `create(RedelegationEntrySchema)` to create a new message.
  */
 export const RedelegationEntrySchema: GenMessage<RedelegationEntry> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 14);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 13);
 
 /**
  * Redelegation contains the list of a particular delegator's redelegating bonds
@@ -656,7 +620,7 @@ export type Redelegation = Message<"cosmos.staking.v1beta1.Redelegation"> & {
  * Use `create(RedelegationSchema)` to create a new message.
  */
 export const RedelegationSchema: GenMessage<Redelegation> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 15);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 14);
 
 /**
  * Params defines the parameters for the x/staking module.
@@ -705,14 +669,6 @@ export type Params = Message<"cosmos.staking.v1beta1.Params"> & {
    * @generated from field: string min_commission_rate = 6;
    */
   minCommissionRate: string;
-
-  /**
-   * key_rotation_fee is fee to be spent when rotating validator's key
-   * (either consensus pubkey or operator key)
-   *
-   * @generated from field: cosmos.base.v1beta1.Coin key_rotation_fee = 7;
-   */
-  keyRotationFee?: Coin;
 };
 
 /**
@@ -720,7 +676,7 @@ export type Params = Message<"cosmos.staking.v1beta1.Params"> & {
  * Use `create(ParamsSchema)` to create a new message.
  */
 export const ParamsSchema: GenMessage<Params> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 16);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 15);
 
 /**
  * DelegationResponse is equivalent to Delegation except that it contains a
@@ -745,7 +701,7 @@ export type DelegationResponse = Message<"cosmos.staking.v1beta1.DelegationRespo
  * Use `create(DelegationResponseSchema)` to create a new message.
  */
 export const DelegationResponseSchema: GenMessage<DelegationResponse> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 17);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 16);
 
 /**
  * RedelegationEntryResponse is equivalent to a RedelegationEntry except that it
@@ -771,7 +727,7 @@ export type RedelegationEntryResponse = Message<"cosmos.staking.v1beta1.Redelega
  * Use `create(RedelegationEntryResponseSchema)` to create a new message.
  */
 export const RedelegationEntryResponseSchema: GenMessage<RedelegationEntryResponse> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 18);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 17);
 
 /**
  * RedelegationResponse is equivalent to a Redelegation except that its entries
@@ -797,7 +753,7 @@ export type RedelegationResponse = Message<"cosmos.staking.v1beta1.RedelegationR
  * Use `create(RedelegationResponseSchema)` to create a new message.
  */
 export const RedelegationResponseSchema: GenMessage<RedelegationResponse> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 19);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 18);
 
 /**
  * Pool is used for tracking bonded and not-bonded token supply of the bond
@@ -822,7 +778,7 @@ export type Pool = Message<"cosmos.staking.v1beta1.Pool"> & {
  * Use `create(PoolSchema)` to create a new message.
  */
 export const PoolSchema: GenMessage<Pool> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 20);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 19);
 
 /**
  * ValidatorUpdates defines an array of abci.ValidatorUpdate objects.
@@ -842,76 +798,7 @@ export type ValidatorUpdates = Message<"cosmos.staking.v1beta1.ValidatorUpdates"
  * Use `create(ValidatorUpdatesSchema)` to create a new message.
  */
 export const ValidatorUpdatesSchema: GenMessage<ValidatorUpdates> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 21);
-
-/**
- * ConsPubKeyRotationHistory contains a validator's consensus public key rotation history.
- *
- * @generated from message cosmos.staking.v1beta1.ConsPubKeyRotationHistory
- */
-export type ConsPubKeyRotationHistory = Message<"cosmos.staking.v1beta1.ConsPubKeyRotationHistory"> & {
-  /**
-   * operator_address defines the address of the validator's operator; bech encoded in JSON.
-   *
-   * @generated from field: bytes operator_address = 1;
-   */
-  operatorAddress: Uint8Array;
-
-  /**
-   * old_cons_pubkey is the old consensus public key of the validator, as a Protobuf Any.
-   *
-   * @generated from field: google.protobuf.Any old_cons_pubkey = 2;
-   */
-  oldConsPubkey?: Any;
-
-  /**
-   * new_cons_pubkey is the new consensus public key of the validator, as a Protobuf Any.
-   *
-   * @generated from field: google.protobuf.Any new_cons_pubkey = 3;
-   */
-  newConsPubkey?: Any;
-
-  /**
-   * height defines the block height at which the rotation event occurred.
-   *
-   * @generated from field: uint64 height = 4;
-   */
-  height: bigint;
-
-  /**
-   * fee holds the amount of fee deduced for the rotation.
-   *
-   * @generated from field: cosmos.base.v1beta1.Coin fee = 5;
-   */
-  fee?: Coin;
-};
-
-/**
- * Describes the message cosmos.staking.v1beta1.ConsPubKeyRotationHistory.
- * Use `create(ConsPubKeyRotationHistorySchema)` to create a new message.
- */
-export const ConsPubKeyRotationHistorySchema: GenMessage<ConsPubKeyRotationHistory> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 22);
-
-/**
- * ValAddrsOfRotatedConsKeys contains the array of validator addresses which rotated their keys
- * This is to block the validator's next rotation till unbonding period.
- *
- * @generated from message cosmos.staking.v1beta1.ValAddrsOfRotatedConsKeys
- */
-export type ValAddrsOfRotatedConsKeys = Message<"cosmos.staking.v1beta1.ValAddrsOfRotatedConsKeys"> & {
-  /**
-   * @generated from field: repeated bytes addresses = 1;
-   */
-  addresses: Uint8Array[];
-};
-
-/**
- * Describes the message cosmos.staking.v1beta1.ValAddrsOfRotatedConsKeys.
- * Use `create(ValAddrsOfRotatedConsKeysSchema)` to create a new message.
- */
-export const ValAddrsOfRotatedConsKeysSchema: GenMessage<ValAddrsOfRotatedConsKeys> = /*@__PURE__*/
-  messageDesc(file_cosmos_staking_v1beta1_staking, 23);
+  messageDesc(file_cosmos_staking_v1beta1_staking, 20);
 
 /**
  * BondStatus is the status of a validator.
@@ -955,7 +842,7 @@ export const BondStatusSchema: GenEnum<BondStatus> = /*@__PURE__*/
   enumDesc(file_cosmos_staking_v1beta1_staking, 0);
 
 /**
- * Infraction indicates the infraction a validator committed.
+ * Infraction indicates the infraction a validator commited.
  *
  * @generated from enum cosmos.staking.v1beta1.Infraction
  */
