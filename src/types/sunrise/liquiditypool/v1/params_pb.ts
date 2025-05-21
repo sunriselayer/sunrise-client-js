@@ -12,7 +12,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file sunrise/liquiditypool/v1/params.proto.
  */
 export const file_sunrise_liquiditypool_v1_params: GenFile = /*@__PURE__*/
-  fileDesc("CiVzdW5yaXNlL2xpcXVpZGl0eXBvb2wvdjEvcGFyYW1zLnByb3RvEhhzdW5yaXNlLmxpcXVpZGl0eXBvb2wudjEiaQoGUGFyYW1zEikKEXdpdGhkcmF3X2ZlZV9yYXRlGAEgASgJQg7StC0KY29zbW9zLkRlYxIuChZzd2FwX3RyZWFzdXJ5X3RheF9yYXRlGAIgASgJQg7StC0KY29zbW9zLkRlYzoE6KAfAULkAQocY29tLnN1bnJpc2UubGlxdWlkaXR5cG9vbC52MUILUGFyYW1zUHJvdG9QAVo1Z2l0aHViLmNvbS9zdW5yaXNlbGF5ZXIvc3VucmlzZS94L2xpcXVpZGl0eXBvb2wvdHlwZXOiAgNTTFiqAhhTdW5yaXNlLkxpcXVpZGl0eXBvb2wuVjHKAhhTdW5yaXNlXExpcXVpZGl0eXBvb2xcVjHiAiRTdW5yaXNlXExpcXVpZGl0eXBvb2xcVjFcR1BCTWV0YWRhdGHqAhpTdW5yaXNlOjpMaXF1aWRpdHlwb29sOjpWMWIGcHJvdG8z", [file_cosmos_proto_cosmos, file_gogoproto_gogo]);
+  fileDesc("CiVzdW5yaXNlL2xpcXVpZGl0eXBvb2wvdjEvcGFyYW1zLnByb3RvEhhzdW5yaXNlLmxpcXVpZGl0eXBvb2wudjEiUgoGUGFyYW1zEhcKD2NyZWF0ZV9wb29sX2dhcxgBIAEoBBIpChF3aXRoZHJhd19mZWVfcmF0ZRgCIAEoCUIO0rQtCmNvc21vcy5EZWM6BOigHwFC5AEKHGNvbS5zdW5yaXNlLmxpcXVpZGl0eXBvb2wudjFCC1BhcmFtc1Byb3RvUAFaNWdpdGh1Yi5jb20vc3VucmlzZWxheWVyL3N1bnJpc2UveC9saXF1aWRpdHlwb29sL3R5cGVzogIDU0xYqgIYU3VucmlzZS5MaXF1aWRpdHlwb29sLlYxygIYU3VucmlzZVxMaXF1aWRpdHlwb29sXFYx4gIkU3VucmlzZVxMaXF1aWRpdHlwb29sXFYxXEdQQk1ldGFkYXRh6gIaU3VucmlzZTo6TGlxdWlkaXR5cG9vbDo6VjFiBnByb3RvMw", [file_cosmos_proto_cosmos, file_gogoproto_gogo]);
 
 /**
  * Params defines the parameters for the module.
@@ -21,18 +21,16 @@ export const file_sunrise_liquiditypool_v1_params: GenFile = /*@__PURE__*/
  */
 export type Params = Message<"sunrise.liquiditypool.v1.Params"> & {
   /**
-   * For reservation, not used yet
-   *
-   * @generated from field: string withdraw_fee_rate = 1;
+   * @generated from field: uint64 create_pool_gas = 1;
    */
-  withdrawFeeRate: string;
+  createPoolGas: bigint;
 
   /**
    * For reservation, not used yet
    *
-   * @generated from field: string swap_treasury_tax_rate = 2;
+   * @generated from field: string withdraw_fee_rate = 2;
    */
-  swapTreasuryTaxRate: string;
+  withdrawFeeRate: string;
 };
 
 /**

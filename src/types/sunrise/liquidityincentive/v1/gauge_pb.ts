@@ -4,7 +4,6 @@
 
 import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv1";
 import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv1";
-import { file_amino_amino } from "../../../amino/amino_pb";
 import { file_cosmos_proto_cosmos } from "../../../cosmos_proto/cosmos_pb";
 import { file_gogoproto_gogo } from "../../../gogoproto/gogo_pb";
 import type { Message } from "@bufbuild/protobuf";
@@ -13,7 +12,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file sunrise/liquidityincentive/v1/gauge.proto.
  */
 export const file_sunrise_liquidityincentive_v1_gauge: GenFile = /*@__PURE__*/
-  fileDesc("CilzdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9nYXVnZS5wcm90bxIdc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEiggEKBUdhdWdlEiAKEXByZXZpb3VzX2Vwb2NoX2lkGAEgASgEQgWo57AqARIWCgdwb29sX2lkGAIgASgEQgWo57AqARI/CgVjb3VudBgDIAEoCUIwyN4fANreHxVjb3Ntb3NzZGsuaW8vbWF0aC5JbnTStC0KY29zbW9zLkludKjnsCoBImYKC1RhbGx5UmVzdWx0EhYKB3Bvb2xfaWQYASABKARCBajnsCoBEj8KBWNvdW50GAIgASgJQjDI3h8A2t4fFWNvc21vc3Nkay5pby9tYXRoLkludNK0LQpjb3Ntb3MuSW50qOewKgEiRAoKUG9vbFdlaWdodBIWCgdwb29sX2lkGAEgASgEQgWo57AqARIeCgZ3ZWlnaHQYAiABKAlCDtK0LQpjb3Ntb3MuRGVjIncKBFZvdGUSKAoGc2VuZGVyGAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSRQoMcG9vbF93ZWlnaHRzGAIgAygLMikuc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEuUG9vbFdlaWdodEIEyN4fAEKBAgohY29tLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxQgpHYXVnZVByb3RvUAFaOmdpdGh1Yi5jb20vc3VucmlzZWxheWVyL3N1bnJpc2UveC9saXF1aWRpdHlpbmNlbnRpdmUvdHlwZXOiAgNTTFiqAh1TdW5yaXNlLkxpcXVpZGl0eWluY2VudGl2ZS5WMcoCHVN1bnJpc2VcTGlxdWlkaXR5aW5jZW50aXZlXFYx4gIpU3VucmlzZVxMaXF1aWRpdHlpbmNlbnRpdmVcVjFcR1BCTWV0YWRhdGHqAh9TdW5yaXNlOjpMaXF1aWRpdHlpbmNlbnRpdmU6OlYxYgZwcm90bzM", [file_amino_amino, file_cosmos_proto_cosmos, file_gogoproto_gogo]);
+  fileDesc("CilzdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9nYXVnZS5wcm90bxIdc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEiWwoFR2F1Z2USDwoHcG9vbF9pZBgBIAEoBBJBCgx2b3RpbmdfcG93ZXIYAiABKAlCK8jeHwDa3h8VY29zbW9zc2RrLmlvL21hdGguSW500rQtCmNvc21vcy5JbnQiPQoKUG9vbFdlaWdodBIPCgdwb29sX2lkGAEgASgEEh4KBndlaWdodBgCIAEoCUIO0rQtCmNvc21vcy5EZWMidwoEVm90ZRIoCgZzZW5kZXIYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxJFCgxwb29sX3dlaWdodHMYAiADKAsyKS5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5Qb29sV2VpZ2h0QgTI3h8AQoECCiFjb20uc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjFCCkdhdWdlUHJvdG9QAVo6Z2l0aHViLmNvbS9zdW5yaXNlbGF5ZXIvc3VucmlzZS94L2xpcXVpZGl0eWluY2VudGl2ZS90eXBlc6ICA1NMWKoCHVN1bnJpc2UuTGlxdWlkaXR5aW5jZW50aXZlLlYxygIdU3VucmlzZVxMaXF1aWRpdHlpbmNlbnRpdmVcVjHiAilTdW5yaXNlXExpcXVpZGl0eWluY2VudGl2ZVxWMVxHUEJNZXRhZGF0YeoCH1N1bnJpc2U6OkxpcXVpZGl0eWluY2VudGl2ZTo6VjFiBnByb3RvMw", [file_cosmos_proto_cosmos, file_gogoproto_gogo]);
 
 /**
  * Gauge
@@ -22,19 +21,14 @@ export const file_sunrise_liquidityincentive_v1_gauge: GenFile = /*@__PURE__*/
  */
 export type Gauge = Message<"sunrise.liquidityincentive.v1.Gauge"> & {
   /**
-   * @generated from field: uint64 previous_epoch_id = 1;
-   */
-  previousEpochId: bigint;
-
-  /**
-   * @generated from field: uint64 pool_id = 2;
+   * @generated from field: uint64 pool_id = 1;
    */
   poolId: bigint;
 
   /**
-   * @generated from field: string count = 3;
+   * @generated from field: string voting_power = 2;
    */
-  count: string;
+  votingPower: string;
 };
 
 /**
@@ -43,30 +37,6 @@ export type Gauge = Message<"sunrise.liquidityincentive.v1.Gauge"> & {
  */
 export const GaugeSchema: GenMessage<Gauge> = /*@__PURE__*/
   messageDesc(file_sunrise_liquidityincentive_v1_gauge, 0);
-
-/**
- * TallyResult
- *
- * @generated from message sunrise.liquidityincentive.v1.TallyResult
- */
-export type TallyResult = Message<"sunrise.liquidityincentive.v1.TallyResult"> & {
-  /**
-   * @generated from field: uint64 pool_id = 1;
-   */
-  poolId: bigint;
-
-  /**
-   * @generated from field: string count = 2;
-   */
-  count: string;
-};
-
-/**
- * Describes the message sunrise.liquidityincentive.v1.TallyResult.
- * Use `create(TallyResultSchema)` to create a new message.
- */
-export const TallyResultSchema: GenMessage<TallyResult> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_gauge, 1);
 
 /**
  * PoolWeight
@@ -90,7 +60,7 @@ export type PoolWeight = Message<"sunrise.liquidityincentive.v1.PoolWeight"> & {
  * Use `create(PoolWeightSchema)` to create a new message.
  */
 export const PoolWeightSchema: GenMessage<PoolWeight> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_gauge, 2);
+  messageDesc(file_sunrise_liquidityincentive_v1_gauge, 1);
 
 /**
  * Vote
@@ -114,5 +84,5 @@ export type Vote = Message<"sunrise.liquidityincentive.v1.Vote"> & {
  * Use `create(VoteSchema)` to create a new message.
  */
 export const VoteSchema: GenMessage<Vote> = /*@__PURE__*/
-  messageDesc(file_sunrise_liquidityincentive_v1_gauge, 3);
+  messageDesc(file_sunrise_liquidityincentive_v1_gauge, 2);
 

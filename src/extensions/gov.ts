@@ -8,8 +8,6 @@ import {
   QueryDepositResponseSchema,
   QueryDepositsRequestSchema,
   QueryDepositsResponseSchema,
-  QueryMessageBasedParamsRequestSchema,
-  QueryMessageBasedParamsResponseSchema,
   QueryParamsRequestSchema,
   QueryParamsResponseSchema,
   QueryProposalRequestSchema,
@@ -82,13 +80,6 @@ export function setupGovV1Extension(base: QueryClient) {
         "TallyResult",
         QueryTallyResultRequestSchema,
         QueryTallyResultResponseSchema,
-      ),
-      messageBasedParams: queryFactory(
-        rpc,
-        service,
-        "MessageBasedParams",
-        QueryMessageBasedParamsRequestSchema,
-        QueryMessageBasedParamsResponseSchema,
       ),
     },
   };

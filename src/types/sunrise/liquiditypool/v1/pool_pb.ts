@@ -71,7 +71,7 @@ export const PoolSchema: GenMessage<Pool> = /*@__PURE__*/
 
 /**
  * TickParams
- * PriceRatio^(Tick - BaseOffSet)
+ * PriceRatio^(Tick + BaseOffSet)
  *
  * @generated from message sunrise.liquiditypool.v1.TickParams
  */
@@ -84,7 +84,7 @@ export type TickParams = Message<"sunrise.liquiditypool.v1.TickParams"> & {
   priceRatio: string;
 
   /**
-   * basically 0 and (-1,0]. In the 1:1 stable pair, -0.5 would work
+   * basically 0 and (-1, 0]. In the 1:1 stable pair, -0.5 would work
    *
    * @generated from field: string base_offset = 2;
    */

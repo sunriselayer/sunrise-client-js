@@ -1,4 +1,4 @@
-// Copyright 2023 Google LLC
+// Copyright 2025 Google LLC
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -24,7 +24,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file google/api/http.proto.
  */
 export const file_google_api_http: GenFile = /*@__PURE__*/
-  fileDesc("ChVnb29nbGUvYXBpL2h0dHAucHJvdG8SCmdvb2dsZS5hcGkiVAoESHR0cBIjCgVydWxlcxgBIAMoCzIULmdvb2dsZS5hcGkuSHR0cFJ1bGUSJwofZnVsbHlfZGVjb2RlX3Jlc2VydmVkX2V4cGFuc2lvbhgCIAEoCCKBAgoISHR0cFJ1bGUSEAoIc2VsZWN0b3IYASABKAkSDQoDZ2V0GAIgASgJSAASDQoDcHV0GAMgASgJSAASDgoEcG9zdBgEIAEoCUgAEhAKBmRlbGV0ZRgFIAEoCUgAEg8KBXBhdGNoGAYgASgJSAASLwoGY3VzdG9tGAggASgLMh0uZ29vZ2xlLmFwaS5DdXN0b21IdHRwUGF0dGVybkgAEgwKBGJvZHkYByABKAkSFQoNcmVzcG9uc2VfYm9keRgMIAEoCRIxChNhZGRpdGlvbmFsX2JpbmRpbmdzGAsgAygLMhQuZ29vZ2xlLmFwaS5IdHRwUnVsZUIJCgdwYXR0ZXJuIi8KEUN1c3RvbUh0dHBQYXR0ZXJuEgwKBGtpbmQYASABKAkSDAoEcGF0aBgCIAEoCUKqAQoOY29tLmdvb2dsZS5hcGlCCUh0dHBQcm90b1ABWkFnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2FwaS9hbm5vdGF0aW9uczthbm5vdGF0aW9uc/gBAaICA0dBWKoCCkdvb2dsZS5BcGnKAgpHb29nbGVcQXBp4gIWR29vZ2xlXEFwaVxHUEJNZXRhZGF0YeoCC0dvb2dsZTo6QXBpYgZwcm90bzM");
+  fileDesc("ChVnb29nbGUvYXBpL2h0dHAucHJvdG8SCmdvb2dsZS5hcGkiVAoESHR0cBIjCgVydWxlcxgBIAMoCzIULmdvb2dsZS5hcGkuSHR0cFJ1bGUSJwofZnVsbHlfZGVjb2RlX3Jlc2VydmVkX2V4cGFuc2lvbhgCIAEoCCKBAgoISHR0cFJ1bGUSEAoIc2VsZWN0b3IYASABKAkSDQoDZ2V0GAIgASgJSAASDQoDcHV0GAMgASgJSAASDgoEcG9zdBgEIAEoCUgAEhAKBmRlbGV0ZRgFIAEoCUgAEg8KBXBhdGNoGAYgASgJSAASLwoGY3VzdG9tGAggASgLMh0uZ29vZ2xlLmFwaS5DdXN0b21IdHRwUGF0dGVybkgAEgwKBGJvZHkYByABKAkSFQoNcmVzcG9uc2VfYm9keRgMIAEoCRIxChNhZGRpdGlvbmFsX2JpbmRpbmdzGAsgAygLMhQuZ29vZ2xlLmFwaS5IdHRwUnVsZUIJCgdwYXR0ZXJuIi8KEUN1c3RvbUh0dHBQYXR0ZXJuEgwKBGtpbmQYASABKAkSDAoEcGF0aBgCIAEoCUKnAQoOY29tLmdvb2dsZS5hcGlCCUh0dHBQcm90b1ABWkFnb29nbGUuZ29sYW5nLm9yZy9nZW5wcm90by9nb29nbGVhcGlzL2FwaS9hbm5vdGF0aW9uczthbm5vdGF0aW9uc6ICA0dBWKoCCkdvb2dsZS5BcGnKAgpHb29nbGVcQXBp4gIWR29vZ2xlXEFwaVxHUEJNZXRhZGF0YeoCC0dvb2dsZTo6QXBpYgZwcm90bzM");
 
 /**
  * Defines the HTTP configuration for an API service. It contains a list of
@@ -64,7 +64,7 @@ export const HttpSchema: GenMessage<Http> = /*@__PURE__*/
   messageDesc(file_google_api_http, 0);
 
 /**
- * # gRPC Transcoding
+ * gRPC Transcoding
  *
  * gRPC Transcoding is a feature for mapping between a gRPC method and one or
  * more HTTP REST endpoints. It allows developers to build a single API service
@@ -105,9 +105,8 @@ export const HttpSchema: GenMessage<Http> = /*@__PURE__*/
  *
  * This enables an HTTP REST to gRPC mapping as below:
  *
- * HTTP | gRPC
- * -----|-----
- * `GET /v1/messages/123456`  | `GetMessage(name: "messages/123456")`
+ * - HTTP: `GET /v1/messages/123456`
+ * - gRPC: `GetMessage(name: "messages/123456")`
  *
  * Any fields in the request message which are not bound by the path template
  * automatically become HTTP query parameters if there is no HTTP request body.
@@ -131,11 +130,9 @@ export const HttpSchema: GenMessage<Http> = /*@__PURE__*/
  *
  * This enables a HTTP JSON to RPC mapping as below:
  *
- * HTTP | gRPC
- * -----|-----
- * `GET /v1/messages/123456?revision=2&sub.subfield=foo` |
- * `GetMessage(message_id: "123456" revision: 2 sub: SubMessage(subfield:
- * "foo"))`
+ * - HTTP: `GET /v1/messages/123456?revision=2&sub.subfield=foo`
+ * - gRPC: `GetMessage(message_id: "123456" revision: 2 sub:
+ * SubMessage(subfield: "foo"))`
  *
  * Note that fields which are mapped to URL query parameters must have a
  * primitive type or a repeated primitive type or a non-repeated message type.
@@ -165,10 +162,8 @@ export const HttpSchema: GenMessage<Http> = /*@__PURE__*/
  * representation of the JSON in the request body is determined by
  * protos JSON encoding:
  *
- * HTTP | gRPC
- * -----|-----
- * `PATCH /v1/messages/123456 { "text": "Hi!" }` | `UpdateMessage(message_id:
- * "123456" message { text: "Hi!" })`
+ * - HTTP: `PATCH /v1/messages/123456 { "text": "Hi!" }`
+ * - gRPC: `UpdateMessage(message_id: "123456" message { text: "Hi!" })`
  *
  * The special name `*` can be used in the body mapping to define that
  * every field not bound by the path template should be mapped to the
@@ -191,10 +186,8 @@ export const HttpSchema: GenMessage<Http> = /*@__PURE__*/
  *
  * The following HTTP JSON to RPC mapping is enabled:
  *
- * HTTP | gRPC
- * -----|-----
- * `PATCH /v1/messages/123456 { "text": "Hi!" }` | `UpdateMessage(message_id:
- * "123456" text: "Hi!")`
+ * - HTTP: `PATCH /v1/messages/123456 { "text": "Hi!" }`
+ * - gRPC: `UpdateMessage(message_id: "123456" text: "Hi!")`
  *
  * Note that when using `*` in the body mapping, it is not possible to
  * have HTTP parameters, as all fields not bound by the path end in
@@ -222,13 +215,13 @@ export const HttpSchema: GenMessage<Http> = /*@__PURE__*/
  *
  * This enables the following two alternative HTTP JSON to RPC mappings:
  *
- * HTTP | gRPC
- * -----|-----
- * `GET /v1/messages/123456` | `GetMessage(message_id: "123456")`
- * `GET /v1/users/me/messages/123456` | `GetMessage(user_id: "me" message_id:
- * "123456")`
+ * - HTTP: `GET /v1/messages/123456`
+ * - gRPC: `GetMessage(message_id: "123456")`
  *
- * ## Rules for HTTP mapping
+ * - HTTP: `GET /v1/users/me/messages/123456`
+ * - gRPC: `GetMessage(user_id: "me" message_id: "123456")`
+ *
+ * Rules for HTTP mapping
  *
  * 1. Leaf request fields (recursive expansion nested messages in the request
  *    message) are classified into three categories:
@@ -247,7 +240,7 @@ export const HttpSchema: GenMessage<Http> = /*@__PURE__*/
  *  request body, all
  *     fields are passed via URL path and URL query parameters.
  *
- * ### Path template syntax
+ * Path template syntax
  *
  *     Template = "/" Segments [ Verb ] ;
  *     Segments = Segment { "/" Segment } ;
@@ -286,7 +279,7 @@ export const HttpSchema: GenMessage<Http> = /*@__PURE__*/
  * Document](https://developers.google.com/discovery/v1/reference/apis) as
  * `{+var}`.
  *
- * ## Using gRPC API Service Configuration
+ * Using gRPC API Service Configuration
  *
  * gRPC API Service Configuration (service config) is a configuration language
  * for configuring a gRPC service to become a user-facing product. The
@@ -301,15 +294,14 @@ export const HttpSchema: GenMessage<Http> = /*@__PURE__*/
  * specified in the service config will override any matching transcoding
  * configuration in the proto.
  *
- * Example:
+ * The following example selects a gRPC method and applies an `HttpRule` to it:
  *
  *     http:
  *       rules:
- *         # Selects a gRPC method and applies HttpRule to it.
  *         - selector: example.v1.Messaging.GetMessage
  *           get: /v1/messages/{message_id}/{sub.subfield}
  *
- * ## Special notes
+ * Special notes
  *
  * When gRPC Transcoding is used to map a gRPC to JSON REST endpoints, the
  * proto to JSON conversion must follow the [proto3

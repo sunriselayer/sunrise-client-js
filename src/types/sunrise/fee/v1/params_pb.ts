@@ -12,7 +12,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file sunrise/fee/v1/params.proto.
  */
 export const file_sunrise_fee_v1_params: GenFile = /*@__PURE__*/
-  fileDesc("ChtzdW5yaXNlL2ZlZS92MS9wYXJhbXMucHJvdG8SDnN1bnJpc2UuZmVlLnYxIlwKBlBhcmFtcxIRCglmZWVfZGVub20YASABKAkSIgoKYnVybl9yYXRpbxgCIAEoCUIO0rQtCmNvc21vcy5EZWMSFQoNYnlwYXNzX2Rlbm9tcxgDIAMoCToE6KAfAUKoAQoSY29tLnN1bnJpc2UuZmVlLnYxQgtQYXJhbXNQcm90b1ABWitnaXRodWIuY29tL3N1bnJpc2VsYXllci9zdW5yaXNlL3gvZmVlL3R5cGVzogIDU0ZYqgIOU3VucmlzZS5GZWUuVjHKAg5TdW5yaXNlXEZlZVxWMeICGlN1bnJpc2VcRmVlXFYxXEdQQk1ldGFkYXRh6gIQU3VucmlzZTo6RmVlOjpWMWIGcHJvdG8z", [file_cosmos_proto_cosmos, file_gogoproto_gogo]);
+  fileDesc("ChtzdW5yaXNlL2ZlZS92MS9wYXJhbXMucHJvdG8SDnN1bnJpc2UuZmVlLnYxIkUKBlBhcmFtcxIRCglmZWVfZGVub20YASABKAkSIgoKYnVybl9yYXRpbxgCIAEoCUIO0rQtCmNvc21vcy5EZWM6BOigHwFCqAEKEmNvbS5zdW5yaXNlLmZlZS52MUILUGFyYW1zUHJvdG9QAVorZ2l0aHViLmNvbS9zdW5yaXNlbGF5ZXIvc3VucmlzZS94L2ZlZS90eXBlc6ICA1NGWKoCDlN1bnJpc2UuRmVlLlYxygIOU3VucmlzZVxGZWVcVjHiAhpTdW5yaXNlXEZlZVxWMVxHUEJNZXRhZGF0YeoCEFN1bnJpc2U6OkZlZTo6VjFiBnByb3RvMw", [file_cosmos_proto_cosmos, file_gogoproto_gogo]);
 
 /**
  * Params defines the parameters for the module.
@@ -29,11 +29,6 @@ export type Params = Message<"sunrise.fee.v1.Params"> & {
    * @generated from field: string burn_ratio = 2;
    */
   burnRatio: string;
-
-  /**
-   * @generated from field: repeated string bypass_denoms = 3;
-   */
-  bypassDenoms: string[];
 };
 
 /**

@@ -10,23 +10,21 @@ plugins:
 
 inputs:
   - git_repo: https://github.com/sunriselayer/sunrise.git
-    branch: fix/proto-dec
+    branch: v0.5.0
     subdir: proto
     paths:
-      - sunrise/accounts/self_delegatable_lockup/v1/lockup.proto
-      - sunrise/accounts/self_delegatable_lockup/v1/query.proto
-      - sunrise/accounts/self_delegatable_lockup/v1/tx.proto
-      - sunrise/accounts/self_delegation_proxy/v1/tx.proto
-      - sunrise/da/v1/query.proto
-      - sunrise/da/v1/tx.proto
+      - sunrise/da/v0/query.proto
+      - sunrise/da/v0/tx.proto
       - sunrise/fee/v1/query.proto
       - sunrise/fee/v1/tx.proto
       - sunrise/liquidityincentive/v1/query.proto
       - sunrise/liquidityincentive/v1/tx.proto
       - sunrise/liquiditypool/v1/query.proto
       - sunrise/liquiditypool/v1/tx.proto
-      - sunrise/selfdelegation/v1/query.proto
-      - sunrise/selfdelegation/v1/tx.proto
+      - sunrise/lockup/v1/query.proto
+      - sunrise/lockup/v1/tx.proto
+      - sunrise/shareclass/v1/query.proto
+      - sunrise/shareclass/v1/tx.proto
       - sunrise/swap/v1/metadata.proto
       - sunrise/swap/v1/query.proto
       - sunrise/swap/v1/route.proto
@@ -34,17 +32,9 @@ inputs:
       - sunrise/tokenconverter/v1/query.proto
       - sunrise/tokenconverter/v1/tx.proto
   - git_repo: https://github.com/cosmos/cosmos-sdk.git
-    branch: v0.52.0-rc.2
+    branch: v0.53.0
+    subdir: proto
     paths:
-      - x/accounts/proto/cosmos/accounts/v1/query.proto
-      - x/accounts/proto/cosmos/accounts/v1/tx.proto
-      - x/gov/proto/cosmos/gov/v1/gov.proto
-      - x/gov/proto/cosmos/gov/v1/query.proto
-      - x/gov/proto/cosmos/gov/v1/tx.proto
-      - x/slashing/proto/cosmos/slashing/v1beta1/tx.proto
-      - x/mint/proto/cosmos/mint/v1beta1/tx.proto
-      - x/nft/proto/cosmos/nft/v1beta1/tx.proto
-      - x/group/proto/cosmos/group/v1/tx.proto
-      - x/upgrade/proto/cosmos/upgrade/v1beta1/tx.proto
-      - x/circuit/proto/cosmos/circuit/v1/tx.proto
-      - x/protocolpool/proto/cosmos/protocolpool/v1/tx.proto
+      - cosmos/gov/v1/gov.proto
+      - cosmos/gov/v1/query.proto
+      - cosmos/gov/v1/tx.proto

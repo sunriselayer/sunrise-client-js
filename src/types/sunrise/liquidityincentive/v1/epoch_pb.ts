@@ -14,7 +14,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file sunrise/liquidityincentive/v1/epoch.proto.
  */
 export const file_sunrise_liquidityincentive_v1_epoch: GenFile = /*@__PURE__*/
-  fileDesc("CilzdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9lcG9jaC5wcm90bxIdc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEijAEKBUVwb2NoEhEKAmlkGAEgASgEQgWo57AqARIaCgtzdGFydF9ibG9jaxgCIAEoA0IFqOewKgESGAoJZW5kX2Jsb2NrGAMgASgDQgWo57AqARI6CgZnYXVnZXMYBCADKAsyJC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5HYXVnZUIEyN4fAEKBAgohY29tLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxQgpFcG9jaFByb3RvUAFaOmdpdGh1Yi5jb20vc3VucmlzZWxheWVyL3N1bnJpc2UveC9saXF1aWRpdHlpbmNlbnRpdmUvdHlwZXOiAgNTTFiqAh1TdW5yaXNlLkxpcXVpZGl0eWluY2VudGl2ZS5WMcoCHVN1bnJpc2VcTGlxdWlkaXR5aW5jZW50aXZlXFYx4gIpU3VucmlzZVxMaXF1aWRpdHlpbmNlbnRpdmVcVjFcR1BCTWV0YWRhdGHqAh9TdW5yaXNlOjpMaXF1aWRpdHlpbmNlbnRpdmU6OlYxYgZwcm90bzM", [file_amino_amino, file_gogoproto_gogo, file_sunrise_liquidityincentive_v1_gauge]);
+  fileDesc("CilzdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9lcG9jaC5wcm90bxIdc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEipwEKBUVwb2NoEhEKAmlkGAEgASgEQgWo57AqARIaCgtzdGFydF9ibG9jaxgCIAEoA0IFqOewKgESGQoKc3RhcnRfdGltZRgDIAEoA0IFqOewKgESGAoJZW5kX2Jsb2NrGAQgASgDQgWo57AqARI6CgZnYXVnZXMYBSADKAsyJC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5HYXVnZUIEyN4fAEKBAgohY29tLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxQgpFcG9jaFByb3RvUAFaOmdpdGh1Yi5jb20vc3VucmlzZWxheWVyL3N1bnJpc2UveC9saXF1aWRpdHlpbmNlbnRpdmUvdHlwZXOiAgNTTFiqAh1TdW5yaXNlLkxpcXVpZGl0eWluY2VudGl2ZS5WMcoCHVN1bnJpc2VcTGlxdWlkaXR5aW5jZW50aXZlXFYx4gIpU3VucmlzZVxMaXF1aWRpdHlpbmNlbnRpdmVcVjFcR1BCTWV0YWRhdGHqAh9TdW5yaXNlOjpMaXF1aWRpdHlpbmNlbnRpdmU6OlYxYgZwcm90bzM", [file_amino_amino, file_gogoproto_gogo, file_sunrise_liquidityincentive_v1_gauge]);
 
 /**
  * Epoch
@@ -33,12 +33,17 @@ export type Epoch = Message<"sunrise.liquidityincentive.v1.Epoch"> & {
   startBlock: bigint;
 
   /**
-   * @generated from field: int64 end_block = 3;
+   * @generated from field: int64 start_time = 3;
+   */
+  startTime: bigint;
+
+  /**
+   * @generated from field: int64 end_block = 4;
    */
   endBlock: bigint;
 
   /**
-   * @generated from field: repeated sunrise.liquidityincentive.v1.Gauge gauges = 4;
+   * @generated from field: repeated sunrise.liquidityincentive.v1.Gauge gauges = 5;
    */
   gauges: Gauge[];
 };

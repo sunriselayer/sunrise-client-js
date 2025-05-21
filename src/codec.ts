@@ -7,31 +7,17 @@ import { defaultRegistryTypes } from "@cosmjs/stargate";
 
 import { convertBufProtocGenEsTypeToPbJsType } from "./internal/registry-adapter";
 import { getTypeUrl, packAny } from "./internal/type-url";
-import * as accounts from "./types/cosmos/accounts";
-import * as circuit from "./types/cosmos/circuit";
-import * as group from "./types/cosmos/group";
-import * as mint from "./types/cosmos/mint";
-import * as nft from "./types/cosmos/nft";
-import * as protocolpool from "./types/cosmos/protocolpool";
-import * as slashing from "./types/cosmos/slashing";
-import * as upgrade from "./types/cosmos/upgrade";
-import * as lockup from "./types/sunrise/accounts/self_delegatable_lockup";
-import * as proxy from "./types/sunrise/accounts/self_delegation_proxy";
 import * as da from "./types/sunrise/da";
 import * as fee from "./types/sunrise/fee";
 import * as liquidityincentive from "./types/sunrise/liquidityincentive";
 import * as liquiditypool from "./types/sunrise/liquiditypool";
+import * as lockup from "./types/sunrise/lockup";
+import * as shareclass from "./types/sunrise/shareclass";
 import * as swap from "./types/sunrise/swap";
 import * as tokenconverter from "./types/sunrise/tokenconverter";
 
 const schemas: GenMessage<Message>[] = [
   // sunrise
-  lockup.MsgSelfDelegateSchema,
-  lockup.MsgWithdrawSelfDelegationUnbondedSchema,
-  lockup.MsgSendSchema,
-  proxy.MsgUndelegateSchema,
-  proxy.MsgWithdrawRewardSchema,
-  proxy.MsgSendSchema,
   da.ParamsSchema,
   da.MsgUpdateParamsSchema,
   da.MsgPublishDataSchema,
@@ -43,8 +29,10 @@ const schemas: GenMessage<Message>[] = [
   fee.MsgUpdateParamsSchema,
   liquidityincentive.ParamsSchema,
   liquidityincentive.MsgUpdateParamsSchema,
+  liquidityincentive.MsgStartNewEpochSchema,
   liquidityincentive.MsgVoteGaugeSchema,
-  liquidityincentive.MsgCollectVoteRewardsSchema,
+  liquidityincentive.MsgRegisterBribeSchema,
+  liquidityincentive.MsgClaimBribesSchema,
   liquiditypool.ParamsSchema,
   liquiditypool.MsgUpdateParamsSchema,
   liquiditypool.MsgCreatePoolSchema,
@@ -52,6 +40,19 @@ const schemas: GenMessage<Message>[] = [
   liquiditypool.MsgIncreaseLiquiditySchema,
   liquiditypool.MsgDecreaseLiquiditySchema,
   liquiditypool.MsgClaimRewardsSchema,
+  lockup.ParamsSchema,
+  lockup.MsgUpdateParamsSchema,
+  lockup.MsgInitLockupAccountSchema,
+  lockup.MsgNonVotingDelegateSchema,
+  lockup.MsgNonVotingUndelegateSchema,
+  lockup.MsgClaimRewardsSchema,
+  lockup.MsgSendSchema,
+  shareclass.ParamsSchema,
+  shareclass.MsgUpdateParamsSchema,
+  shareclass.MsgNonVotingDelegateSchema,
+  shareclass.MsgNonVotingUndelegateSchema,
+  shareclass.MsgClaimRewardsSchema,
+  shareclass.MsgCreateValidatorSchema,
   swap.ParamsSchema,
   swap.MsgUpdateParamsSchema,
   swap.MsgSwapExactAmountInSchema,
@@ -59,41 +60,7 @@ const schemas: GenMessage<Message>[] = [
   tokenconverter.ParamsSchema,
   tokenconverter.MsgUpdateParamsSchema,
   tokenconverter.MsgConvertSchema,
-  // cosmos not included cosmjs
-  accounts.MsgInitSchema,
-  accounts.MsgExecuteSchema,
-  accounts.MsgExecuteBundleSchema,
-  circuit.MsgAuthorizeCircuitBreakerSchema,
-  circuit.MsgResetCircuitBreakerSchema,
-  circuit.MsgTripCircuitBreakerSchema,
-  group.MsgCreateGroupPolicySchema,
-  group.MsgCreateGroupSchema,
-  group.MsgCreateGroupWithPolicySchema,
-  group.MsgExecSchema,
-  group.MsgLeaveGroupSchema,
-  group.MsgSubmitProposalSchema,
-  group.MsgUpdateGroupAdminSchema,
-  group.MsgUpdateGroupMembersSchema,
-  group.MsgUpdateGroupMetadataSchema,
-  group.MsgUpdateGroupPolicyAdminSchema,
-  group.MsgUpdateGroupPolicyDecisionPolicySchema,
-  group.MsgUpdateGroupPolicyMetadataSchema,
-  group.MsgVoteSchema,
-  group.MsgWithdrawProposalSchema,
-  mint.MsgUpdateParamsSchema,
-  nft.MsgSendSchema,
-  protocolpool.MsgCancelContinuousFundSchema,
-  protocolpool.MsgClaimBudgetSchema,
-  protocolpool.MsgCommunityPoolSpendSchema,
-  protocolpool.MsgCreateContinuousFundSchema,
-  protocolpool.MsgFundCommunityPoolSchema,
-  protocolpool.MsgSubmitBudgetProposalSchema,
-  protocolpool.MsgUpdateParamsSchema,
-  protocolpool.MsgWithdrawContinuousFundSchema,
-  slashing.MsgUnjailSchema,
-  slashing.MsgUpdateParamsSchema,
-  upgrade.MsgCancelUpgradeSchema,
-  upgrade.MsgSoftwareUpgradeSchema,
+  // x/gov already included in cosmjs
 ];
 
 export const sunriseTypesRegistry = new Registry([
