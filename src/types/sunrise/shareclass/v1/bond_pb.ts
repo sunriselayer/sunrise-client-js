@@ -16,7 +16,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file sunrise/shareclass/v1/bond.proto.
  */
 export const file_sunrise_shareclass_v1_bond: GenFile = /*@__PURE__*/
-  fileDesc("CiBzdW5yaXNlL3NoYXJlY2xhc3MvdjEvYm9uZC5wcm90bxIVc3VucmlzZS5zaGFyZWNsYXNzLnYxIn4KDVZhbGlkYXRvckJvbmQSPAoRdmFsaWRhdG9yX2FkZHJlc3MYASABKAlCIdK0LR1jb3Ntb3MuVmFsaWRhdG9yQWRkcmVzc1N0cmluZxIvCgZhbW91bnQYAiABKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CBMjeHwAisgEKCVVuYm9uZGluZxIKCgJpZBgBIAEoBBIpCgdhZGRyZXNzGAIgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSPQoPY29tcGxldGlvbl90aW1lGAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcEIIyN4fAJDfHwESLwoGYW1vdW50GAQgASgLMhkuY29zbW9zLmJhc2UudjFiZXRhMS5Db2luQgTI3h8AQtABChljb20uc3VucmlzZS5zaGFyZWNsYXNzLnYxQglCb25kUHJvdG9QAVoyZ2l0aHViLmNvbS9zdW5yaXNlbGF5ZXIvc3VucmlzZS94L3NoYXJlY2xhc3MvdHlwZXOiAgNTU1iqAhVTdW5yaXNlLlNoYXJlY2xhc3MuVjHKAhVTdW5yaXNlXFNoYXJlY2xhc3NcVjHiAiFTdW5yaXNlXFNoYXJlY2xhc3NcVjFcR1BCTWV0YWRhdGHqAhdTdW5yaXNlOjpTaGFyZWNsYXNzOjpWMWIGcHJvdG8z", [file_cosmos_base_v1beta1_coin, file_cosmos_proto_cosmos, file_gogoproto_gogo, file_google_protobuf_timestamp]);
+  fileDesc("CiBzdW5yaXNlL3NoYXJlY2xhc3MvdjEvYm9uZC5wcm90bxIVc3VucmlzZS5zaGFyZWNsYXNzLnYxIn4KDVZhbGlkYXRvckJvbmQSPAoRdmFsaWRhdG9yX2FkZHJlc3MYASABKAlCIdK0LR1jb3Ntb3MuVmFsaWRhdG9yQWRkcmVzc1N0cmluZxIvCgZhbW91bnQYAiABKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CBMjeHwAirwIKCVVuYm9uZGluZxIKCgJpZBgBIAEoBBIzChFyZWNpcGllbnRfYWRkcmVzcxgCIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEjMKEWRlbGVnYXRvcl9hZGRyZXNzGAMgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSPAoRdmFsaWRhdG9yX2FkZHJlc3MYBCABKAlCIdK0LR1jb3Ntb3MuVmFsaWRhdG9yQWRkcmVzc1N0cmluZxI9Cg9jb21wbGV0aW9uX3RpbWUYBSABKAsyGi5nb29nbGUucHJvdG9idWYuVGltZXN0YW1wQgjI3h8AkN8fARIvCgZhbW91bnQYBiABKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CBMjeHwBC0AEKGWNvbS5zdW5yaXNlLnNoYXJlY2xhc3MudjFCCUJvbmRQcm90b1ABWjJnaXRodWIuY29tL3N1bnJpc2VsYXllci9zdW5yaXNlL3gvc2hhcmVjbGFzcy90eXBlc6ICA1NTWKoCFVN1bnJpc2UuU2hhcmVjbGFzcy5WMcoCFVN1bnJpc2VcU2hhcmVjbGFzc1xWMeICIVN1bnJpc2VcU2hhcmVjbGFzc1xWMVxHUEJNZXRhZGF0YeoCF1N1bnJpc2U6OlNoYXJlY2xhc3M6OlYxYgZwcm90bzM", [file_cosmos_base_v1beta1_coin, file_cosmos_proto_cosmos, file_gogoproto_gogo, file_google_protobuf_timestamp]);
 
 /**
  * ValidatorBond
@@ -54,17 +54,27 @@ export type Unbonding = Message<"sunrise.shareclass.v1.Unbonding"> & {
   id: bigint;
 
   /**
-   * @generated from field: string address = 2;
+   * @generated from field: string recipient_address = 2;
    */
-  address: string;
+  recipientAddress: string;
 
   /**
-   * @generated from field: google.protobuf.Timestamp completion_time = 3;
+   * @generated from field: string delegator_address = 3;
+   */
+  delegatorAddress: string;
+
+  /**
+   * @generated from field: string validator_address = 4;
+   */
+  validatorAddress: string;
+
+  /**
+   * @generated from field: google.protobuf.Timestamp completion_time = 5;
    */
   completionTime?: Timestamp;
 
   /**
-   * @generated from field: cosmos.base.v1beta1.Coin amount = 4;
+   * @generated from field: cosmos.base.v1beta1.Coin amount = 6;
    */
   amount?: Coin;
 };
