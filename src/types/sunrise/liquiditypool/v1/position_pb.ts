@@ -4,7 +4,6 @@
 
 import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv1";
 import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv1";
-import { file_amino_amino } from "../../../amino/amino_pb";
 import { file_cosmos_proto_cosmos } from "../../../cosmos_proto/cosmos_pb";
 import type { Message } from "@bufbuild/protobuf";
 
@@ -12,7 +11,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file sunrise/liquiditypool/v1/position.proto.
  */
 export const file_sunrise_liquiditypool_v1_position: GenFile = /*@__PURE__*/
-  fileDesc("CidzdW5yaXNlL2xpcXVpZGl0eXBvb2wvdjEvcG9zaXRpb24ucHJvdG8SGHN1bnJpc2UubGlxdWlkaXR5cG9vbC52MSK5AQoIUG9zaXRpb24SEQoCaWQYASABKARCBajnsCoBEikKB2FkZHJlc3MYAiABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxIWCgdwb29sX2lkGAMgASgEQgWo57AqARIZCgpsb3dlcl90aWNrGAQgASgDQgWo57AqARIZCgp1cHBlcl90aWNrGAUgASgDQgWo57AqARIhCglsaXF1aWRpdHkYBiABKAlCDtK0LQpjb3Ntb3MuRGVjQuYBChxjb20uc3VucmlzZS5saXF1aWRpdHlwb29sLnYxQg1Qb3NpdGlvblByb3RvUAFaNWdpdGh1Yi5jb20vc3VucmlzZWxheWVyL3N1bnJpc2UveC9saXF1aWRpdHlwb29sL3R5cGVzogIDU0xYqgIYU3VucmlzZS5MaXF1aWRpdHlwb29sLlYxygIYU3VucmlzZVxMaXF1aWRpdHlwb29sXFYx4gIkU3VucmlzZVxMaXF1aWRpdHlwb29sXFYxXEdQQk1ldGFkYXRh6gIaU3VucmlzZTo6TGlxdWlkaXR5cG9vbDo6VjFiBnByb3RvMw", [file_amino_amino, file_cosmos_proto_cosmos]);
+  fileDesc("CidzdW5yaXNlL2xpcXVpZGl0eXBvb2wvdjEvcG9zaXRpb24ucHJvdG8SGHN1bnJpc2UubGlxdWlkaXR5cG9vbC52MSKdAQoIUG9zaXRpb24SCgoCaWQYASABKAQSKQoHYWRkcmVzcxgCIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEg8KB3Bvb2xfaWQYAyABKAQSEgoKbG93ZXJfdGljaxgEIAEoAxISCgp1cHBlcl90aWNrGAUgASgDEiEKCWxpcXVpZGl0eRgGIAEoCUIO0rQtCmNvc21vcy5EZWNC5gEKHGNvbS5zdW5yaXNlLmxpcXVpZGl0eXBvb2wudjFCDVBvc2l0aW9uUHJvdG9QAVo1Z2l0aHViLmNvbS9zdW5yaXNlbGF5ZXIvc3VucmlzZS94L2xpcXVpZGl0eXBvb2wvdHlwZXOiAgNTTFiqAhhTdW5yaXNlLkxpcXVpZGl0eXBvb2wuVjHKAhhTdW5yaXNlXExpcXVpZGl0eXBvb2xcVjHiAiRTdW5yaXNlXExpcXVpZGl0eXBvb2xcVjFcR1BCTWV0YWRhdGHqAhpTdW5yaXNlOjpMaXF1aWRpdHlwb29sOjpWMWIGcHJvdG8z", [file_cosmos_proto_cosmos]);
 
 /**
  * Position

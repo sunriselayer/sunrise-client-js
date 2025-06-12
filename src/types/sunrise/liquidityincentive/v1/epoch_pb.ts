@@ -4,7 +4,6 @@
 
 import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv1";
 import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv1";
-import { file_amino_amino } from "../../../amino/amino_pb";
 import { file_gogoproto_gogo } from "../../../gogoproto/gogo_pb";
 import type { Gauge } from "./gauge_pb";
 import { file_sunrise_liquidityincentive_v1_gauge } from "./gauge_pb";
@@ -14,7 +13,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file sunrise/liquidityincentive/v1/epoch.proto.
  */
 export const file_sunrise_liquidityincentive_v1_epoch: GenFile = /*@__PURE__*/
-  fileDesc("CilzdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9lcG9jaC5wcm90bxIdc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEipwEKBUVwb2NoEhEKAmlkGAEgASgEQgWo57AqARIaCgtzdGFydF9ibG9jaxgCIAEoA0IFqOewKgESGQoKc3RhcnRfdGltZRgDIAEoA0IFqOewKgESGAoJZW5kX2Jsb2NrGAQgASgDQgWo57AqARI6CgZnYXVnZXMYBSADKAsyJC5zdW5yaXNlLmxpcXVpZGl0eWluY2VudGl2ZS52MS5HYXVnZUIEyN4fAEKBAgohY29tLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxQgpFcG9jaFByb3RvUAFaOmdpdGh1Yi5jb20vc3VucmlzZWxheWVyL3N1bnJpc2UveC9saXF1aWRpdHlpbmNlbnRpdmUvdHlwZXOiAgNTTFiqAh1TdW5yaXNlLkxpcXVpZGl0eWluY2VudGl2ZS5WMcoCHVN1bnJpc2VcTGlxdWlkaXR5aW5jZW50aXZlXFYx4gIpU3VucmlzZVxMaXF1aWRpdHlpbmNlbnRpdmVcVjFcR1BCTWV0YWRhdGHqAh9TdW5yaXNlOjpMaXF1aWRpdHlpbmNlbnRpdmU6OlYxYgZwcm90bzM", [file_amino_amino, file_gogoproto_gogo, file_sunrise_liquidityincentive_v1_gauge]);
+  fileDesc("CilzdW5yaXNlL2xpcXVpZGl0eWluY2VudGl2ZS92MS9lcG9jaC5wcm90bxIdc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjEiiwEKBUVwb2NoEgoKAmlkGAEgASgEEhMKC3N0YXJ0X2Jsb2NrGAIgASgDEhIKCnN0YXJ0X3RpbWUYAyABKAMSEQoJZW5kX2Jsb2NrGAQgASgDEjoKBmdhdWdlcxgFIAMoCzIkLnN1bnJpc2UubGlxdWlkaXR5aW5jZW50aXZlLnYxLkdhdWdlQgTI3h8AQoECCiFjb20uc3VucmlzZS5saXF1aWRpdHlpbmNlbnRpdmUudjFCCkVwb2NoUHJvdG9QAVo6Z2l0aHViLmNvbS9zdW5yaXNlbGF5ZXIvc3VucmlzZS94L2xpcXVpZGl0eWluY2VudGl2ZS90eXBlc6ICA1NMWKoCHVN1bnJpc2UuTGlxdWlkaXR5aW5jZW50aXZlLlYxygIdU3VucmlzZVxMaXF1aWRpdHlpbmNlbnRpdmVcVjHiAilTdW5yaXNlXExpcXVpZGl0eWluY2VudGl2ZVxWMVxHUEJNZXRhZGF0YeoCH1N1bnJpc2U6OkxpcXVpZGl0eWluY2VudGl2ZTo6VjFiBnByb3RvMw", [file_gogoproto_gogo, file_sunrise_liquidityincentive_v1_gauge]);
 
 /**
  * Epoch
