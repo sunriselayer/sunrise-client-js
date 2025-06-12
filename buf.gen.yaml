@@ -10,7 +10,7 @@ plugins:
 
 inputs:
   - git_repo: https://github.com/sunriselayer/sunrise.git
-    branch: v0.5.3
+    branch: v0.6.0
     subdir: proto
     paths:
       - sunrise/da/v0/query.proto
