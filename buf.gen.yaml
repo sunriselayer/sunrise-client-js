@@ -10,7 +10,7 @@ plugins:
 
 inputs:
   - git_repo: https://github.com/sunriselayer/sunrise.git
-    branch: v0.6.0
+    branch: v1.0.0
     subdir: proto
     paths:
       - sunrise/da/v0/query.proto
@@ -25,6 +25,7 @@ inputs:
       - sunrise/lockup/v1/tx.proto
       - sunrise/shareclass/v1/query.proto
       - sunrise/shareclass/v1/tx.proto
+      - sunrise/swap/v1/extension.proto
       - sunrise/swap/v1/metadata.proto
       - sunrise/swap/v1/query.proto
       - sunrise/swap/v1/route.proto
@@ -32,7 +33,7 @@ inputs:
       - sunrise/tokenconverter/v1/query.proto
       - sunrise/tokenconverter/v1/tx.proto
   - git_repo: https://github.com/cosmos/cosmos-sdk.git
-    branch: v0.53.0
+    branch: v0.53.2
     subdir: proto
     paths:
       - cosmos/gov/v1/gov.proto

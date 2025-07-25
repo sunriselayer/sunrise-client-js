@@ -11,7 +11,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file sunrise/tokenconverter/v1/params.proto.
  */
 export const file_sunrise_tokenconverter_v1_params: GenFile = /*@__PURE__*/
-  fileDesc("CiZzdW5yaXNlL3Rva2VuY29udmVydGVyL3YxL3BhcmFtcy5wcm90bxIZc3VucmlzZS50b2tlbmNvbnZlcnRlci52MSIOCgZQYXJhbXM6BOigHwFC6gEKHWNvbS5zdW5yaXNlLnRva2VuY29udmVydGVyLnYxQgtQYXJhbXNQcm90b1ABWjZnaXRodWIuY29tL3N1bnJpc2VsYXllci9zdW5yaXNlL3gvdG9rZW5jb252ZXJ0ZXIvdHlwZXOiAgNTVFiqAhlTdW5yaXNlLlRva2VuY29udmVydGVyLlYxygIZU3VucmlzZVxUb2tlbmNvbnZlcnRlclxWMeICJVN1bnJpc2VcVG9rZW5jb252ZXJ0ZXJcVjFcR1BCTWV0YWRhdGHqAhtTdW5yaXNlOjpUb2tlbmNvbnZlcnRlcjo6VjFiBnByb3RvMw", [file_gogoproto_gogo]);
+  fileDesc("CiZzdW5yaXNlL3Rva2VuY29udmVydGVyL3YxL3BhcmFtcy5wcm90bxIZc3VucmlzZS50b2tlbmNvbnZlcnRlci52MSJlCgZQYXJhbXMSHgoWbm9uX3RyYW5zZmVyYWJsZV9kZW5vbRgBIAEoCRIaChJ0cmFuc2ZlcmFibGVfZGVub20YAiABKAkSGQoRYWxsb3dlZF9hZGRyZXNzZXMYAyADKAk6BOigHwFC6gEKHWNvbS5zdW5yaXNlLnRva2VuY29udmVydGVyLnYxQgtQYXJhbXNQcm90b1ABWjZnaXRodWIuY29tL3N1bnJpc2VsYXllci9zdW5yaXNlL3gvdG9rZW5jb252ZXJ0ZXIvdHlwZXOiAgNTVFiqAhlTdW5yaXNlLlRva2VuY29udmVydGVyLlYxygIZU3VucmlzZVxUb2tlbmNvbnZlcnRlclxWMeICJVN1bnJpc2VcVG9rZW5jb252ZXJ0ZXJcVjFcR1BCTWV0YWRhdGHqAhtTdW5yaXNlOjpUb2tlbmNvbnZlcnRlcjo6VjFiBnByb3RvMw", [file_gogoproto_gogo]);
 
 /**
  * Params defines the parameters for the module.
@@ -19,6 +19,20 @@ export const file_sunrise_tokenconverter_v1_params: GenFile = /*@__PURE__*/
  * @generated from message sunrise.tokenconverter.v1.Params
  */
 export type Params = Message<"sunrise.tokenconverter.v1.Params"> & {
+  /**
+   * @generated from field: string non_transferable_denom = 1;
+   */
+  nonTransferableDenom: string;
+
+  /**
+   * @generated from field: string transferable_denom = 2;
+   */
+  transferableDenom: string;
+
+  /**
+   * @generated from field: repeated string allowed_addresses = 3;
+   */
+  allowedAddresses: string[];
 };
 
 /**
