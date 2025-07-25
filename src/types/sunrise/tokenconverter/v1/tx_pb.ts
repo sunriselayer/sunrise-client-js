@@ -4,6 +4,8 @@
 
 import type { GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv1";
 import { fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv1";
+import type { Coin } from "../../../cosmos/base/v1beta1/coin_pb";
+import { file_cosmos_base_v1beta1_coin } from "../../../cosmos/base/v1beta1/coin_pb";
 import { file_cosmos_msg_v1_msg } from "../../../cosmos/msg/v1/msg_pb";
 import { file_cosmos_proto_cosmos } from "../../../cosmos_proto/cosmos_pb";
 import { file_gogoproto_gogo } from "../../../gogoproto/gogo_pb";
@@ -15,7 +17,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file sunrise/tokenconverter/v1/tx.proto.
  */
 export const file_sunrise_tokenconverter_v1_tx: GenFile = /*@__PURE__*/
-  fileDesc("CiJzdW5yaXNlL3Rva2VuY29udmVydGVyL3YxL3R4LnByb3RvEhlzdW5yaXNlLnRva2VuY29udmVydGVyLnYxIocBCg9Nc2dVcGRhdGVQYXJhbXMSKwoJYXV0aG9yaXR5GAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSNwoGcGFyYW1zGAIgASgLMiEuc3VucmlzZS50b2tlbmNvbnZlcnRlci52MS5QYXJhbXNCBMjeHwA6DoLnsCoJYXV0aG9yaXR5IhkKF01zZ1VwZGF0ZVBhcmFtc1Jlc3BvbnNlIoABCgpNc2dDb252ZXJ0EigKBnNlbmRlchgBIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEjsKBmFtb3VudBgCIAEoCUIryN4fANreHxVjb3Ntb3NzZGsuaW8vbWF0aC5JbnTStC0KY29zbW9zLkludDoLguewKgZzZW5kZXIiFAoSTXNnQ29udmVydFJlc3BvbnNlMt0BCgNNc2cSbgoMVXBkYXRlUGFyYW1zEiouc3VucmlzZS50b2tlbmNvbnZlcnRlci52MS5Nc2dVcGRhdGVQYXJhbXMaMi5zdW5yaXNlLnRva2VuY29udmVydGVyLnYxLk1zZ1VwZGF0ZVBhcmFtc1Jlc3BvbnNlEl8KB0NvbnZlcnQSJS5zdW5yaXNlLnRva2VuY29udmVydGVyLnYxLk1zZ0NvbnZlcnQaLS5zdW5yaXNlLnRva2VuY29udmVydGVyLnYxLk1zZ0NvbnZlcnRSZXNwb25zZRoFgOewKgFC5gEKHWNvbS5zdW5yaXNlLnRva2VuY29udmVydGVyLnYxQgdUeFByb3RvUAFaNmdpdGh1Yi5jb20vc3VucmlzZWxheWVyL3N1bnJpc2UveC90b2tlbmNvbnZlcnRlci90eXBlc6ICA1NUWKoCGVN1bnJpc2UuVG9rZW5jb252ZXJ0ZXIuVjHKAhlTdW5yaXNlXFRva2VuY29udmVydGVyXFYx4gIlU3VucmlzZVxUb2tlbmNvbnZlcnRlclxWMVxHUEJNZXRhZGF0YeoCG1N1bnJpc2U6OlRva2VuY29udmVydGVyOjpWMWIGcHJvdG8z", [file_cosmos_msg_v1_msg, file_cosmos_proto_cosmos, file_gogoproto_gogo, file_sunrise_tokenconverter_v1_params]);
+  fileDesc("CiJzdW5yaXNlL3Rva2VuY29udmVydGVyL3YxL3R4LnByb3RvEhlzdW5yaXNlLnRva2VuY29udmVydGVyLnYxIocBCg9Nc2dVcGRhdGVQYXJhbXMSKwoJYXV0aG9yaXR5GAEgASgJQhjStC0UY29zbW9zLkFkZHJlc3NTdHJpbmcSNwoGcGFyYW1zGAIgASgLMiEuc3VucmlzZS50b2tlbmNvbnZlcnRlci52MS5QYXJhbXNCBMjeHwA6DoLnsCoJYXV0aG9yaXR5IhkKF01zZ1VwZGF0ZVBhcmFtc1Jlc3BvbnNlIoABCgpNc2dDb252ZXJ0EigKBnNlbmRlchgBIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEjsKBmFtb3VudBgCIAEoCUIryN4fANreHxVjb3Ntb3NzZGsuaW8vbWF0aC5JbnTStC0KY29zbW9zLkludDoLguewKgZzZW5kZXIiFAoSTXNnQ29udmVydFJlc3BvbnNlItcBCgdNc2dTZW5kEi4KDGZyb21fYWRkcmVzcxgBIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEiwKCnRvX2FkZHJlc3MYAiABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxJbCgZhbW91bnQYAyADKAsyGS5jb3Ntb3MuYmFzZS52MWJldGExLkNvaW5CMMjeHwCq3x8oZ2l0aHViLmNvbS9jb3Ntb3MvY29zbW9zLXNkay90eXBlcy5Db2luczoRguewKgxmcm9tX2FkZHJlc3MiEQoPTXNnU2VuZFJlc3BvbnNlMrUCCgNNc2cSbgoMVXBkYXRlUGFyYW1zEiouc3VucmlzZS50b2tlbmNvbnZlcnRlci52MS5Nc2dVcGRhdGVQYXJhbXMaMi5zdW5yaXNlLnRva2VuY29udmVydGVyLnYxLk1zZ1VwZGF0ZVBhcmFtc1Jlc3BvbnNlEl8KB0NvbnZlcnQSJS5zdW5yaXNlLnRva2VuY29udmVydGVyLnYxLk1zZ0NvbnZlcnQaLS5zdW5yaXNlLnRva2VuY29udmVydGVyLnYxLk1zZ0NvbnZlcnRSZXNwb25zZRJWCgRTZW5kEiIuc3VucmlzZS50b2tlbmNvbnZlcnRlci52MS5Nc2dTZW5kGiouc3VucmlzZS50b2tlbmNvbnZlcnRlci52MS5Nc2dTZW5kUmVzcG9uc2UaBYDnsCoBQuYBCh1jb20uc3VucmlzZS50b2tlbmNvbnZlcnRlci52MUIHVHhQcm90b1ABWjZnaXRodWIuY29tL3N1bnJpc2VsYXllci9zdW5yaXNlL3gvdG9rZW5jb252ZXJ0ZXIvdHlwZXOiAgNTVFiqAhlTdW5yaXNlLlRva2VuY29udmVydGVyLlYxygIZU3VucmlzZVxUb2tlbmNvbnZlcnRlclxWMeICJVN1bnJpc2VcVG9rZW5jb252ZXJ0ZXJcVjFcR1BCTWV0YWRhdGHqAhtTdW5yaXNlOjpUb2tlbmNvbnZlcnRlcjo6VjFiBnByb3RvMw", [file_cosmos_base_v1beta1_coin, file_cosmos_msg_v1_msg, file_cosmos_proto_cosmos, file_gogoproto_gogo, file_sunrise_tokenconverter_v1_params]);
 
 /**
  * MsgUpdateParams is the Msg/UpdateParams request type.
@@ -103,6 +105,50 @@ export const MsgConvertResponseSchema: GenMessage<MsgConvertResponse> = /*@__PUR
   messageDesc(file_sunrise_tokenconverter_v1_tx, 3);
 
 /**
+ * MsgSend
+ *
+ * @generated from message sunrise.tokenconverter.v1.MsgSend
+ */
+export type MsgSend = Message<"sunrise.tokenconverter.v1.MsgSend"> & {
+  /**
+   * @generated from field: string from_address = 1;
+   */
+  fromAddress: string;
+
+  /**
+   * @generated from field: string to_address = 2;
+   */
+  toAddress: string;
+
+  /**
+   * @generated from field: repeated cosmos.base.v1beta1.Coin amount = 3;
+   */
+  amount: Coin[];
+};
+
+/**
+ * Describes the message sunrise.tokenconverter.v1.MsgSend.
+ * Use `create(MsgSendSchema)` to create a new message.
+ */
+export const MsgSendSchema: GenMessage<MsgSend> = /*@__PURE__*/
+  messageDesc(file_sunrise_tokenconverter_v1_tx, 4);
+
+/**
+ * MsgSendResponse
+ *
+ * @generated from message sunrise.tokenconverter.v1.MsgSendResponse
+ */
+export type MsgSendResponse = Message<"sunrise.tokenconverter.v1.MsgSendResponse"> & {
+};
+
+/**
+ * Describes the message sunrise.tokenconverter.v1.MsgSendResponse.
+ * Use `create(MsgSendResponseSchema)` to create a new message.
+ */
+export const MsgSendResponseSchema: GenMessage<MsgSendResponse> = /*@__PURE__*/
+  messageDesc(file_sunrise_tokenconverter_v1_tx, 5);
+
+/**
  * Msg defines the Msg service.
  *
  * @generated from service sunrise.tokenconverter.v1.Msg
@@ -128,6 +174,16 @@ export const Msg: GenService<{
     methodKind: "unary";
     input: typeof MsgConvertSchema;
     output: typeof MsgConvertResponseSchema;
+  },
+  /**
+   * Send
+   *
+   * @generated from rpc sunrise.tokenconverter.v1.Msg.Send
+   */
+  send: {
+    methodKind: "unary";
+    input: typeof MsgSendSchema;
+    output: typeof MsgSendResponseSchema;
   },
 }> = /*@__PURE__*/
   serviceDesc(file_sunrise_tokenconverter_v1_tx, 0);

@@ -12,7 +12,7 @@ import type { Message } from "@bufbuild/protobuf";
  * Describes the file sunrise/liquiditypool/v1/params.proto.
  */
 export const file_sunrise_liquiditypool_v1_params: GenFile = /*@__PURE__*/
-  fileDesc("CiVzdW5yaXNlL2xpcXVpZGl0eXBvb2wvdjEvcGFyYW1zLnByb3RvEhhzdW5yaXNlLmxpcXVpZGl0eXBvb2wudjEiUgoGUGFyYW1zEhcKD2NyZWF0ZV9wb29sX2dhcxgBIAEoBBIpChF3aXRoZHJhd19mZWVfcmF0ZRgCIAEoCUIO0rQtCmNvc21vcy5EZWM6BOigHwFC5AEKHGNvbS5zdW5yaXNlLmxpcXVpZGl0eXBvb2wudjFCC1BhcmFtc1Byb3RvUAFaNWdpdGh1Yi5jb20vc3VucmlzZWxheWVyL3N1bnJpc2UveC9saXF1aWRpdHlwb29sL3R5cGVzogIDU0xYqgIYU3VucmlzZS5MaXF1aWRpdHlwb29sLlYxygIYU3VucmlzZVxMaXF1aWRpdHlwb29sXFYx4gIkU3VucmlzZVxMaXF1aWRpdHlwb29sXFYxXEdQQk1ldGFkYXRh6gIaU3VucmlzZTo6TGlxdWlkaXR5cG9vbDo6VjFiBnByb3RvMw", [file_cosmos_proto_cosmos, file_gogoproto_gogo]);
+  fileDesc("CiVzdW5yaXNlL2xpcXVpZGl0eXBvb2wvdjEvcGFyYW1zLnByb3RvEhhzdW5yaXNlLmxpcXVpZGl0eXBvb2wudjEiiwEKBlBhcmFtcxIXCg9jcmVhdGVfcG9vbF9nYXMYASABKAQSKQoRd2l0aGRyYXdfZmVlX3JhdGUYAiABKAlCDtK0LQpjb3Ntb3MuRGVjEhwKFGFsbG93ZWRfcXVvdGVfZGVub21zGAMgAygJEhkKEWFsbG93ZWRfYWRkcmVzc2VzGAQgAygJOgTooB8BQuQBChxjb20uc3VucmlzZS5saXF1aWRpdHlwb29sLnYxQgtQYXJhbXNQcm90b1ABWjVnaXRodWIuY29tL3N1bnJpc2VsYXllci9zdW5yaXNlL3gvbGlxdWlkaXR5cG9vbC90eXBlc6ICA1NMWKoCGFN1bnJpc2UuTGlxdWlkaXR5cG9vbC5WMcoCGFN1bnJpc2VcTGlxdWlkaXR5cG9vbFxWMeICJFN1bnJpc2VcTGlxdWlkaXR5cG9vbFxWMVxHUEJNZXRhZGF0YeoCGlN1bnJpc2U6OkxpcXVpZGl0eXBvb2w6OlYxYgZwcm90bzM", [file_cosmos_proto_cosmos, file_gogoproto_gogo]);
 
 /**
  * Params defines the parameters for the module.
@@ -31,6 +31,16 @@ export type Params = Message<"sunrise.liquiditypool.v1.Params"> & {
    * @generated from field: string withdraw_fee_rate = 2;
    */
   withdrawFeeRate: string;
+
+  /**
+   * @generated from field: repeated string allowed_quote_denoms = 3;
+   */
+  allowedQuoteDenoms: string[];
+
+  /**
+   * @generated from field: repeated string allowed_addresses = 4;
+   */
+  allowedAddresses: string[];
 };
 
 /**
