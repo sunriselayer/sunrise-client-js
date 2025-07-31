@@ -60,6 +60,7 @@ const schemas: GenMessage<Message>[] = [
   tokenconverter.ParamsSchema,
   tokenconverter.MsgUpdateParamsSchema,
   tokenconverter.MsgConvertSchema,
+  tokenconverter.MsgSendSchema
   // x/gov already included in cosmjs
 ];
 
