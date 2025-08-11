@@ -1,6 +1,6 @@
 {
   "name": "@sunriselayer/client",
-  "version": "1.0.1-rc1",
+  "version": "1.0.1-rc2",
   "publishConfig": {
     "access": "public"
   },
@@ -17,6 +17,7 @@
     "./types/liquiditypool": "./dist/types/sunrise/liquiditypool/index.js",
     "./types/lockup": "./dist/types/sunrise/lockup/index.js",
     "./types/shareclass": "./dist/types/sunrise/shareclass/index.js",
+    "./types/stable": "./dist/types/sunrise/stable/index.js",
     "./types/swap": "./dist/types/sunrise/swap/index.js",
     "./types/tokenconverter": "./dist/types/sunrise/tokenconverter/index.js"
   },

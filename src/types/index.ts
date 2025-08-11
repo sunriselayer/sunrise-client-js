@@ -8,3 +8,4 @@ export * as SunriseLockup from "./sunrise/lockup";
 export * as SunriseShareClass from "./sunrise/shareclass";
 export * as SunriseSwap from "./sunrise/swap";
 export * as SunriseTokenConverter from "./sunrise/tokenconverter";
+export * as SunriseStable from "./sunrise/stable";

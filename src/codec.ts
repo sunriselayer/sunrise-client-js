@@ -13,6 +13,7 @@ import * as liquidityincentive from "./types/sunrise/liquidityincentive";
 import * as liquiditypool from "./types/sunrise/liquiditypool";
 import * as lockup from "./types/sunrise/lockup";
 import * as shareclass from "./types/sunrise/shareclass";
+import * as stable from "./types/sunrise/stable";
 import * as swap from "./types/sunrise/swap";
 import * as tokenconverter from "./types/sunrise/tokenconverter";
 
@@ -53,6 +54,10 @@ const schemas: GenMessage<Message>[] = [
   shareclass.MsgNonVotingUndelegateSchema,
   shareclass.MsgClaimRewardsSchema,
   shareclass.MsgCreateValidatorSchema,
+  stable.ParamsSchema,
+  stable.MsgUpdateParamsSchema,
+  stable.MsgMintSchema,
+  stable.MsgBurnSchema,
   swap.ParamsSchema,
   swap.MsgUpdateParamsSchema,
   swap.MsgSwapExactAmountInSchema,

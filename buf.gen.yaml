@@ -25,6 +25,8 @@ inputs:
       - sunrise/lockup/v1/tx.proto
       - sunrise/shareclass/v1/query.proto
       - sunrise/shareclass/v1/tx.proto
+      - sunrise/stable/v1/query.proto
+      - sunrise/stable/v1/tx.proto
       - sunrise/swap/v1/extension.proto
       - sunrise/swap/v1/metadata.proto
       - sunrise/swap/v1/query.proto

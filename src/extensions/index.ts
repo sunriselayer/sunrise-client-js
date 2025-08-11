@@ -5,5 +5,6 @@ export * from "./liquidityincentive";
 export * from "./liquiditypool";
 export * from "./lockup";
 export * from "./shareclass";
+export * from "./stable";
 export * from "./swap";
 export * from "./tokenconverter";
