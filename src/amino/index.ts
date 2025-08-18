@@ -1,5 +1,4 @@
 import * as da from './da';
-import * as fee from './fee';
 import * as liquidityincentive from './liquidityincentive';
 import * as liquiditypool from './liquiditypool';
 import * as lockup from './lockup';
@@ -10,7 +9,6 @@ import * as tokenconverter from './tokenconverter';
 
 export {
     da,
-    fee,
     liquidityincentive,
     liquiditypool,
     lockup,

@@ -16,9 +16,6 @@ import {
     type MsgUnregisterProofDeputy,
     MsgVerifyDataSchema,
     type MsgVerifyData,
-    MsgUpdateParamsSchema,
-    type MsgUpdateParams,
-    type Params,
 } from '../types/sunrise/da';
 
 export interface AminoMsgPublishData extends AminoMsg {
@@ -71,14 +68,6 @@ export interface AminoMsgVerifyData extends AminoMsg {
     readonly type: 'sunrise/da/MsgVerifyData';
     readonly value: {
         readonly sender: string;
-    };
-}
-
-export interface AminoMsgUpdateParams extends AminoMsg {
-    readonly type: 'sunrise/da/MsgUpdateParams';
-    readonly value: {
-        readonly authority: string;
-        readonly params: Params;
     };
 }
 
@@ -250,30 +239,6 @@ export function createDaAminoConverters(): AminoConverters {
             }: AminoMsgVerifyData['value']): MsgVerifyData => {
                 return create(MsgVerifyDataSchema, {
                     sender: sender,
-                });
-            }
-        },
-        '/sunrise.da.v0.MsgUpdateParams': {
-            aminoType: 'sunrise/da/MsgUpdateParams',
-            toAmino: ({
-                authority,
-                params,
-            }: MsgUpdateParams): AminoMsgUpdateParams['value'] => {
-                assertDefinedAndNotNull(authority, 'missing authority');
-                assertDefinedAndNotNull(params, 'missing params');
-
-                return {
-                    authority: authority,
-                    params: params,
-                };
-            },
-            fromAmino: ({
-                authority,
-                params,
-            }: AminoMsgUpdateParams['value']): MsgUpdateParams => {
-                return create(MsgUpdateParamsSchema, {
-                    authority: authority,
-                    params: params,
                 });
             }
         },

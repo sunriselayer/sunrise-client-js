@@ -1,33 +1,29 @@
 // Create Amino converter for the swap module.
-import type { AminoMsg, Coin } from '@cosmjs/amino';
+import type { AminoMsg } from '@cosmjs/amino';
 import type { AminoConverters } from '@cosmjs/stargate';
 import { assertDefinedAndNotNull } from '@cosmjs/utils';
 import { create } from '@bufbuild/protobuf';
 import {
-    MsgUpdateParamsSchema,
-    type MsgUpdateParams,
-    type Params,
     MsgSwapExactAmountInSchema,
     type MsgSwapExactAmountIn,
-    type Route,
     MsgSwapExactAmountOutSchema,
     type MsgSwapExactAmountOut,
+    Route,
+    RoutePool,
+    RouteSeries,
+    RouteParallel,
+    RouteSchema,
+    RoutePoolSchema,
+    RouteSeriesSchema,
+    RouteParallelSchema,
 } from '../types/sunrise/swap';
-
-export interface AminoMsgUpdateParams extends AminoMsg {
-    readonly type: 'sunrise/swap/MsgUpdateParams';
-    readonly value: {
-        readonly authority: string;
-        readonly params: Params;
-    };
-}
 
 export interface AminoMsgSwapExactAmountIn extends AminoMsg {
     readonly type: 'sunrise/swap/MsgSwapExactAmountIn';
     readonly value: {
         readonly sender: string;
         readonly interface_provider: string;
-        readonly route: Route;
+        readonly route: any;
         readonly amount_in: string;
         readonly min_amount_out: string;
     };
@@ -38,7 +34,7 @@ export interface AminoMsgSwapExactAmountOut extends AminoMsg {
     readonly value: {
         readonly sender: string;
         readonly interface_provider: string;
-        readonly route: Route;
+        readonly route: any;
         readonly max_amount_in: string;
         readonly amount_out: string;
     };
@@ -46,30 +42,6 @@ export interface AminoMsgSwapExactAmountOut extends AminoMsg {
 
 export function createSwapAminoConverters(): AminoConverters {
     return {
-        '/sunrise.swap.v1.MsgUpdateParams': {
-            aminoType: 'sunrise/swap/MsgUpdateParams',
-            toAmino: ({
-                authority,
-                params,
-            }: MsgUpdateParams): AminoMsgUpdateParams['value'] => {
-                assertDefinedAndNotNull(authority, 'missing authority');
-                assertDefinedAndNotNull(params, 'missing params');
-
-                return {
-                    authority: authority,
-                    params: params,
-                };
-            },
-            fromAmino: ({
-                authority,
-                params,
-            }: AminoMsgUpdateParams['value']): MsgUpdateParams => {
-                return create(MsgUpdateParamsSchema, {
-                    authority: authority,
-                    params: params,
-                });
-            }
-        },
         '/sunrise.swap.v1.MsgSwapExactAmountIn': {
             aminoType: 'sunrise/swap/MsgSwapExactAmountIn',
             toAmino: ({
@@ -88,7 +60,7 @@ export function createSwapAminoConverters(): AminoConverters {
                 return {
                     sender: sender,
                     interface_provider: interfaceProvider,
-                    route: route,
+                    route: convertRoute(route),
                     amount_in: amountIn,
                     min_amount_out: minAmountOut,
                 };
@@ -103,7 +75,7 @@ export function createSwapAminoConverters(): AminoConverters {
                 return create(MsgSwapExactAmountInSchema, {
                     sender: sender,
                     interfaceProvider: interface_provider,
-                    route: route,
+                    route: convertRouteFromAmino(route),
                     amountIn: amount_in,
                     minAmountOut: min_amount_out,
                 });
@@ -127,7 +99,7 @@ export function createSwapAminoConverters(): AminoConverters {
                 return {
                     sender: sender,
                     interface_provider: interfaceProvider,
-                    route: route,
+                    route: convertRoute(route),
                     max_amount_in: maxAmountIn,
                     amount_out: amountOut,
                 };
@@ -142,11 +114,89 @@ export function createSwapAminoConverters(): AminoConverters {
                 return create(MsgSwapExactAmountOutSchema, {
                     sender: sender,
                     interfaceProvider: interface_provider,
-                    route: route,
+                    route: convertRouteFromAmino(route),
                     maxAmountIn: max_amount_in,
                     amountOut: amount_out,
                 });
             }
         },
     };
+}
+
+export function convertRouteFromAmino(aminoRoute: any): Route {
+    const route = create(RouteSchema, {
+        denomIn: aminoRoute.denom_in,
+        denomOut: aminoRoute.denom_out,
+    });
+
+    if (aminoRoute.pool) {
+        route.strategy = {
+            case: 'pool',
+            value: create(RoutePoolSchema, {
+                poolId: BigInt(aminoRoute.pool.pool_id),
+            }),
+        };
+    } else if (aminoRoute.series) {
+        route.strategy = {
+            case: 'series',
+            value: create(RouteSeriesSchema, {
+                routes: (aminoRoute.series.routes || []).map(convertRouteFromAmino),
+            }),
+        };
+    } else if (aminoRoute.parallel) {
+        route.strategy = {
+            case: 'parallel',
+            value: create(RouteParallelSchema, {
+                routes: (aminoRoute.parallel.routes || []).map(convertRouteFromAmino),
+                weights: aminoRoute.parallel.weights,
+            }),
+        };
+    }
+
+    return route;
+}
+
+export function convertRoute(route: Route): any {
+    const newRoute: any = {
+        denom_in: route.denomIn,
+        denom_out: route.denomOut
+    };
+
+    if (route.strategy.case) {
+        const strategyCase = route.strategy.case;
+        const strategyValue = route.strategy.value;
+
+        switch (strategyCase) {
+            case 'pool': {
+                const pool = strategyValue as RoutePool;
+                if (pool) {
+                    newRoute.pool = {
+                        pool_id: pool.poolId.toString()
+                    };
+                }
+                break;
+            }
+            case 'series': {
+                const series = strategyValue as RouteSeries;
+                if (series) {
+                    newRoute.series = {
+                        routes: (series.routes || []).map(convertRoute)
+                    };
+                }
+                break;
+            }
+            case 'parallel': {
+                const parallel = strategyValue as RouteParallel;
+                if (parallel) {
+                    newRoute.parallel = {
+                        routes: (parallel.routes || []).map(convertRoute),
+                        weights: parallel.weights
+                    };
+                }
+                break;
+            }
+        }
+    }
+
+    return newRoute;
 }

@@ -92,7 +92,6 @@ export const sunriseTypesRegistry = new Registry([
 export const sunriseAminoTypes = new AminoTypes({
   ...createDefaultAminoConverters(),
   ...amino.da.createDaAminoConverters(),
-  ...amino.fee.createFeeAminoConverters(),
   ...amino.liquidityincentive.createLiquidityincentiveAminoConverters(),
   ...amino.liquiditypool.createLiquiditypoolAminoConverters(),
   ...amino.lockup.createLockupAminoConverters(),

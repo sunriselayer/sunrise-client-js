@@ -4,9 +4,6 @@ import type { AminoConverters } from '@cosmjs/stargate';
 import { assertDefinedAndNotNull } from '@cosmjs/utils';
 import { create } from '@bufbuild/protobuf';
 import {
-    MsgUpdateParamsSchema,
-    type MsgUpdateParams,
-    type Params,
     MsgNonVotingDelegateSchema,
     type MsgNonVotingDelegate,
     MsgNonVotingUndelegateSchema,
@@ -22,15 +19,6 @@ import {
     type CommissionRates,
 } from '../types/cosmos/staking';
 import { type Any } from '@bufbuild/protobuf/wkt';
-
-
-export interface AminoMsgUpdateParams extends AminoMsg {
-    readonly type: 'sunrise/sc/MsgUpdateParams';
-    readonly value: {
-        readonly authority: string;
-        readonly params: Params;
-    };
-}
 
 export interface AminoMsgNonVotingDelegate extends AminoMsg {
     readonly type: 'sunrise/sc/MsgNonVotingDelegate';
@@ -69,30 +57,6 @@ export interface AminoMsgCreateValidator extends AminoMsg {
 
 export function createShareclassAminoConverters(): AminoConverters {
     return {
-        '/sunrise.shareclass.v1.MsgUpdateParams': {
-            aminoType: 'sunrise/sc/MsgUpdateParams',
-            toAmino: ({
-                authority,
-                params,
-            }: MsgUpdateParams): AminoMsgUpdateParams['value'] => {
-                assertDefinedAndNotNull(authority, 'missing authority');
-                assertDefinedAndNotNull(params, 'missing params');
-
-                return {
-                    authority: authority,
-                    params: params,
-                };
-            },
-            fromAmino: ({
-                authority,
-                params,
-            }: AminoMsgUpdateParams['value']): MsgUpdateParams => {
-                return create(MsgUpdateParamsSchema, {
-                    authority: authority,
-                    params: params,
-                });
-            }
-        },
         '/sunrise.shareclass.v1.MsgNonVotingDelegate': {
             aminoType: 'sunrise/sc/MsgNonVotingDelegate',
             toAmino: ({

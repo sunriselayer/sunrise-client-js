@@ -4,22 +4,11 @@ import type { AminoConverters } from '@cosmjs/stargate';
 import { assertDefinedAndNotNull } from '@cosmjs/utils';
 import { create } from '@bufbuild/protobuf';
 import {
-    MsgUpdateParamsSchema,
-    type MsgUpdateParams,
-    type Params,
     MsgMintSchema,
     type MsgMint,
     MsgBurnSchema,
     type MsgBurn,
 } from '../types/sunrise/stable';
-
-export interface AminoMsgUpdateParams extends AminoMsg {
-    readonly type: 'sunrise/stable/MsgUpdateParams';
-    readonly value: {
-        readonly authority: string;
-        readonly params: Params;
-    };
-}
 
 export interface AminoMsgMint extends AminoMsg {
     readonly type: 'sunrise/stable/MsgMint';
@@ -39,30 +28,6 @@ export interface AminoMsgBurn extends AminoMsg {
 
 export function createStableAminoConverters(): AminoConverters {
     return {
-        '/sunrise.stable.v1.MsgUpdateParams': {
-            aminoType: 'sunrise/stable/MsgUpdateParams',
-            toAmino: ({
-                authority,
-                params,
-            }: MsgUpdateParams): AminoMsgUpdateParams['value'] => {
-                assertDefinedAndNotNull(authority, 'missing authority');
-                assertDefinedAndNotNull(params, 'missing params');
-
-                return {
-                    authority: authority,
-                    params: params,
-                };
-            },
-            fromAmino: ({
-                authority,
-                params,
-            }: AminoMsgUpdateParams['value']): MsgUpdateParams => {
-                return create(MsgUpdateParamsSchema, {
-                    authority: authority,
-                    params: params,
-                });
-            }
-        },
         '/sunrise.stable.v1.MsgMint': {
             aminoType: 'sunrise/stable/MsgMint',
             toAmino: ({

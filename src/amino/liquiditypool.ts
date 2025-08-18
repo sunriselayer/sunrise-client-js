@@ -4,9 +4,6 @@ import type { AminoConverters } from '@cosmjs/stargate';
 import { assertDefinedAndNotNull } from '@cosmjs/utils';
 import { create } from '@bufbuild/protobuf';
 import {
-    MsgUpdateParamsSchema,
-    type MsgUpdateParams,
-    type Params,
     MsgCreatePoolSchema,
     type MsgCreatePool,
     MsgCreatePositionSchema,
@@ -18,14 +15,6 @@ import {
     MsgClaimRewardsSchema,
     type MsgClaimRewards,
 } from '../types/sunrise/liquiditypool';
-
-export interface AminoMsgUpdateParams extends AminoMsg {
-    readonly type: 'sunrise/pool/MsgUpdateParams';
-    readonly value: {
-        readonly authority: string;
-        readonly params: Params;
-    };
-}
 
 export interface AminoMsgCreatePool extends AminoMsg {
     readonly type: 'sunrise/pool/MsgCreatePool';
@@ -84,30 +73,6 @@ export interface AminoMsgClaimRewards extends AminoMsg {
 
 export function createLiquiditypoolAminoConverters(): AminoConverters {
     return {
-        '/sunrise.liquiditypool.v1.MsgUpdateParams': {
-            aminoType: 'sunrise/pool/MsgUpdateParams',
-            toAmino: ({
-                authority,
-                params,
-            }: MsgUpdateParams): AminoMsgUpdateParams['value'] => {
-                assertDefinedAndNotNull(authority, 'missing authority');
-                assertDefinedAndNotNull(params, 'missing params');
-
-                return {
-                    authority: authority,
-                    params: params,
-                };
-            },
-            fromAmino: ({
-                authority,
-                params,
-            }: AminoMsgUpdateParams['value']): MsgUpdateParams => {
-                return create(MsgUpdateParamsSchema, {
-                    authority: authority,
-                    params: params,
-                });
-            }
-        },
         '/sunrise.liquiditypool.v1.MsgCreatePool': {
             aminoType: 'sunrise/pool/MsgCreatePool',
             toAmino: ({
