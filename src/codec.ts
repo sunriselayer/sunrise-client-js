@@ -8,7 +8,9 @@ import { defaultRegistryTypes } from "@cosmjs/stargate";
 import { convertBufProtocGenEsTypeToPbJsType } from "./internal/registry-adapter";
 import { getTypeUrl, packAny } from "./internal/type-url";
 
+import * as bank from "./types/cosmos/bank"
 import * as slashing from "./types/cosmos/slashing";
+import * as upgrade from "./types/cosmos/upgrade";
 
 import * as da from "./types/sunrise/da";
 import * as fee from "./types/sunrise/fee";
@@ -70,8 +72,11 @@ const schemas: GenMessage<Message>[] = [
   tokenconverter.MsgConvertSchema,
   tokenconverter.MsgSendSchema,
   // x/gov already included in cosmjs
+  bank.MsgSetSendEnabledSchema,
   slashing.MsgUpdateParamsSchema,
-  slashing.MsgUnjailSchema
+  slashing.MsgUnjailSchema,
+  upgrade.MsgSoftwareUpgradeSchema,
+  upgrade.MsgCancelUpgradeSchema,
 ];
 
 export const sunriseTypesRegistry = new Registry([
