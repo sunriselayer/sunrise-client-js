@@ -10,7 +10,7 @@ plugins:
 
 inputs:
   - git_repo: https://github.com/sunriselayer/sunrise.git
-    branch: v1.0.0
+    branch: v1.1.0
     subdir: proto
     paths:
       - sunrise/da/v0/query.proto
@@ -38,9 +38,15 @@ inputs:
     branch: v0.53.2
     subdir: proto
     paths:
+      - cosmos/bank/v1beta1/bank.proto
+      - cosmos/bank/v1beta1/query.proto
+      - cosmos/bank/v1beta1/tx.proto
       - cosmos/slashing/v1beta1/query.proto
       - cosmos/slashing/v1beta1/slashing.proto
       - cosmos/slashing/v1beta1/tx.proto
+      - cosmos/upgrade/v1beta1/upgrade.proto
+      - cosmos/upgrade/v1beta1/query.proto
+      - cosmos/upgrade/v1beta1/tx.proto
       - cosmos/gov/v1/gov.proto
       - cosmos/gov/v1/query.proto
       - cosmos/gov/v1/tx.proto
