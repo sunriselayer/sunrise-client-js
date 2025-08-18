@@ -6,13 +6,14 @@ import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv1";
 import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv1";
 import { file_cosmos_proto_cosmos } from "../../../cosmos_proto/cosmos_pb";
 import { file_gogoproto_gogo } from "../../../gogoproto/gogo_pb";
+import { file_amino_amino } from "../../../amino/amino_pb";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file sunrise/liquiditypool/v1/params.proto.
  */
 export const file_sunrise_liquiditypool_v1_params: GenFile = /*@__PURE__*/
-  fileDesc("CiVzdW5yaXNlL2xpcXVpZGl0eXBvb2wvdjEvcGFyYW1zLnByb3RvEhhzdW5yaXNlLmxpcXVpZGl0eXBvb2wudjEiiwEKBlBhcmFtcxIXCg9jcmVhdGVfcG9vbF9nYXMYASABKAQSKQoRd2l0aGRyYXdfZmVlX3JhdGUYAiABKAlCDtK0LQpjb3Ntb3MuRGVjEhwKFGFsbG93ZWRfcXVvdGVfZGVub21zGAMgAygJEhkKEWFsbG93ZWRfYWRkcmVzc2VzGAQgAygJOgTooB8BQuQBChxjb20uc3VucmlzZS5saXF1aWRpdHlwb29sLnYxQgtQYXJhbXNQcm90b1ABWjVnaXRodWIuY29tL3N1bnJpc2VsYXllci9zdW5yaXNlL3gvbGlxdWlkaXR5cG9vbC90eXBlc6ICA1NMWKoCGFN1bnJpc2UuTGlxdWlkaXR5cG9vbC5WMcoCGFN1bnJpc2VcTGlxdWlkaXR5cG9vbFxWMeICJFN1bnJpc2VcTGlxdWlkaXR5cG9vbFxWMVxHUEJNZXRhZGF0YeoCGlN1bnJpc2U6OkxpcXVpZGl0eXBvb2w6OlYxYgZwcm90bzM", [file_cosmos_proto_cosmos, file_gogoproto_gogo]);
+  fileDesc("CiVzdW5yaXNlL2xpcXVpZGl0eXBvb2wvdjEvcGFyYW1zLnByb3RvEhhzdW5yaXNlLmxpcXVpZGl0eXBvb2wudjEiowEKBlBhcmFtcxIXCg9jcmVhdGVfcG9vbF9nYXMYASABKAQSKQoRd2l0aGRyYXdfZmVlX3JhdGUYAiABKAlCDtK0LQpjb3Ntb3MuRGVjEhwKFGFsbG93ZWRfcXVvdGVfZGVub21zGAMgAygJEhkKEWFsbG93ZWRfYWRkcmVzc2VzGAQgAygJOhzooB8BiuewKhNzdW5yaXNlL3Bvb2wvUGFyYW1zQuQBChxjb20uc3VucmlzZS5saXF1aWRpdHlwb29sLnYxQgtQYXJhbXNQcm90b1ABWjVnaXRodWIuY29tL3N1bnJpc2VsYXllci9zdW5yaXNlL3gvbGlxdWlkaXR5cG9vbC90eXBlc6ICA1NMWKoCGFN1bnJpc2UuTGlxdWlkaXR5cG9vbC5WMcoCGFN1bnJpc2VcTGlxdWlkaXR5cG9vbFxWMeICJFN1bnJpc2VcTGlxdWlkaXR5cG9vbFxWMVxHUEJNZXRhZGF0YeoCGlN1bnJpc2U6OkxpcXVpZGl0eXBvb2w6OlYxYgZwcm90bzM", [file_cosmos_proto_cosmos, file_gogoproto_gogo, file_amino_amino]);
 
 /**
  * Params defines the parameters for the module.

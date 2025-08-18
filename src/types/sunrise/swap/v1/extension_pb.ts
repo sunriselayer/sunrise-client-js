@@ -8,13 +8,14 @@ import { file_cosmos_proto_cosmos } from "../../../cosmos_proto/cosmos_pb";
 import { file_gogoproto_gogo } from "../../../gogoproto/gogo_pb";
 import type { Route } from "./route_pb";
 import { file_sunrise_swap_v1_route } from "./route_pb";
+import { file_amino_amino } from "../../../amino/amino_pb";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file sunrise/swap/v1/extension.proto.
  */
 export const file_sunrise_swap_v1_extension: GenFile = /*@__PURE__*/
-  fileDesc("Ch9zdW5yaXNlL3N3YXAvdjEvZXh0ZW5zaW9uLnByb3RvEg9zdW5yaXNlLnN3YXAudjEiiQEKFlN3YXBCZWZvcmVGZWVFeHRlbnNpb24SKwoFcm91dGUYASABKAsyFi5zdW5yaXNlLnN3YXAudjEuUm91dGVCBMjeHwASQgoNbWF4X2Ftb3VudF9pbhgCIAEoCUIryN4fANreHxVjb3Ntb3NzZGsuaW8vbWF0aC5JbnTStC0KY29zbW9zLkludEKxAQoTY29tLnN1bnJpc2Uuc3dhcC52MUIORXh0ZW5zaW9uUHJvdG9QAVosZ2l0aHViLmNvbS9zdW5yaXNlbGF5ZXIvc3VucmlzZS94L3N3YXAvdHlwZXOiAgNTU1iqAg9TdW5yaXNlLlN3YXAuVjHKAg9TdW5yaXNlXFN3YXBcVjHiAhtTdW5yaXNlXFN3YXBcVjFcR1BCTWV0YWRhdGHqAhFTdW5yaXNlOjpTd2FwOjpWMWIGcHJvdG8z", [file_cosmos_proto_cosmos, file_gogoproto_gogo, file_sunrise_swap_v1_route]);
+  fileDesc("Ch9zdW5yaXNlL3N3YXAvdjEvZXh0ZW5zaW9uLnByb3RvEg9zdW5yaXNlLnN3YXAudjEiswEKFlN3YXBCZWZvcmVGZWVFeHRlbnNpb24SKwoFcm91dGUYASABKAsyFi5zdW5yaXNlLnN3YXAudjEuUm91dGVCBMjeHwASQgoNbWF4X2Ftb3VudF9pbhgCIAEoCUIryN4fANreHxVjb3Ntb3NzZGsuaW8vbWF0aC5JbnTStC0KY29zbW9zLkludDooiuewKiNzdW5yaXNlL3N3YXAvU3dhcEJlZm9yZUZlZUV4dGVuc2lvbkKxAQoTY29tLnN1bnJpc2Uuc3dhcC52MUIORXh0ZW5zaW9uUHJvdG9QAVosZ2l0aHViLmNvbS9zdW5yaXNlbGF5ZXIvc3VucmlzZS94L3N3YXAvdHlwZXOiAgNTU1iqAg9TdW5yaXNlLlN3YXAuVjHKAg9TdW5yaXNlXFN3YXBcVjHiAhtTdW5yaXNlXFN3YXBcVjFcR1BCTWV0YWRhdGHqAhFTdW5yaXNlOjpTd2FwOjpWMWIGcHJvdG8z", [file_cosmos_proto_cosmos, file_gogoproto_gogo, file_sunrise_swap_v1_route, file_amino_amino]);
 
 /**
  * SwapBeforeFeeExtension

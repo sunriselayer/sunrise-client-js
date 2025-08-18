@@ -5,13 +5,14 @@
 import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv1";
 import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv1";
 import { file_gogoproto_gogo } from "../../../gogoproto/gogo_pb";
+import { file_amino_amino } from "../../../amino/amino_pb";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file sunrise/stable/v1/params.proto.
  */
 export const file_sunrise_stable_v1_params: GenFile = /*@__PURE__*/
-  fileDesc("Ch5zdW5yaXNlL3N0YWJsZS92MS9wYXJhbXMucHJvdG8SEXN1bnJpc2Uuc3RhYmxlLnYxIj8KBlBhcmFtcxIUCgxzdGFibGVfZGVub20YASABKAkSGQoRYWxsb3dlZF9hZGRyZXNzZXMYAiADKAk6BOigHwFCugEKFWNvbS5zdW5yaXNlLnN0YWJsZS52MUILUGFyYW1zUHJvdG9QAVouZ2l0aHViLmNvbS9zdW5yaXNlbGF5ZXIvc3VucmlzZS94L3N0YWJsZS90eXBlc6ICA1NTWKoCEVN1bnJpc2UuU3RhYmxlLlYxygIRU3VucmlzZVxTdGFibGVcVjHiAh1TdW5yaXNlXFN0YWJsZVxWMVxHUEJNZXRhZGF0YeoCE1N1bnJpc2U6OlN0YWJsZTo6VjFiBnByb3RvMw", [file_gogoproto_gogo]);
+  fileDesc("Ch5zdW5yaXNlL3N0YWJsZS92MS9wYXJhbXMucHJvdG8SEXN1bnJpc2Uuc3RhYmxlLnYxIlkKBlBhcmFtcxIUCgxzdGFibGVfZGVub20YASABKAkSGQoRYWxsb3dlZF9hZGRyZXNzZXMYAiADKAk6HuigHwGK57AqFXN1bnJpc2Uvc3RhYmxlL1BhcmFtc0K6AQoVY29tLnN1bnJpc2Uuc3RhYmxlLnYxQgtQYXJhbXNQcm90b1ABWi5naXRodWIuY29tL3N1bnJpc2VsYXllci9zdW5yaXNlL3gvc3RhYmxlL3R5cGVzogIDU1NYqgIRU3VucmlzZS5TdGFibGUuVjHKAhFTdW5yaXNlXFN0YWJsZVxWMeICHVN1bnJpc2VcU3RhYmxlXFYxXEdQQk1ldGFkYXRh6gITU3VucmlzZTo6U3RhYmxlOjpWMWIGcHJvdG8z", [file_gogoproto_gogo, file_amino_amino]);
 
 /**
  * Params defines the parameters for the module.

@@ -9,13 +9,14 @@ import { file_cosmos_proto_cosmos } from "../../../cosmos_proto/cosmos_pb";
 import { file_gogoproto_gogo } from "../../../gogoproto/gogo_pb";
 import type { Params } from "./params_pb";
 import { file_sunrise_fee_v1_params } from "./params_pb";
+import { file_amino_amino } from "../../../amino/amino_pb";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file sunrise/fee/v1/tx.proto.
  */
 export const file_sunrise_fee_v1_tx: GenFile = /*@__PURE__*/
-  fileDesc("ChdzdW5yaXNlL2ZlZS92MS90eC5wcm90bxIOc3VucmlzZS5mZWUudjEifAoPTXNnVXBkYXRlUGFyYW1zEisKCWF1dGhvcml0eRgBIAEoCUIY0rQtFGNvc21vcy5BZGRyZXNzU3RyaW5nEiwKBnBhcmFtcxgCIAEoCzIWLnN1bnJpc2UuZmVlLnYxLlBhcmFtc0IEyN4fADoOguewKglhdXRob3JpdHkiGQoXTXNnVXBkYXRlUGFyYW1zUmVzcG9uc2UyZgoDTXNnElgKDFVwZGF0ZVBhcmFtcxIfLnN1bnJpc2UuZmVlLnYxLk1zZ1VwZGF0ZVBhcmFtcxonLnN1bnJpc2UuZmVlLnYxLk1zZ1VwZGF0ZVBhcmFtc1Jlc3BvbnNlGgWA57AqAUKkAQoSY29tLnN1bnJpc2UuZmVlLnYxQgdUeFByb3RvUAFaK2dpdGh1Yi5jb20vc3VucmlzZWxheWVyL3N1bnJpc2UveC9mZWUvdHlwZXOiAgNTRliqAg5TdW5yaXNlLkZlZS5WMcoCDlN1bnJpc2VcRmVlXFYx4gIaU3VucmlzZVxGZWVcVjFcR1BCTWV0YWRhdGHqAhBTdW5yaXNlOjpGZWU6OlYxYgZwcm90bzM", [file_cosmos_msg_v1_msg, file_cosmos_proto_cosmos, file_gogoproto_gogo, file_sunrise_fee_v1_params]);
+  fileDesc("ChdzdW5yaXNlL2ZlZS92MS90eC5wcm90bxIOc3VucmlzZS5mZWUudjEinAEKD01zZ1VwZGF0ZVBhcmFtcxIrCglhdXRob3JpdHkYASABKAlCGNK0LRRjb3Ntb3MuQWRkcmVzc1N0cmluZxIsCgZwYXJhbXMYAiABKAsyFi5zdW5yaXNlLmZlZS52MS5QYXJhbXNCBMjeHwA6LoLnsCoJYXV0aG9yaXR5iuewKhtzdW5yaXNlL2ZlZS9Nc2dVcGRhdGVQYXJhbXMiGQoXTXNnVXBkYXRlUGFyYW1zUmVzcG9uc2UyZgoDTXNnElgKDFVwZGF0ZVBhcmFtcxIfLnN1bnJpc2UuZmVlLnYxLk1zZ1VwZGF0ZVBhcmFtcxonLnN1bnJpc2UuZmVlLnYxLk1zZ1VwZGF0ZVBhcmFtc1Jlc3BvbnNlGgWA57AqAUKkAQoSY29tLnN1bnJpc2UuZmVlLnYxQgdUeFByb3RvUAFaK2dpdGh1Yi5jb20vc3VucmlzZWxheWVyL3N1bnJpc2UveC9mZWUvdHlwZXOiAgNTRliqAg5TdW5yaXNlLkZlZS5WMcoCDlN1bnJpc2VcRmVlXFYx4gIaU3VucmlzZVxGZWVcVjFcR1BCTWV0YWRhdGHqAhBTdW5yaXNlOjpGZWU6OlYxYgZwcm90bzM", [file_cosmos_msg_v1_msg, file_cosmos_proto_cosmos, file_gogoproto_gogo, file_sunrise_fee_v1_params, file_amino_amino]);
 
 /**
  * MsgUpdateParams is the Msg/UpdateParams request type.
