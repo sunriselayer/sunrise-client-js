@@ -24,6 +24,7 @@ export interface AminoMsgNonVotingDelegate extends AminoMsg {
     readonly type: 'sunrise/sc/MsgNonVotingDelegate';
     readonly value: {
         readonly sender: string;
+        readonly validator_address: string;
         readonly amount: Coin;
     };
 }
@@ -32,7 +33,9 @@ export interface AminoMsgNonVotingUndelegate extends AminoMsg {
     readonly type: 'sunrise/sc/MsgNonVotingUndelegate';
     readonly value: {
         readonly sender: string;
+        readonly validator_address: string;
         readonly amount: Coin;
+        readonly recipient: string;
     };
 }
 
@@ -40,6 +43,7 @@ export interface AminoMsgClaimRewards extends AminoMsg {
     readonly type: 'sunrise/sc/MsgClaimRewards';
     readonly value: {
         readonly sender: string;
+        readonly validator_address: string;
     };
 }
 
@@ -61,22 +65,27 @@ export function createShareclassAminoConverters(): AminoConverters {
             aminoType: 'sunrise/sc/MsgNonVotingDelegate',
             toAmino: ({
                 sender,
+                validatorAddress,
                 amount,
             }: MsgNonVotingDelegate): AminoMsgNonVotingDelegate['value'] => {
                 assertDefinedAndNotNull(sender, 'missing sender');
+                assertDefinedAndNotNull(validatorAddress, 'missing validator_address');
                 assertDefinedAndNotNull(amount, 'missing amount');
 
                 return {
                     sender: sender,
+                    validator_address: validatorAddress,
                     amount: amount,
                 };
             },
             fromAmino: ({
                 sender,
+                validator_address,
                 amount,
             }: AminoMsgNonVotingDelegate['value']): MsgNonVotingDelegate => {
                 return create(MsgNonVotingDelegateSchema, {
                     sender: sender,
+                    validatorAddress: validator_address,
                     amount: amount,
                 });
             }
@@ -85,23 +94,33 @@ export function createShareclassAminoConverters(): AminoConverters {
             aminoType: 'sunrise/sc/MsgNonVotingUndelegate',
             toAmino: ({
                 sender,
+                validatorAddress,
                 amount,
+                recipient,
             }: MsgNonVotingUndelegate): AminoMsgNonVotingUndelegate['value'] => {
                 assertDefinedAndNotNull(sender, 'missing sender');
+                assertDefinedAndNotNull(validatorAddress, 'missing validator_address');
                 assertDefinedAndNotNull(amount, 'missing amount');
+                assertDefinedAndNotNull(recipient, 'missing recipient');
 
                 return {
                     sender: sender,
+                    validator_address: validatorAddress,
                     amount: amount,
+                    recipient: recipient,
                 };
             },
             fromAmino: ({
                 sender,
+                validator_address,
                 amount,
+                recipient,
             }: AminoMsgNonVotingUndelegate['value']): MsgNonVotingUndelegate => {
                 return create(MsgNonVotingUndelegateSchema, {
                     sender: sender,
+                    validatorAddress: validator_address,
                     amount: amount,
+                    recipient: recipient,
                 });
             }
         },
@@ -109,18 +128,23 @@ export function createShareclassAminoConverters(): AminoConverters {
             aminoType: 'sunrise/sc/MsgClaimRewards',
             toAmino: ({
                 sender,
+                validatorAddress,
             }: MsgClaimRewards): AminoMsgClaimRewards['value'] => {
                 assertDefinedAndNotNull(sender, 'missing sender');
+                assertDefinedAndNotNull(validatorAddress, 'missing validator_address');
 
                 return {
                     sender: sender,
+                    validator_address: validatorAddress,
                 };
             },
             fromAmino: ({
                 sender,
+                validator_address,
             }: AminoMsgClaimRewards['value']): MsgClaimRewards => {
                 return create(MsgClaimRewardsSchema, {
                     sender: sender,
+                    validatorAddress: validator_address,
                 });
             }
         },
