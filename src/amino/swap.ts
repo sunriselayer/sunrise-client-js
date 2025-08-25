@@ -124,27 +124,23 @@ export function createSwapAminoConverters(): AminoConverters {
 }
 
 export function convertRouteFromAmino(aminoRoute: any): Route {
-    const route = create(RouteSchema, {
-        denomIn: aminoRoute.denom_in,
-        denomOut: aminoRoute.denom_out,
-    });
-
+    let strategy: Route['strategy'] | undefined;
     if (aminoRoute.pool) {
-        route.strategy = {
+        strategy = {
             case: 'pool',
             value: create(RoutePoolSchema, {
                 poolId: BigInt(aminoRoute.pool.pool_id),
             }),
         };
     } else if (aminoRoute.series) {
-        route.strategy = {
+        strategy = {
             case: 'series',
             value: create(RouteSeriesSchema, {
                 routes: (aminoRoute.series.routes || []).map(convertRouteFromAmino),
             }),
         };
     } else if (aminoRoute.parallel) {
-        route.strategy = {
+        strategy = {
             case: 'parallel',
             value: create(RouteParallelSchema, {
                 routes: (aminoRoute.parallel.routes || []).map(convertRouteFromAmino),
@@ -152,6 +148,11 @@ export function convertRouteFromAmino(aminoRoute: any): Route {
             }),
         };
     }
+    const route = create(RouteSchema, {
+        denomIn: aminoRoute.denom_in,
+        denomOut: aminoRoute.denom_out,
+        strategy: strategy,
+    });
 
     return route;
 }
