@@ -158,10 +158,15 @@ export function convertRouteFromAmino(aminoRoute: any): Route {
 }
 
 export function convertRoute(route: Route): any {
-    const newRoute: any = {
-        denom_in: route.denomIn,
-        denom_out: route.denomOut
-    };
+    const newRoute: any = {};
+
+    if (route.denomIn) {
+        newRoute.denom_in = route.denomIn;
+    }
+    if (route.denomOut) {
+        newRoute.denom_out = route.denomOut;
+    }
+
 
     if (route.strategy.case) {
         const strategyCase = route.strategy.case;
@@ -189,10 +194,14 @@ export function convertRoute(route: Route): any {
             case 'parallel': {
                 const parallel = strategyValue as RouteParallel;
                 if (parallel) {
-                    newRoute.parallel = {
-                        routes: (parallel.routes || []).map(convertRoute),
-                        weights: parallel.weights
+                    const aminoParallel: { routes: any[]; weights?: string[] } = {
+                        routes: (parallel.routes || []).map(convertRoute)
                     };
+
+                    if (parallel.weights && parallel.weights.length > 0) {
+                        aminoParallel.weights = parallel.weights;
+                    }
+                    newRoute.parallel = aminoParallel;
                 }
                 break;
             }
