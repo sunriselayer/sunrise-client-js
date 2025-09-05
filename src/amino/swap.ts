@@ -60,7 +60,7 @@ export function createSwapAminoConverters(): AminoConverters {
                 return {
                     sender: sender,
                     interface_provider: interfaceProvider,
-                    route: convertRoute(route),
+                    route: convertRouteToAmino(route),
                     amount_in: amountIn,
                     min_amount_out: minAmountOut,
                 };
@@ -99,7 +99,7 @@ export function createSwapAminoConverters(): AminoConverters {
                 return {
                     sender: sender,
                     interface_provider: interfaceProvider,
-                    route: convertRoute(route),
+                    route: convertRouteToAmino(route),
                     max_amount_in: maxAmountIn,
                     amount_out: amountOut,
                 };
@@ -125,29 +125,43 @@ export function createSwapAminoConverters(): AminoConverters {
 
 export function convertRouteFromAmino(aminoRoute: any): Route {
     let strategy: Route['strategy'] | undefined;
-    if (aminoRoute.pool) {
-        strategy = {
-            case: 'pool',
-            value: create(RoutePoolSchema, {
-                poolId: BigInt(aminoRoute.pool.pool_id),
-            }),
-        };
-    } else if (aminoRoute.series) {
-        strategy = {
-            case: 'series',
-            value: create(RouteSeriesSchema, {
-                routes: (aminoRoute.series.routes || []).map(convertRouteFromAmino),
-            }),
-        };
-    } else if (aminoRoute.parallel) {
-        strategy = {
-            case: 'parallel',
-            value: create(RouteParallelSchema, {
-                routes: (aminoRoute.parallel.routes || []).map(convertRouteFromAmino),
-                weights: aminoRoute.parallel.weights,
-            }),
-        };
+    if (aminoRoute.Strategy) {
+        const strategyValue = aminoRoute.Strategy.value;
+        switch (aminoRoute.Strategy.type) {
+            case 'sunrise/swap/RoutePool':
+                if (strategyValue.pool) {
+                    strategy = {
+                        case: 'pool',
+                        value: create(RoutePoolSchema, {
+                            poolId: BigInt(strategyValue.pool.pool_id),
+                        }),
+                    };
+                }
+                break;
+            case 'sunrise/swap/RouteSeries':
+                if (strategyValue.series) {
+                    strategy = {
+                        case: 'series',
+                        value: create(RouteSeriesSchema, {
+                            routes: (strategyValue.series.routes || []).map(convertRouteFromAmino),
+                        }),
+                    };
+                }
+                break;
+            case 'sunrise/swap/RouteParallel':
+                if (strategyValue.parallel) {
+                    strategy = {
+                        case: 'parallel',
+                        value: create(RouteParallelSchema, {
+                            routes: (strategyValue.parallel.routes || []).map(convertRouteFromAmino),
+                            weights: strategyValue.parallel.weights,
+                        }),
+                    };
+                }
+                break;
+        }
     }
+
     const route = create(RouteSchema, {
         denomIn: aminoRoute.denom_in,
         denomOut: aminoRoute.denom_out,
@@ -157,7 +171,7 @@ export function convertRouteFromAmino(aminoRoute: any): Route {
     return route;
 }
 
-export function convertRoute(route: Route): any {
+export function convertRouteToAmino(route: Route): any {
     const newRoute: any = {};
 
     if (route.denomIn) {
@@ -168,7 +182,7 @@ export function convertRoute(route: Route): any {
     }
 
 
-    if (route.strategy.case) {
+    if (route.strategy?.case) {
         const strategyCase = route.strategy.case;
         const strategyValue = route.strategy.value;
 
@@ -176,8 +190,13 @@ export function convertRoute(route: Route): any {
             case 'pool': {
                 const pool = strategyValue as RoutePool;
                 if (pool) {
-                    newRoute.pool = {
-                        pool_id: pool.poolId.toString()
+                    newRoute.Strategy = {
+                        type: 'sunrise/swap/RoutePool',
+                        value: {
+                            pool: {
+                                pool_id: pool.poolId.toString(),
+                            },
+                        },
                     };
                 }
                 break;
@@ -185,8 +204,13 @@ export function convertRoute(route: Route): any {
             case 'series': {
                 const series = strategyValue as RouteSeries;
                 if (series) {
-                    newRoute.series = {
-                        routes: (series.routes || []).map(convertRoute)
+                    newRoute.Strategy = {
+                        type: 'sunrise/swap/RouteSeries',
+                        value: {
+                            series: {
+                                routes: (series.routes || []).map(convertRouteToAmino),
+                            },
+                        },
                     };
                 }
                 break;
@@ -195,13 +219,18 @@ export function convertRoute(route: Route): any {
                 const parallel = strategyValue as RouteParallel;
                 if (parallel) {
                     const aminoParallel: { routes: any[]; weights?: string[] } = {
-                        routes: (parallel.routes || []).map(convertRoute)
+                        routes: (parallel.routes || []).map(convertRouteToAmino),
                     };
 
                     if (parallel.weights && parallel.weights.length > 0) {
                         aminoParallel.weights = parallel.weights;
                     }
-                    newRoute.parallel = aminoParallel;
+                    newRoute.Strategy = {
+                        type: 'sunrise/swap/RouteParallel',
+                        value: {
+                            parallel: aminoParallel,
+                        },
+                    };
                 }
                 break;
             }
