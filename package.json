@@ -1,6 +1,6 @@
 {
   "name": "@sunriselayer/client",
-  "version": "1.1.1-rc4",
+  "version": "1.2.0-rc1",
   "publishConfig": {
     "access": "public"
   },
@@ -19,7 +19,9 @@
     "./types/shareclass": "./dist/types/sunrise/shareclass/index.js",
     "./types/stable": "./dist/types/sunrise/stable/index.js",
     "./types/swap": "./dist/types/sunrise/swap/index.js",
-    "./types/tokenconverter": "./dist/types/sunrise/tokenconverter/index.js"
+    "./types/tokenconverter": "./dist/types/sunrise/tokenconverter/index.js",
+    "./types/tokenfactory": "./dist/types/sunrise/tokenfactory/index.js",
+    "./types/cron": "./dist/types/sunrise/cron/index.js"
   },
   "scripts": {
     "gen-proto": "buf generate",
