@@ -3,12 +3,14 @@ import { GenMessage } from "@bufbuild/protobuf/codegenv1";
 import { Any } from "@bufbuild/protobuf/wkt";
 import { Registry } from "@cosmjs/proto-signing";
 import type { EncodeObject, GeneratedType } from "@cosmjs/proto-signing";
+import { AminoTypes, createDefaultAminoConverters } from "@cosmjs/stargate";
 import { defaultRegistryTypes } from "@cosmjs/stargate";
 
+import * as amino from "./amino";
 import { convertBufProtocGenEsTypeToPbJsType } from "./internal/registry-adapter";
 import { getTypeUrl, packAny } from "./internal/type-url";
 
-import * as bank from "./types/cosmos/bank"
+import * as bank from "./types/cosmos/bank";
 import * as slashing from "./types/cosmos/slashing";
 import * as upgrade from "./types/cosmos/upgrade";
 
@@ -86,6 +88,18 @@ export const sunriseTypesRegistry = new Registry([
     new convertBufProtocGenEsTypeToPbJsType(schema),
   ]),
 ]);
+
+export const sunriseAminoTypes = new AminoTypes({
+  ...createDefaultAminoConverters(),
+  ...amino.da.createDaAminoConverters(),
+  ...amino.liquidityincentive.createLiquidityincentiveAminoConverters(),
+  ...amino.liquiditypool.createLiquiditypoolAminoConverters(),
+  ...amino.lockup.createLockupAminoConverters(),
+  ...amino.shareclass.createShareclassAminoConverters(),
+  ...amino.stable.createStableAminoConverters(),
+  ...amino.swap.createSwapAminoConverters(),
+  ...amino.tokenconverter.createTokenconverterAminoConverters(),
+});
 
 export function createEncodeObject<T extends Message>(
   schema: GenMessage<T>,
