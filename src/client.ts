@@ -38,6 +38,8 @@ import {
   SwapExtension,
   TokenConverterExtension,
 } from "./extensions";
+import { setupTokenFactoryExtension, TokenFactoryExtension } from "./extensions/tokenfactory";
+import { CronExtension, setupCronExtension } from "./extensions/cron";
 
 type Extensions = AuthExtension &
   BankExtension &
@@ -55,7 +57,9 @@ type Extensions = AuthExtension &
   LockupExtension &
   ShareClassExtension &
   SwapExtension &
-  TokenConverterExtension;
+  TokenConverterExtension &
+  TokenFactoryExtension &
+  CronExtension;
 
 export class SunriseClient extends StargateClient {
   private readonly _queryClient?: QueryClient & Extensions;
@@ -96,6 +100,8 @@ export class SunriseClient extends StargateClient {
         setupShareClassExtension,
         setupSwapExtension,
         setupTokenConverterExtension,
+        setupTokenFactoryExtension,
+        setupCronExtension,
       );
     }
   }
