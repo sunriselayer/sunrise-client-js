@@ -4,16 +4,16 @@
 
 import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv1";
 import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv1";
+import { file_amino_amino } from "../../../amino/amino_pb";
 import { file_cosmos_proto_cosmos } from "../../../cosmos_proto/cosmos_pb";
 import { file_gogoproto_gogo } from "../../../gogoproto/gogo_pb";
-import { file_amino_amino } from "../../../amino/amino_pb";
 import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file sunrise/fee/v1/params.proto.
  */
 export const file_sunrise_fee_v1_params: GenFile = /*@__PURE__*/
-  fileDesc("ChtzdW5yaXNlL2ZlZS92MS9wYXJhbXMucHJvdG8SDnN1bnJpc2UuZmVlLnYxIpwBCgZQYXJhbXMSEQoJZmVlX2Rlbm9tGAEgASgJEhIKCmJ1cm5fZGVub20YAiABKAkSIgoKYnVybl9yYXRpbxgDIAEoCUIO0rQtCmNvc21vcy5EZWMSFAoMYnVybl9wb29sX2lkGAQgASgEEhQKDGJ1cm5fZW5hYmxlZBgFIAEoCDob6KAfAYrnsCoSc3VucmlzZS9mZWUvUGFyYW1zQqgBChJjb20uc3VucmlzZS5mZWUudjFCC1BhcmFtc1Byb3RvUAFaK2dpdGh1Yi5jb20vc3VucmlzZWxheWVyL3N1bnJpc2UveC9mZWUvdHlwZXOiAgNTRliqAg5TdW5yaXNlLkZlZS5WMcoCDlN1bnJpc2VcRmVlXFYx4gIaU3VucmlzZVxGZWVcVjFcR1BCTWV0YWRhdGHqAhBTdW5yaXNlOjpGZWU6OlYxYgZwcm90bzM", [file_cosmos_proto_cosmos, file_gogoproto_gogo, file_amino_amino]);
+  fileDesc("ChtzdW5yaXNlL2ZlZS92MS9wYXJhbXMucHJvdG8SDnN1bnJpc2UuZmVlLnYxIpwBCgZQYXJhbXMSEQoJZmVlX2Rlbm9tGAEgASgJEhIKCmJ1cm5fZGVub20YAiABKAkSIgoKYnVybl9yYXRpbxgDIAEoCUIO0rQtCmNvc21vcy5EZWMSFAoMYnVybl9wb29sX2lkGAQgASgEEhQKDGJ1cm5fZW5hYmxlZBgFIAEoCDob6KAfAYrnsCoSc3VucmlzZS9mZWUvUGFyYW1zQqgBChJjb20uc3VucmlzZS5mZWUudjFCC1BhcmFtc1Byb3RvUAFaK2dpdGh1Yi5jb20vc3VucmlzZWxheWVyL3N1bnJpc2UveC9mZWUvdHlwZXOiAgNTRliqAg5TdW5yaXNlLkZlZS5WMcoCDlN1bnJpc2VcRmVlXFYx4gIaU3VucmlzZVxGZWVcVjFcR1BCTWV0YWRhdGHqAhBTdW5yaXNlOjpGZWU6OlYxYgZwcm90bzM", [file_amino_amino, file_cosmos_proto_cosmos, file_gogoproto_gogo]);
 
 /**
  * Params defines the parameters for the module.
