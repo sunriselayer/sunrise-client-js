@@ -23,6 +23,7 @@ import * as shareclass from "./types/sunrise/shareclass";
 import * as stable from "./types/sunrise/stable";
 import * as swap from "./types/sunrise/swap";
 import * as tokenconverter from "./types/sunrise/tokenconverter";
+import { wasmTypes } from "@cosmjs/cosmwasm-stargate";
 
 const schemas: GenMessage<Message>[] = [
   // sunrise
@@ -83,6 +84,7 @@ const schemas: GenMessage<Message>[] = [
 
 export const sunriseTypesRegistry = new Registry([
   ...defaultRegistryTypes,
+  ...wasmTypes,
   ...schemas.map<[string, GeneratedType]>((schema) => [
     getTypeUrl(schema),
     new convertBufProtocGenEsTypeToPbJsType(schema),
